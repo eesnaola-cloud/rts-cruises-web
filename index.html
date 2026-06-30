@@ -128,7 +128,7 @@ h3{font-size:clamp(17px,2vw,22px);}
 .filters{background:#fff;border:1px solid var(--grey-200);border-radius:8px;padding:clamp(16px,2.5vw,24px) clamp(16px,2.5vw,28px);margin-bottom:40px;box-shadow:0 14px 36px -24px rgba(11,28,61,.15);display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;}
 .filter-group{display:flex;flex-direction:column;gap:5px;flex:1;min-width:130px;}
 .filter-group label{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--grey-600);font-weight:700;}
-.filter-group select{width:100%;padding:11px 12px;border:1px solid var(--grey-200);border-radius:4px;font-family:var(--sans);font-size:14px;color:var(--navy);background:var(--grey-100);}
+.filter-group select,.filter-group input[type=text]{width:100%;padding:11px 12px;border:1px solid var(--grey-200);border-radius:4px;font-family:var(--sans);font-size:14px;color:var(--navy);background:var(--grey-100);}.filter-group input[type=text]::placeholder{color:var(--grey-500);}.filter-group input[type=text]:focus{outline:none;border-color:var(--gold);}
 .itin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
 .itin-card{position:relative;border-radius:10px;overflow:hidden;height:400px;background-size:cover;background-position:center;cursor:pointer;transition:transform .4s,box-shadow .4s;}
 .itin-card:hover{transform:translateY(-7px);box-shadow:0 28px 48px -14px rgba(11,28,61,.5);}
@@ -331,7 +331,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
   .social-strip{flex-direction:column;align-items:flex-start;gap:18px;}
   .filters{flex-direction:column;gap:10px;}
   .filter-group{min-width:0;width:100%;}
-  .filter-group select{width:100%;font-size:16px;}
+  .filter-group select,.filter-group input[type=text]{width:100%;font-size:16px;}
   .locked-box{display:none;}
   .n-modal{max-height:95vh;margin:10px;}
   .n-modal-body{padding:20px;}
@@ -451,7 +451,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
       <h2>Travesías seleccionadas</h2>
       <p style="margin-top:10px;color:var(--grey-600);font-size:16px;max-width:520px;">Tarifas publicadas por las navieras, sujetas a modificaciones por disponibilidad y métodos de pago.</p>
     </div>
-    <div class="filters reveal">
+    <div class="filters reveal"><div class="filter-group" style="flex:2;min-width:200px;"><label>Buscar</label><input type="text" id="f-search" placeholder="Naviera, destino, barco…"></div>
       <div class="filter-group">
         <label>Destino</label>
         <select id="f-region">
@@ -505,7 +505,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
           <option value="11">Noviembre</option><option value="12">Diciembre</option>
         </select>
       </div>
-      <button class="btn btn-navy" onclick="clearFilters()">Limpiar</button>
+      <div class="filter-group"><label>Ordenar por</label><select id="f-sort"><option value="">Sin ordenar</option><option value="precio-asc">Precio: menor a mayor</option><option value="precio-desc">Precio: mayor a menor</option><option value="fecha-asc">Fecha: más próxima</option><option value="fecha-desc">Fecha: más lejana</option></select></div><button class="btn btn-navy" onclick="clearFilters()">Limpiar</button>
     </div>
     <div id="itin-status" style="text-align:center;padding:32px;color:var(--grey-600);font-size:15px;display:none;">Cargando itinerarios…</div>
     <div class="itin-grid" id="itin-grid"></div>
@@ -972,8 +972,10 @@ function renderItins() {
   const naviera = document.getElementById('f-naviera').value;
   const dias    = document.getElementById('f-dias').value;
   const mes     = document.getElementById('f-mes').value;
+  const search  = (document.getElementById('f-search').value || '').toLowerCase().trim();
+  const sort    = document.getElementById('f-sort').value;
 
-  const filtered = ALL_ITINS.filter(it => {
+  let filtered = ALL_ITINS.filter(it => {
     if(region  && it.region !== region) return false;
     if(naviera && it.naviera !== naviera) return false;
     if(mes) { const d = new Date(it.fecha); if(isNaN(d) || (d.getMonth()+1) !== +mes) return false; }
@@ -984,8 +986,18 @@ function renderItins() {
       if(dias==='15-21'&& !(n>=15 && n<=21)) return false;
       if(dias==='22'   && n<22)              return false;
     }
+    if(search) {
+      const hay = [it.naviera, it.barco, it.region, it.puerto_salida, it.puerto_llegada]
+        .join(' ').toLowerCase();
+      if(!hay.includes(search)) return false;
+    }
     return true;
   });
+
+  if(sort === 'precio-asc')  filtered.sort((a,b) => (+a.precio||0) - (+b.precio||0));
+  if(sort === 'precio-desc') filtered.sort((a,b) => (+b.precio||0) - (+a.precio||0));
+  if(sort === 'fecha-asc')   filtered.sort((a,b) => new Date(a.fecha) - new Date(b.fecha));
+  if(sort === 'fecha-desc')  filtered.sort((a,b) => new Date(b.fecha) - new Date(a.fecha));
 
   const grid = document.getElementById('itin-grid');
   const moreDiv = document.getElementById('itin-more');
@@ -1006,13 +1018,15 @@ function renderItins() {
 function showMore() { SHOWN += 12; renderItins(); }
 
 function clearFilters() {
-  ['f-region','f-naviera','f-dias','f-mes'].forEach(id => document.getElementById(id).value = '');
+  ['f-region','f-naviera','f-dias','f-mes','f-sort'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('f-search').value = '';
   SHOWN = 12;
   renderItins();
 }
 
-['f-region','f-naviera','f-dias','f-mes'].forEach(id =>
+['f-region','f-naviera','f-dias','f-mes','f-sort'].forEach(id =>
   document.getElementById(id).addEventListener('change', () => { SHOWN=12; renderItins(); }));
+document.getElementById('f-search').addEventListener('input', () => { SHOWN=12; renderItins(); });
 
 // ── Carga inicial desde Google Sheets ──
 (async () => {
