@@ -1,0 +1,21 @@
+# Datos sensibles
+*.csv
+rts-cruises-emails/
+
+# Scripts internos
+*.py
+debug*.py
+
+# Archivos de trabajo internos
+rts_v2.html
+rts_v3.html
+rts_dashboard.html
+umbral-cero-gtm.html
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp

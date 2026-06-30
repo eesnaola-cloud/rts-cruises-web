@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTS Cruises — Cruceros de Lujo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden;}
+body{font-family:'DM Sans',sans-serif;color:#0B1C3D;background:#fff;overflow-x:hidden;line-height:1.6;}
+img{display:block;max-width:100%;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+button{font-family:inherit;cursor:pointer;}
+
+:root{
+  --navy:#0B1C3D; --navy-deep:#071529; --navy-light:#13294f;
+  --gold:#C49A3C; --gold-light:#dab35e;
+  --grey-100:#F6F7FA; --grey-200:#E7E9EF; --grey-600:#5c6478;
+  --serif:'Playfair Display',serif; --sans:'DM Sans',sans-serif;
+  --max:1200px; --pad:clamp(20px,5vw,64px);
+}
+
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad);}
+.eyebrow{display:block;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:12px;}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.12;}
+h1{font-size:clamp(32px,5vw,60px);}
+h2{font-size:clamp(26px,3.5vw,42px);}
+h3{font-size:clamp(17px,2vw,22px);}
+
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:14px 28px;border-radius:2px;font-family:var(--sans);
+  font-weight:700;font-size:13px;letter-spacing:.8px;
+  text-transform:uppercase;border:1.5px solid transparent;
+  transition:all .3s ease;white-space:nowrap;cursor:pointer;
+}
+.btn-gold{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
+.btn-gold:hover{background:var(--gold-light);box-shadow:0 8px 22px -6px rgba(196,154,60,.55);transform:translateY(-2px);}
+.btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
+.btn-outline:hover{background:rgba(255,255,255,.1);border-color:#fff;}
+.btn-ghost{background:transparent;color:var(--navy);border-color:var(--navy);}
+.btn-ghost:hover{background:var(--navy);color:#fff;}
+.btn-navy{background:var(--navy);color:#fff;border-color:var(--navy);}
+.btn-navy:hover{background:var(--navy-light);}
+
+.section{padding:clamp(60px,8vw,120px) 0;}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+/* ── NAVBAR ── */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px 0;transition:background .4s,padding .4s,box-shadow .4s;}
+.navbar.scrolled{background:rgba(11,28,61,.97);backdrop-filter:blur(12px);box-shadow:0 4px 24px rgba(0,0,0,.25);padding:12px 0;}
+.navbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.nav-logo{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.nav-logo img{height:44px;width:auto;object-fit:contain;}
+.nav-logo .sub{font-size:8px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;font-weight:700;}
+.nav-links{display:flex;align-items:center;gap:clamp(12px,2vw,28px);}
+.nav-links a{color:rgba(255,255,255,.8);font-size:13.5px;font-weight:500;white-space:nowrap;transition:color .2s;}
+.nav-links a:hover{color:#fff;}
+.nav-ctas{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.nav-ctas .btn{padding:10px 18px;font-size:11px;}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
+.burger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:all .3s;}
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(7,21,41,.98);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:28px;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a,.mobile-menu button{color:#fff;font-size:20px;font-weight:600;font-family:var(--serif);background:none;border:none;cursor:pointer;}
+.mobile-menu .close{position:absolute;top:24px;right:24px;font-size:32px;background:none;border:none;color:#fff;cursor:pointer;line-height:1;}
+
+/* ── HERO ── */
+.hero{display:flex;flex-direction:column;position:relative;color:#fff;overflow:hidden;}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,21,41,.45) 0%,rgba(7,21,41,.65) 50%,rgba(7,21,41,.97) 100%);z-index:1;}
+.hero-body{flex:1;position:relative;z-index:2;}
+.hero-stats{position:relative;z-index:2;}
+.hero-body{flex:1;padding-top:140px;padding-bottom:80px;}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(196,154,60,.4);background:rgba(196,154,60,.08);padding:8px 18px;border-radius:30px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);font-weight:700;margin-bottom:28px;}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+.hero h1{margin-bottom:20px;text-shadow:0 4px 28px rgba(0,0,0,.4);max-width:680px;}
+.hero h1 em{font-style:italic;color:var(--gold-light);}
+.hero-lead{font-size:clamp(15px,1.8vw,18px);color:rgba(255,255,255,.82);max-width:520px;margin-bottom:36px;line-height:1.7;}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+.hero-stats{background:rgba(7,21,41,.65);border-top:1px solid rgba(255,255,255,.1);backdrop-filter:blur(8px);padding:28px 0;}
+.hero-stats .wrap{display:flex;gap:clamp(28px,5vw,60px);flex-wrap:wrap;}
+.stat-num{font-family:var(--serif);font-size:clamp(22px,3vw,30px);color:var(--gold-light);font-weight:700;line-height:1;}
+.stat-label{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:5px;}
+
+/* ── LOGO BAND / NAVIERAS ── */
+.logo-band{padding:clamp(48px,6vw,80px) 0;border-top:1px solid var(--grey-200);border-bottom:1px solid var(--grey-200);}
+.logo-band-head{text-align:center;margin-bottom:44px;}
+.logo-band-head p{color:var(--grey-600);font-size:15px;max-width:480px;margin:10px auto 0;}
+.logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--grey-200);border:1px solid var(--grey-200);border-radius:8px;overflow:hidden;}
+.logo-cell{background:#fff;padding:clamp(28px,3.5vw,44px) clamp(16px,2vw,28px);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:160px;cursor:pointer;transition:background .3s;position:relative;gap:12px;}
+.logo-cell:hover{background:var(--navy);}
+.logo-cell img{max-height:52px;max-width:80%;object-fit:contain;filter:grayscale(1) opacity(.7);transition:filter .3s;}
+.logo-cell img[src*="aqua"]{max-height:90px;max-width:95%;}
+.logo-cell:hover img{filter:brightness(0) invert(1) opacity(1);}
+.logo-word{font-family:var(--serif);font-size:11px;font-weight:700;color:var(--navy);text-align:center;transition:color .3s;display:block;word-break:break-word;hyphens:auto;max-width:100%;line-height:1.3;}
+.logo-cell:hover .logo-word{color:var(--gold-light);}
+.logo-hint{position:absolute;bottom:10px;font-size:8.5px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);opacity:0;transition:opacity .3s;}
+.logo-cell:hover .logo-hint{opacity:1;}
+
+/* ── NAVIERA MODAL ── */
+.n-modal-overlay{position:fixed;inset:0;background:rgba(7,21,41,.88);z-index:2000;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .35s;}
+.n-modal-overlay.open{opacity:1;pointer-events:all;}
+.n-modal{background:#fff;border-radius:12px;max-width:860px;width:100%;max-height:90vh;overflow-y:auto;position:relative;}
+.n-modal-close{position:sticky;top:0;display:flex;justify-content:flex-end;padding:16px 20px 0;background:#fff;z-index:1;}
+.n-modal-close button{background:var(--grey-100);border:none;width:36px;height:36px;border-radius:50%;font-size:20px;line-height:1;color:var(--navy);cursor:pointer;}
+.n-modal-hero{height:200px;background-size:cover;background-position:center;position:relative;border-radius:12px 12px 0 0;overflow:hidden;}
+.n-modal-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(7,21,41,.85) 100%);}
+.n-modal-hero-text{position:absolute;bottom:20px;left:28px;right:28px;z-index:1;color:#fff;}
+.n-modal-hero-text h2{font-size:28px;color:#fff;margin-bottom:4px;}
+.n-modal-hero-text .tagline{font-size:13px;color:rgba(255,255,255,.72);letter-spacing:.5px;}
+.n-modal-body{padding:28px 32px 36px;}
+.n-section{margin-bottom:28px;}
+.n-section h4{font-family:var(--serif);font-size:17px;margin-bottom:12px;color:var(--navy);}
+.n-section p{font-size:14px;color:var(--grey-600);line-height:1.75;}
+.n-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.n-chip{background:var(--grey-100);border:1px solid var(--grey-200);border-radius:20px;padding:5px 14px;font-size:12.5px;font-weight:600;color:var(--navy);}
+.n-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px;}
+.n-info-box{background:var(--grey-100);border-radius:8px;padding:16px 18px;}
+.n-info-box .label{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--grey-600);font-weight:700;margin-bottom:5px;}
+.n-info-box .value{font-size:14px;font-weight:600;color:var(--navy);line-height:1.45;}
+.n-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+
+/* ── ITINERARIES ── */
+.filters{background:#fff;border:1px solid var(--grey-200);border-radius:8px;padding:clamp(16px,2.5vw,24px) clamp(16px,2.5vw,28px);margin-bottom:40px;box-shadow:0 14px 36px -24px rgba(11,28,61,.15);display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;}
+.filter-group{display:flex;flex-direction:column;gap:5px;flex:1;min-width:130px;}
+.filter-group label{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--grey-600);font-weight:700;}
+.filter-group select{width:100%;padding:11px 12px;border:1px solid var(--grey-200);border-radius:4px;font-family:var(--sans);font-size:14px;color:var(--navy);background:var(--grey-100);}
+.itin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.itin-card{position:relative;border-radius:10px;overflow:hidden;height:400px;background-size:cover;background-position:center;cursor:pointer;transition:transform .4s,box-shadow .4s;}
+.itin-card:hover{transform:translateY(-7px);box-shadow:0 28px 48px -14px rgba(11,28,61,.5);}
+.itin-card::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,21,41,.04) 0%,rgba(7,21,41,.88) 100%);transition:background .35s;}
+.itin-card:hover::before{background:linear-gradient(180deg,rgba(7,21,41,.1) 0%,rgba(7,21,41,.95) 100%);}
+.itin-badge{position:absolute;top:16px;left:16px;z-index:2;background:var(--gold);color:var(--navy-deep);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 13px;border-radius:20px;}
+.itin-body{position:absolute;bottom:0;left:0;right:0;padding:22px;z-index:2;color:#fff;}
+.itin-dest{font-family:var(--serif);font-size:19px;font-weight:700;margin-bottom:7px;line-height:1.25;}
+.itin-meta{display:flex;gap:14px;font-size:12px;color:rgba(255,255,255,.7);margin-bottom:13px;}
+.itin-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.15);padding-top:13px;}
+.itin-price .label{font-size:9.5px;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.5);}
+.itin-price .value{font-family:var(--serif);font-size:17px;color:var(--gold-light);font-weight:700;}
+.itin-foot .btn{padding:9px 16px;font-size:10.5px;}
+.itin-more{text-align:center;margin-top:44px;}
+
+/* ── WHY RTS ── */
+.why-head{text-align:center;max-width:560px;margin:0 auto clamp(40px,5vw,60px);}
+.why-head h2{color:#fff;margin-top:10px;}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(255,255,255,.06);border-radius:8px;overflow:hidden;}
+.why-card{padding:clamp(28px,4vw,44px) clamp(20px,3vw,32px);transition:background .3s;}
+.why-card:hover{background:var(--navy-light);}
+.why-num{font-family:var(--serif);font-size:38px;color:var(--gold);opacity:.4;font-weight:700;margin-bottom:14px;line-height:1;}
+.why-card h3{color:#fff;font-size:17px;margin-bottom:10px;}
+.why-card p{font-size:13.5px;color:rgba(255,255,255,.55);line-height:1.7;}
+
+/* ── RITA ── */
+.rita-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,80px);align-items:center;}
+.rita-copy h2{margin-bottom:14px;}
+.rita-copy .lead{color:var(--grey-600);font-size:16px;margin-bottom:28px;line-height:1.7;}
+.rita-points{display:flex;flex-direction:column;gap:18px;margin-bottom:32px;}
+.rita-point{display:flex;gap:14px;align-items:flex-start;}
+.rita-ico{width:38px;height:38px;border-radius:50%;background:rgba(196,154,60,.1);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;}
+.rita-txt strong{display:block;font-size:14.5px;color:var(--navy);margin-bottom:2px;}
+.rita-txt span{font-size:13.5px;color:var(--grey-600);}
+.phone{max-width:300px;margin:0 auto;}
+.phone-frame{background:var(--navy-deep);border-radius:34px;padding:10px;border:2px solid #1c3357;box-shadow:0 36px 60px -20px rgba(11,28,61,.55);}
+.phone-screen{background:#e9edf3;border-radius:24px;overflow:hidden;}
+.chat-head{background:var(--navy);padding:14px 15px;display:flex;align-items:center;gap:10px;}
+.chat-av{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#9c7a2c);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;color:var(--navy-deep);font-size:13px;flex-shrink:0;}
+.chat-info .name{color:#fff;font-weight:700;font-size:13px;}
+.chat-info .status{font-size:10px;color:#7ee08a;display:flex;align-items:center;gap:4px;}
+.chat-info .status::before{content:'';width:5px;height:5px;border-radius:50%;background:#7ee08a;display:inline-block;}
+.chat-body{padding:12px 11px;min-height:260px;display:flex;flex-direction:column;gap:8px;}
+.bubble{max-width:84%;padding:8px 12px;border-radius:12px;font-size:12.5px;line-height:1.45;box-shadow:0 1px 3px rgba(0,0,0,.07);}
+.bubble.in{background:#fff;color:var(--navy);align-self:flex-start;border-bottom-left-radius:2px;}
+.bubble.out{background:#d4f3da;color:#1c3326;align-self:flex-end;border-bottom-right-radius:2px;}
+.bubble .time{display:block;font-size:9.5px;color:#9aa3b5;margin-top:3px;text-align:right;}
+.typing{align-self:flex-start;background:#fff;padding:10px 14px;border-radius:12px;border-bottom-left-radius:2px;display:flex;gap:4px;}
+.typing span{width:6px;height:6px;border-radius:50%;background:#9ca3af;animation:blink 1.4s infinite;}
+.typing span:nth-child(2){animation-delay:.2s;}
+.typing span:nth-child(3){animation-delay:.4s;}
+@keyframes blink{0%,60%,100%{opacity:.2;}30%{opacity:1;}}
+.chat-input{padding:8px 11px;background:#e9edf3;display:flex;gap:6px;align-items:center;}
+.chat-input .field{flex:1;background:#fff;border-radius:18px;padding:7px 12px;font-size:12px;color:#9aa3b5;}
+.chat-input .send-btn{width:30px;height:30px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;}
+
+/* ── PARTNERS TABS ── */
+.tabs-wrap{background:#fff;border:1px solid var(--grey-200);border-radius:10px;overflow:hidden;box-shadow:0 18px 44px -24px rgba(11,28,61,.16);}
+.tabs-nav{display:flex;border-bottom:1px solid var(--grey-200);padding:0 clamp(16px,3vw,36px);}
+.tab-btn{padding:14px clamp(14px,2vw,28px);font-family:var(--sans);font-size:13.5px;font-weight:700;cursor:pointer;border:none;border-bottom:2px solid transparent;background:transparent;color:#9aa3b5;transition:all .25s;margin-bottom:-1px;}
+.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold);}
+.tabs-body{padding:clamp(28px,4vw,48px) clamp(20px,4vw,44px);}
+.tab-pane{display:none;}
+.tab-pane.active{display:block;}
+.partners-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;}
+.feature-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:28px;}
+.feature-list li{display:flex;align-items:center;gap:10px;font-size:14px;}
+.check{width:20px;height:20px;border-radius:50%;background:var(--gold);color:var(--navy-deep);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;flex-shrink:0;}
+.locked-box{background:var(--grey-100);border-radius:8px;padding:36px 28px;text-align:center;border:1px solid var(--grey-200);}
+.locked-box .icon{font-size:40px;margin-bottom:12px;}
+.locked-box h4{font-family:var(--serif);font-size:17px;margin-bottom:7px;}
+.locked-box p{font-size:13px;color:var(--grey-600);}
+.guides-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px;}
+.guide-chip{background:#fff;border:1px solid var(--grey-200);padding:9px 16px;border-radius:28px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:7px;cursor:pointer;transition:all .25s;color:var(--navy);}
+.guide-chip:hover{background:var(--navy);color:#fff;}
+.guide-chip .arr{color:var(--gold);font-size:12px;}
+
+/* ── PARTNERS LANDING ── */
+.p-benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(255,255,255,.06);border-radius:10px;overflow:hidden;margin-bottom:2px;}
+.p-benefit{padding:clamp(28px,4vw,44px) clamp(20px,3vw,32px);transition:background .3s;}
+.p-benefit:hover{background:rgba(255,255,255,.05);}
+.p-ico{font-size:28px;margin-bottom:14px;}
+.p-benefit h4{font-family:var(--serif);font-size:17px;color:#fff;margin-bottom:10px;}
+.p-benefit p{font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.7;}
+.comm-table{width:100%;border-collapse:collapse;min-width:560px;}
+.comm-table th{background:rgba(255,255,255,.07);color:rgba(255,255,255,.5);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;padding:12px 16px;text-align:left;border-bottom:1px solid rgba(255,255,255,.1);}
+.comm-table td{padding:14px 16px;font-size:14px;color:rgba(255,255,255,.75);border-bottom:1px solid rgba(255,255,255,.06);}
+.comm-table tbody tr:hover td{background:rgba(255,255,255,.04);}
+.comm-hi{color:var(--gold-light);font-weight:700;font-size:15px;}
+@media(max-width:768px){.p-benefits-grid{grid-template-columns:1fr;}}
+
+/* ── AGENCY TESTIMONIALS ── */
+.ag-test{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:clamp(20px,3vw,28px);}
+.ag-stars{color:var(--gold);font-size:12px;letter-spacing:2px;margin-bottom:12px;}
+.ag-test blockquote{font-size:13.5px;font-style:italic;color:rgba(255,255,255,.7);margin-bottom:18px;line-height:1.7;}
+.ag-author{display:flex;align-items:center;gap:10px;}
+.ag-av{width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--navy-deep);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:11px;flex-shrink:0;}
+.ag-name{font-size:13px;font-weight:700;color:#fff;}
+.ag-loc{font-size:11px;color:rgba(255,255,255,.4);}
+@media(max-width:768px){.agency-testimonials{grid-template-columns:1fr!important;}}
+
+/* ── TESTIMONIALS ── */
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:44px;}
+.testimonial{background:#fff;border:1px solid var(--grey-200);border-radius:10px;padding:clamp(22px,3vw,34px) clamp(18px,2.5vw,28px);box-shadow:0 14px 32px -20px rgba(11,28,61,.16);}
+.stars{color:var(--gold);font-size:12px;letter-spacing:2px;margin-bottom:14px;}
+.testimonial blockquote{font-size:14.5px;font-style:italic;color:var(--navy-light);margin-bottom:20px;line-height:1.7;}
+.author{display:flex;align-items:center;gap:10px;}
+.author-av{width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--gold-light);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:12px;flex-shrink:0;}
+.author-name{font-size:13.5px;font-weight:700;color:var(--navy);}
+.author-city{font-size:12px;color:var(--grey-600);}
+.social-strip{background:var(--navy);border-radius:10px;padding:clamp(24px,3vw,40px) clamp(20px,4vw,48px);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+.social-strip h3{color:#fff;font-size:20px;margin-bottom:5px;}
+.social-strip p{color:rgba(255,255,255,.55);font-size:14px;}
+.social-icons{display:flex;gap:10px;}
+.social-ico{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;transition:all .25s;cursor:pointer;}
+.social-ico:hover{background:var(--gold);border-color:var(--gold);color:var(--navy-deep);}
+
+/* ── HOW IT WORKS ── */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;position:relative;}
+.step{text-align:center;position:relative;z-index:1;}
+.step-num{width:56px;height:56px;border-radius:50%;border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:20px;font-weight:700;color:var(--gold);margin:0 auto 20px;background:var(--grey-100);}
+.step h3{font-size:17px;margin-bottom:10px;color:var(--navy);}
+.step p{font-size:14px;color:var(--grey-600);max-width:240px;margin:0 auto;line-height:1.65;}
+
+/* ── FAQ ── */
+.faq-list{max-width:760px;margin:0 auto;}
+.faq-item{border-bottom:1px solid var(--grey-200);}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:20px 0;font-family:var(--sans);font-size:15px;font-weight:600;color:var(--navy);display:flex;justify-content:space-between;align-items:center;cursor:pointer;gap:16px;}
+.faq-icon{color:var(--gold);font-size:20px;font-weight:300;flex-shrink:0;transition:transform .3s;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;}
+.faq-item.open .faq-a{max-height:200px;}
+.faq-a p{padding:0 0 20px;font-size:14px;color:var(--grey-600);line-height:1.75;max-width:640px;}
+
+/* ── CLOSING CTA ── */
+.closing{padding:clamp(80px,10vw,130px) 0;text-align:center;color:#fff;background:linear-gradient(rgba(7,21,41,.76),rgba(7,21,41,.93)),url('https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=2400&fit=crop') center/cover no-repeat;}
+.closing h2{max-width:640px;margin:10px auto 16px;}
+.closing p{font-size:16px;color:rgba(255,255,255,.72);max-width:440px;margin:0 auto 36px;line-height:1.65;}
+.closing-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+
+/* ── FOOTER ── */
+footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48px,7vw,80px) 0 24px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:clamp(24px,4vw,40px);padding-bottom:clamp(36px,5vw,56px);border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:22px;}
+.footer-brand .logo-name{font-family:var(--serif);font-size:19px;color:#fff;line-height:1;}
+.footer-brand .logo-sub{font-size:8.5px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;margin:4px 0 14px;}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,.42);max-width:230px;margin-bottom:18px;line-height:1.65;}
+.footer-col h4{color:#fff;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px;font-family:var(--sans);}
+.footer-col ul{display:flex;flex-direction:column;gap:10px;}
+.footer-col a{font-size:13px;color:rgba(255,255,255,.45);transition:color .2s;}
+.footer-col a:hover{color:var(--gold-light);}
+.footer-socials{display:flex;gap:8px;}
+.footer-soc{width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;cursor:pointer;transition:all .25s;}
+.footer-soc:hover{background:var(--gold);border-color:var(--gold);color:var(--navy-deep);}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:11px;color:rgba(255,255,255,.28);}
+.footer-bottom a{color:rgba(255,255,255,.28);}
+.footer-bottom a:hover{color:var(--gold-light);}
+
+/* ── FLOATING WA ── */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:999;width:54px;height:54px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 24px -4px rgba(196,154,60,.65);animation:waPulse 2.5s ease-in-out infinite;}
+@keyframes waPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.08);}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1280px){
+  .nav-logo .sub{display:none;}
+  .nav-links a{font-size:12.5px;}
+  .nav-ctas .btn{padding:9px 14px;font-size:10.5px;}
+}
+@media(max-width:1100px){
+  .nav-links{gap:12px;}
+  .nav-links a:nth-child(5),.nav-links a:nth-child(6){display:none;}
+}
+@media(max-width:1024px){
+  .itin-grid{grid-template-columns:repeat(2,1fr);}
+  .why-grid{grid-template-columns:repeat(2,1fr);}
+  .testimonials-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .partners-grid{grid-template-columns:1fr;gap:28px;}
+  .rita-grid{grid-template-columns:1fr;gap:48px;}
+  .logo-grid{grid-template-columns:repeat(4,1fr);}
+  .p-benefits-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:768px){
+  :root{--pad:16px;}
+  .nav-links{display:none;}
+  .nav-ctas{display:none;}
+  .burger{display:flex;}
+  .hero-body{padding-top:110px;padding-bottom:56px;}
+  .hero-ctas{flex-direction:column;gap:10px;}
+  .hero-ctas .btn{flex:1;justify-content:center;min-width:0;text-align:center;}
+  .hero-stats .wrap{gap:24px;flex-wrap:wrap;}
+  .itin-grid{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .testimonials-grid{grid-template-columns:1fr;}
+  .logo-grid{grid-template-columns:repeat(2,1fr);}
+  .logo-cell{min-height:120px;padding:20px 12px;}
+  .logo-cell img{max-height:44px;}
+  .logo-cell img[src*="aqua"]{max-height:80px;max-width:95%;}
+  .steps{grid-template-columns:1fr;gap:36px;}
+  .footer-grid{grid-template-columns:1fr;}
+  .social-strip{flex-direction:column;align-items:flex-start;gap:18px;}
+  .filters{flex-direction:column;gap:10px;}
+  .filter-group{min-width:0;width:100%;}
+  .filter-group select{width:100%;font-size:16px;}
+  .locked-box{display:none;}
+  .n-modal{max-height:95vh;margin:10px;}
+  .n-modal-body{padding:20px;}
+  .n-grid-2{grid-template-columns:1fr;}
+  .p-benefits-grid{grid-template-columns:1fr;}
+  .rita-grid{gap:32px;}
+  .krooze-inner{flex-direction:column;text-align:center;}
+  .krooze-ctas{justify-content:center;}
+  section{padding-left:0;padding-right:0;}
+}
+@media(max-width:480px){
+  .logo-grid{grid-template-columns:repeat(2,1fr);}
+  .hero h1{font-size:clamp(26px,8vw,38px);}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="wrap">
+    <a href="#" class="nav-logo">
+      <img src="data:image/png;base64,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" alt="RTS Cruises">
+      <span class="sub">Luxury Cruise Specialists · Est. 1984</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#navieras">Navieras</a>
+      <a href="#itinerarios">Itinerarios</a>
+      <a href="#why">Por qué RTS</a>
+      <a href="#rita">Rita</a>
+      <a href="partners.html">Para agencias</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-ctas">
+      <a href="partners.html" class="btn btn-outline">Sección para agencias</a>
+      <a href="https://wa.me/5491125447248" target="_blank" rel="noopener" class="btn btn-gold">Consultá con Rita</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="close" id="menu-close">×</button>
+  <a href="#navieras"    class="mm-link">Navieras</a>
+  <a href="#itinerarios" class="mm-link">Itinerarios</a>
+  <a href="#why"         class="mm-link">Por qué RTS</a>
+  <a href="#rita"        class="mm-link">Rita</a>
+  <a href="partners.html" class="mm-link">Para agencias</a>
+  <a href="#faq"         class="mm-link">FAQ</a>
+  <a href="https://wa.me/5491125447248" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:8px;">Consultá con Rita</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=2400&fit=crop">
+    <source src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_25fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-body">
+    <div class="wrap">
+      <div class="hero-badge reveal">
+        <span class="dot"></span>
+        +40 años creando viajes inolvidables · Desde 1984
+      </div>
+      <h1 class="reveal">El lujo de navegar,<br><em>guiado por expertos.</em></h1>
+      <p class="hero-lead reveal">Representante oficial de las navieras de lujo más prestigiosas del mundo. Asesoría personalizada, el mismo precio que la naviera.</p>
+      <div class="hero-ctas reveal">
+        <a href="#partners"    class="btn btn-gold">Sección para agencias</a>
+        <a href="#itinerarios" class="btn btn-outline">Ver itinerarios</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="wrap">
+      <div><div class="stat-num">40+</div><div class="stat-label">Años de trayectoria</div></div>
+      <div><div class="stat-num">160+</div><div class="stat-label">Agencias clientes</div></div>
+      <div><div class="stat-num">8</div><div class="stat-label">Navieras representadas</div></div>
+      <div><div class="stat-num">8.000+</div><div class="stat-label">Viajeros embarcados</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NAVIERAS -->
+<section class="logo-band reveal" id="navieras">
+  <div class="wrap">
+    <div class="logo-band-head">
+      <span class="eyebrow">Representante Oficial</span>
+      <h2>Navieras que representamos</h2>
+      <p>Acceso directo a las 8 navieras de lujo más reconocidas del mundo. Hacé clic en cada una para ver la approach guide completa.</p>
+    </div>
+    <div class="logo-grid" id="logo-grid"></div>
+  </div>
+</section>
+
+<!-- NAVIERA MODAL -->
+<div class="n-modal-overlay" id="n-modal-overlay">
+  <div class="n-modal" id="n-modal">
+    <div class="n-modal-close"><button onclick="closeModal()">×</button></div>
+    <div class="n-modal-hero" id="n-modal-img">
+      <div class="n-modal-hero-text">
+        <h2 id="n-modal-name"></h2>
+        <div class="tagline" id="n-modal-tagline"></div>
+      </div>
+    </div>
+    <div class="n-modal-body" id="n-modal-body"></div>
+  </div>
+</div>
+
+<!-- ITINERARIES -->
+<section class="section" id="itinerarios" style="background:var(--grey-100)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Itinerarios 2025–2026 · Powered by Rita</span>
+      <h2>Travesías seleccionadas</h2>
+      <p style="margin-top:10px;color:var(--grey-600);font-size:16px;max-width:520px;">Tarifas publicadas por las navieras, sujetas a modificaciones por disponibilidad y métodos de pago.</p>
+    </div>
+    <div class="filters reveal">
+      <div class="filter-group">
+        <label>Destino</label>
+        <select id="f-region">
+          <option value="">Todos los destinos</option>
+          <option value="Europe">Europa</option>
+          <option value="Mediterranean">Mediterráneo</option>
+          <option value="Asia">Asia</option>
+          <option value="Caribbean">Caribe</option>
+          <option value="Northern Europe">Europa del Norte</option>
+          <option value="South America">América del Sur</option>
+          <option value="Alaska">Alaska</option>
+          <option value="Australia & Pacific">Australia y Pacífico</option>
+          <option value="Africa & Indian Ocean">África e Índico</option>
+          <option value="Galapagos">Galápagos</option>
+          <option value="France">Francia y Ríos</option>
+          <option value="Transatlantic">Transatlántico</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Naviera</label>
+        <select id="f-naviera">
+          <option value="">Todas las navieras</option>
+          <option value="SILVERSEA">Silversea</option>
+          <option value="CRYSTAL">Crystal</option>
+          <option value="PONANT">Ponant</option>
+          <option value="PAUL GAUGUIN">Paul Gauguin</option>
+          <option value="EXPLORA">Explora Journeys</option>
+          <option value="SCENIC">Scenic</option>
+          <option value="EMERALD">Emerald Cruises</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Duración</label>
+        <select id="f-dias">
+          <option value="">Cualquier duración</option>
+          <option value="1-7">Hasta 7 días</option>
+          <option value="8-14">8 a 14 días</option>
+          <option value="15-21">15 a 21 días</option>
+          <option value="22">22+ días</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Mes de salida</label>
+        <select id="f-mes">
+          <option value="">Cualquier mes</option>
+          <option value="1">Enero</option><option value="2">Febrero</option>
+          <option value="3">Marzo</option><option value="4">Abril</option>
+          <option value="5">Mayo</option><option value="6">Junio</option>
+          <option value="7">Julio</option><option value="8">Agosto</option>
+          <option value="9">Septiembre</option><option value="10">Octubre</option>
+          <option value="11">Noviembre</option><option value="12">Diciembre</option>
+        </select>
+      </div>
+      <button class="btn btn-navy" onclick="clearFilters()">Limpiar</button>
+    </div>
+    <div id="itin-status" style="text-align:center;padding:32px;color:var(--grey-600);font-size:15px;display:none;">Cargando itinerarios…</div>
+    <div class="itin-grid" id="itin-grid"></div>
+    <div class="itin-more reveal" id="itin-more" style="display:none;">
+      <button class="btn btn-ghost" id="itin-more-btn" onclick="showMore()">Ver más itinerarios</button>
+      <span id="itin-count" style="margin-left:16px;font-size:13px;color:var(--grey-600);"></span>
+    </div>
+    <div class="itin-more reveal" style="margin-top:12px;">
+      <button class="btn btn-ghost" onclick="openRita()">Consultar con Rita →</button>
+    </div>
+  </div>
+</section>
+
+<!-- WHY RTS -->
+<section class="section" id="why" style="background:var(--navy)">
+  <div class="wrap">
+    <div class="why-head reveal">
+      <span class="eyebrow">Por qué RTS</span>
+      <h2>La diferencia de la representación directa</h2>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why-card"><div class="why-num">01</div><h3>+40 años de trayectoria</h3><p>Desde 1984 conectamos viajeros argentinos con las navieras de lujo más exigentes del mundo.</p></div>
+      <div class="why-card"><div class="why-num">02</div><h3>Representación directa</h3><p>Somos representantes oficiales, no intermediarios. Acceso directo a condiciones especiales y tarifas netas.</p></div>
+      <div class="why-card"><div class="why-num">03</div><h3>Mismo precio que la naviera</h3><p>Pagás exactamente lo mismo que reservando directo, con el respaldo de un equipo experto en cada travesía.</p></div>
+      <div class="why-card"><div class="why-num">04</div><h3>160+ agencias clientes</h3><p>La red de agencias de viajes más grande de Argentina confía en RTS para sus pasajeros de alta gama.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RITA -->
+<section class="section" id="rita">
+  <div class="wrap">
+    <div class="rita-grid reveal">
+      <div class="rita-copy">
+        <span class="eyebrow">Asistente IA · WhatsApp</span>
+        <h2>Conocé a Rita,<br>tu asesora 24/7</h2>
+        <p class="lead">Responde consultas, arma cotizaciones y te conecta con un asesor cuando lo necesitás — a cualquier hora, cualquier día.</p>
+        <div class="rita-points">
+          <div class="rita-point"><div class="rita-ico">⚡</div><div class="rita-txt"><strong>Respuestas inmediatas</strong><span>Cotizaciones en minutos, incluso de madrugada.</span></div></div>
+          <div class="rita-point"><div class="rita-ico">🧭</div><div class="rita-txt"><strong>Curaduría experta</strong><span>Sugiere itinerarios por destino, fecha y presupuesto.</span></div></div>
+          <div class="rita-point"><div class="rita-ico">🤝</div><div class="rita-txt"><strong>Derivación a asesor</strong><span>Para reservas de alto valor, te conecta con el equipo humano.</span></div></div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="https://wa.me/5491125447248" target="_blank" rel="noopener" class="btn btn-gold">Hablar con Rita</a>
+          <a href="tel:+541140000000" class="btn btn-ghost">Llamar a un asesor</a>
+        </div>
+      </div>
+      <div class="phone">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <div class="chat-head">
+              <div class="chat-av">R</div>
+              <div class="chat-info"><div class="name">Rita · RTS Cruises</div><div class="status">en línea</div></div>
+            </div>
+            <div class="chat-body" id="chat-body"></div>
+            <div class="chat-input">
+              <div class="field">Escribir un mensaje...</div>
+              <div class="send-btn"><svg viewBox="0 0 24 24" fill="#C49A3C" width="12" height="12"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS LANDING -->
+<section id="partners" style="background:var(--navy-deep);color:#fff;padding:clamp(80px,10vw,130px) 0 clamp(80px,10vw,120px);">
+  <div class="wrap">
+
+    <div class="reveal" style="max-width:640px;margin:0 auto clamp(48px,7vw,72px);text-align:center;">
+      <span class="eyebrow">Para agencias de viaje</span>
+      <h2 style="color:#fff;margin:10px 0 16px;">Trabajá con las navieras<br>de lujo más exclusivas</h2>
+      <p style="color:rgba(255,255,255,.65);font-size:16px;line-height:1.7;">160+ agencias ya forman parte de la red RTS. Accedé a herramientas y respaldo que transforman tu negocio.</p>
+    </div>
+
+    <!-- Beneficios grid 3-col -->
+    <div class="reveal p-benefits-grid">
+      <div class="p-benefit">
+        <div class="p-ico">🔍</div>
+        <h4>Buscador en tiempo real</h4>
+        <p>Disponibilidad y tarifas netas actualizadas al instante para las 12 navieras, desde una sola plataforma.</p>
+      </div>
+      <div class="p-benefit">
+        <div class="p-ico">🤝</div>
+        <h4>Relación personalizada</h4>
+        <p>Asesor dedicado por agencia. Trato directo con el equipo RTS en cada cotización, sin bots ni formularios.</p>
+      </div>
+      <div class="p-benefit">
+        <div class="p-ico">💳</div>
+        <h4>Medios de pago ajustables</h4>
+        <p>Cuotas, transferencias, crypto o divisas. Adaptamos el método a cada pasajero para cerrar cada venta.</p>
+      </div>
+      <div class="p-benefit">
+        <div class="p-ico">📚</div>
+        <h4>Approach Guides exclusivas</h4>
+        <p>Material de ventas por naviera: perfil de pasajero, diferenciadores y argumentos para vender con confianza.</p>
+      </div>
+      <div class="p-benefit">
+        <div class="p-ico">🏆</div>
+        <h4>Capacitación continua</h4>
+        <p>Webinars, fam trips y certificaciones oficiales de las navieras que representamos.</p>
+      </div>
+      <div class="p-benefit">
+        <div class="p-ico">🚀</div>
+        <h4>Portal Krooze</h4>
+        <p>Reservas en línea, expedientes y promociones exclusivas para partners en un solo lugar.</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="reveal" style="text-align:center;margin-top:clamp(48px,6vw,72px);">
+      <a href="partners.html" class="btn btn-gold" style="font-size:14px;padding:16px 36px;">Ver sección para agencias →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonios">
+  <div class="wrap">
+    <div style="text-align:center;max-width:480px;margin:0 auto 48px;" class="reveal">
+      <span class="eyebrow">Testimonios</span>
+      <h2>Lo que dicen nuestros viajeros</h2>
+    </div>
+    <div class="testimonials-grid reveal">
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"El servicio fue impecable. Conseguimos una cabina con balcón a precio de interior gracias a la gestión de RTS."</blockquote>
+        <div class="author"><div class="author-av">GM</div><div><div class="author-name">G.M.</div><div class="author-city">Buenos Aires</div></div></div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"40 años de experiencia se notan. Nos asesoraron en todo, desde el itinerario hasta el seguro de viaje."</blockquote>
+        <div class="author"><div class="author-av">AR</div><div><div class="author-name">A.R.</div><div class="author-city">Rosario</div></div></div>
+      </div>
+      <div class="testimonial">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Reservé por Rita un sábado a la noche y al otro día ya tenía la cotización detallada. Increíble."</blockquote>
+        <div class="author"><div class="author-av">PL</div><div><div class="author-name">P.L.</div><div class="author-city">Montevideo</div></div></div>
+      </div>
+    </div>
+    <div class="social-strip reveal">
+      <div><h3>Seguinos en redes</h3><p>Contenido diario sobre destinos, navieras y promociones exclusivas.</p></div>
+      <div class="social-icons">
+        <a class="social-ico" href="#">IG</a>
+        <a class="social-ico" href="#">FB</a>
+        <a class="social-ico" href="#">in</a>
+        <a class="social-ico" href="#">YT</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" style="background:var(--grey-100)">
+  <div class="wrap">
+    <div style="text-align:center;max-width:480px;margin:0 auto 56px;" class="reveal">
+      <span class="eyebrow">Cómo funciona</span>
+      <h2>Tu crucero en 3 pasos</h2>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><div class="step-num">1</div><h3>Contanos tu viaje soñado</h3><p>Hablá con Rita por WhatsApp o escribinos con destino, fechas y preferencias.</p></div>
+      <div class="step"><div class="step-num">2</div><h3>Recibí tu propuesta a medida</h3><p>Armamos una cotización personalizada con las mejores opciones de cabina y naviera.</p></div>
+      <div class="step"><div class="step-num">3</div><h3>Embarcá tranquilo</h3><p>Te acompañamos en cada paso, desde la reserva hasta el regreso a casa.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div style="text-align:center;max-width:480px;margin:0 auto 48px;" class="reveal">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Resolvemos tus dudas</h2>
+    </div>
+    <div class="faq-list reveal" id="faq-list"></div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="closing">
+  <div class="wrap reveal">
+    <span class="eyebrow">Empezá tu próxima travesía</span>
+    <h2>Tu próximo crucero de lujo está a un mensaje de distancia</h2>
+    <p>Asesoría experta sin costo adicional. El mismo precio que la naviera.</p>
+    <div class="closing-ctas">
+      <a href="https://wa.me/5491125447248" target="_blank" rel="noopener" class="btn btn-gold">Consultá con Rita</a>
+      <a href="mailto:info@rtscruises.com" class="btn btn-outline">Contactar a un asesor</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="data:image/png;base64,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" alt="RTS Cruises" style="height:56px;width:auto;object-fit:contain;margin-bottom:12px;">
+        <div class="logo-sub">Luxury Cruise Specialists · Est. 1984</div>
+        <p>Representante oficial de las navieras de lujo más reconocidas del mundo. Más de 40 años conectando viajeros y agencias con el mar.</p>
+        <div class="footer-socials">
+          <a class="footer-soc" href="#">IG</a>
+          <a class="footer-soc" href="#">FB</a>
+          <a class="footer-soc" href="#">in</a>
+          <a class="footer-soc" href="#">YT</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#navieras">Navieras</a></li>
+          <li><a href="#itinerarios">Itinerarios</a></li>
+          <li><a href="#why">Por qué RTS</a></li>
+          <li><a href="#rita">Rita</a></li>
+          <li><a href="partners.html">Para agencias</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navieras</h4>
+        <ul>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Silversea')">Silversea</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Crystal')">Crystal</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Ponant')">Ponant</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Paul Gauguin')">Paul Gauguin</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Explora')">Explora</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Scenic')">Scenic</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Emerald')">Emerald</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Riverside')">Riverside</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Viking')">Viking</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Uniworld')">Uniworld</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Aqua Expeditions')">Aqua Expeditions</a></li>
+          <li><a href="#navieras" onclick="event.preventDefault();openModal('Ritz Carlton')">Ritz Carlton</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="#">📍 Buenos Aires, Argentina</a></li>
+          <li><a href="tel:+541140000000">📞 +54 11 4000-0000</a></li>
+          <li><a href="mailto:info@rtscruises.com">✉️ info@rtscruises.com</a></li>
+          <li><a href="https://wa.me/5491125447248" target="_blank" rel="noopener">💬 WhatsApp Rita 24/7</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 RTS Cruises. Todos los derechos reservados.</span>
+      <span><a href="#">Términos</a> · <a href="#">Privacidad</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5491125447248" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp Rita">
+  <svg viewBox="0 0 24 24" fill="white" width="26" height="26"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm0 18.13h-.01a8.2 8.2 0 01-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.37c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 015.83 2.42 8.18 8.18 0 012.41 5.83c0 4.55-3.7 8.21-8.25 8.21zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.4-.12-.56.13-.17.25-.65.81-.79.97-.15.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.16-.25.25-.41c.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.25 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+</a>
+
+<script>
+// ══════════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════════
+
+// Navieras — contenido basado en sitios oficiales
+const NAVIERAS_DATA = {
+  Silversea: {
+    domain:'silversea.com',
+    tagline:'Ultra-lujo all-inclusive · 900+ destinos',
+    img:'https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=1200&fit=crop',
+    desc:'Silversea es la naviera ultra-luxury líder del mundo, con una flota de cruceros all-suite y all-inclusive que navega los 7 continentes. Reconocida por su servicio personalizado (butlers para cada suite), gastronomía de nivel Relais & Châteaux y su exclusiva flota de expedición que accede a destinos remotos inalcanzables para otras navieras.',
+    highlights:['All-suite, all-inclusive en todos los barcos','Flota de expedición: Galápagos, Antártida, Ártico','Silver Nova y Silver Ray: los barcos más modernos','Programa "Door to Door": transfers incluidos desde el domicilio','Gastronomía certificada Relais & Châteaux'],
+    ships:['Silver Nova','Silver Ray','Silver Dawn','Silver Origin (Galápagos)','Silver Endeavour (Polar)'],
+    profile:'Viajero 55+, alto poder adquisitivo, busca comodidad total y destinos únicos.',
+    price:'Desde USD 8.000 por persona (7 noches)',
+  },
+  Crystal: {
+    domain:'crystalcruises.com',
+    tagline:'Luxury ocean & river · Elegancia atemporal',
+    img:'https://images.unsplash.com/photo-1480796927426-f609979314bd?q=80&w=1200&fit=crop',
+    desc:'Crystal es sinónimo de lujo refinado y servicio impecable. Con barcos íntimos para 700–800 pasajeros, ofrece el espacio más generoso por pasajero de su categoría, entretenimiento Broadway-level, y una gastronomía galardonada con múltiples restaurantes de especialidad.',
+    highlights:['Ratio pasajero-tripulación 1:1','Restaurantes de especialidad sin suplemento','Entretenimiento en vivo de primer nivel','All-inclusive con bebidas premium y gratuidades','Butler en penthouses'],
+    ships:['Crystal Symphony','Crystal Serenity','Crystal Bach (río)','Crystal Mahler (río)'],
+    profile:'Viajero 55-70, busca elegancia clásica, gastronomía y entretenimiento refinado.',
+    price:'Desde USD 5.500 por persona (7 noches)',
+  },
+  Ponant: {
+    domain:'ponant.com',
+    tagline:'French luxury expedition · Destinos remotos',
+    img:'https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?q=80&w=1200&fit=crop',
+    desc:'Ponant es la única naviera de lujo francesa y la referencia mundial en expedición de alto nivel. Sus barcos de 180–270 pasajeros acceden a Antártida, Groenlandia, Ártico y Nueva Guinea con perspectiva científica y exploradora, sin renunciar al refinamiento francés.',
+    highlights:['Barcos pequeños (180-270 pax)','Zodiacs y equipo científico a bordo','Cocina francesa de autor en alta mar','Destinos: Antártida, Ártico, Polinesia, Amazonas','Vela de lujo: Le Ponant'],
+    ships:['Le Bougainville','Le Laperouse','Le Bellot','Le Ponant','Ponant Odyssey'],
+    profile:'Viajero 45-65, curioso, amante de naturaleza y cultura, presupuesto alto.',
+    price:'Desde USD 7.000 por persona (8 noches)',
+  },
+  'Paul Gauguin': {
+    domain:'pgcruises.com',
+    tagline:'Polinesia Francesa año redondo · El paraíso hecho rutina',
+    img:'https://images.unsplash.com/photo-1471922694854-ff1b63b20054?q=80&w=1200&fit=crop',
+    desc:'Paul Gauguin Cruises es la naviera especialista en Polinesia Francesa, las Islas Cook y el Pacífico Sur. Su único barco opera año redondo desde Papeete, ofreciendo acceso a motu (islas privadas), snorkel, kayak y experiencias culturales auténticas imposibles desde tierra.',
+    highlights:['Única naviera con base permanente en Papeete','Acceso a islas privadas (motu)','332 pasajeros — íntimo y refinado','Programa cultural polinesio auténtico','Buceo, snorkel y actividades acuáticas incluidas'],
+    ships:['m/s Paul Gauguin'],
+    profile:'Parejas 40-65, luna de miel o aniversario, destino único e intimidad.',
+    price:'Desde USD 4.500 por persona (7 noches)',
+  },
+  Explora: {
+    domain:'explorajourneys.com',
+    tagline:'Ocean state of mind · Lujo moderno de nueva generación',
+    img:'https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=1200&fit=crop',
+    desc:'Explora Journeys es la propuesta ultra-luxury del grupo MSC, lanzada en 2023. Sus barcos de 461 suites con terraza redefinieron el diseño naval: plazas exteriores amplias, 18 restaurantes y bares, piscinas de agua salada, y un estilo más moderno y flexible que las navieras clásicas.',
+    highlights:['Diseño naval de nueva generación','18 restaurantes y bares a bordo','Piscinas de agua salada y amplias cubiertas','461 suites todas con terraza privada','Mediterráneo, Caribe, Norte de Europa'],
+    ships:['Explora I','Explora II','Explora III (2026)','Explora IV (2027)'],
+    profile:'Viajero 40-60, diseño-consciente, busca modernidad y gastronomía.',
+    price:'Desde USD 4.800 por persona (7 noches)',
+  },
+  Scenic: {
+    domain:'scenic.com',
+    tagline:'Ultra-luxury · Todo absolutamente incluido',
+    img:'https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?q=80&w=1200&fit=crop',
+    desc:'Scenic reinventó los cruceros fluviales y oceánicos con su concepto "Ultra-All-Inclusive": literalmente todo está incluido, desde excursiones personalizadas hasta helicóptero y submarino en el Scenic Eclipse. Sus Space-Ships fluviales son los más lujosos de los ríos europeos.',
+    highlights:['Ultra-All-Inclusive: todo sin excepción','Scenic Eclipse: helicóptero y submarino','Butlers en cada camarote fluvial','Excursiones en grupos pequeños','Máx. 228 pasajeros en océano'],
+    ships:['Scenic Eclipse','Scenic Eclipse II','Scenic Crystal (río)','Scenic Jasper (río)'],
+    profile:'Viajero 60+, alto poder adquisitivo, máxima conveniencia.',
+    price:'Desde USD 6.000 por persona (8 noches)',
+  },
+  Emerald: {
+    domain:'emeraldcruises.com',
+    tagline:'Luxury yacht-style · Íntimo y exclusivo',
+    img:'https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=1200&fit=crop',
+    desc:'Emerald Cruises combina los cruceros oceánicos y fluviales de lujo con un enfoque íntimo y personalizado. Su buque insignia oceánico Emerald Azzurra opera con solo 100 pasajeros, accediendo a destinos exclusivos del Mediterráneo, Caribe e Índico que los barcos grandes no pueden alcanzar.',
+    highlights:['Emerald Azzurra: solo 100 pasajeros','Destinos exclusivos inaccesibles para barcos grandes','Plataforma de agua con kayaks y snorkel incluidos','All-inclusive con bebidas y excursiones','Diseño de yate de lujo moderno'],
+    ships:['Emerald Azzurra','Emerald Sakara','Flota fluvial Star-Ships (Europa)'],
+    profile:'Viajero 50-65, busca exclusividad, destinos únicos y trato personalizado.',
+    price:'Desde USD 3.500 por persona (7 noches)',
+  },
+  Riverside: {
+    domain:'riverside-cruises.com',
+    tagline:'Luxury river cruises · Europa con clase',
+    img:'https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?q=80&w=1200&fit=crop',
+    desc:'Riverside Luxury Cruises ofrece cruceros fluviales premium por los grandes ríos de Europa: Rin, Danubio, Mosela, Ródano y Duero. Sus barcos para 135 pasajeros son puro lujo: amplias suites con balcón, gastronomía de autor y excursiones culturales de primer nivel. All-inclusive sin sorpresas.',
+    highlights:['Solo 135 pasajeros por barco','All-inclusive completo: bebidas, excursiones, propinas','Suites con balcón panorámico','Itinerarios: Rin, Danubio, Mosela, Ródano, Duero','Gastronomía regional de autor'],
+    ships:['Riverside Debussy','Riverside Ravel','Riverside Mozart','Riverside Bach'],
+    profile:'Viajero 55-70, apasionado de la cultura y gastronomía europea.',
+    price:'Desde USD 4.000 por persona (7 noches)',
+  },
+  Viking: {
+    domain:'vikingcruises.com',
+    tagline:'Destination-focused cruising · Elegancia escandinava',
+    img:'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=1200&fit=crop',
+    desc:'Viking es la referencia mundial en cruceros enfocados en el destino. Sus barcos de diseño escandinavo minimalista (930 pasajeros) priorizan la experiencia cultural sobre el entretenimiento masivo. Sin casinos, sin niños, sin distracciones: solo viaje, cultura y naturaleza. Flota oceánica y fluvial.',
+    highlights:['Sin casinos, sin niños — solo adultos','Diseño escandinavo minimalista','Enfoque cultural: conferencias y guías expertos','Flota oceánica + fluvial (600+ barcos fluviales)','Cabinas exteriores — 100% con vistas'],
+    ships:['Viking Star','Viking Sky','Viking Venus','Viking Neptune','+ 70 barcos fluviales'],
+    profile:'Viajero 55+, culto, interesado en historia, naturaleza y destinos auténticos.',
+    price:'Desde USD 3.500 por persona (7 noches)',
+  },
+  Uniworld: {
+    domain:'uniworld.com',
+    tagline:'Boutique river cruises · Arte y lujo en los ríos del mundo',
+    img:'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1200&fit=crop',
+    desc:'Uniworld es la naviera boutique de ríos más lujosa del mundo. Cada barco es una obra de arte flotante, diseñado por la decoradora de interiores Ionna Vautrin con piezas únicas y colecciones de arte exclusivas. All-inclusive total en Europa, Asia, Egipto y el Ganges.',
+    highlights:['Cada barco es único — arte e interiores exclusivos','All-inclusive total: vinos, excursiones, propinas','Máximo 128-164 pasajeros por barco','Destinos: Europa, Egipto, India, Vietnam','Cocina regional galardonada a bordo'],
+    ships:['S.S. Maria Theresa','S.S. Joie de Vivre','River Beatrice','S.S. Bon Voyage'],
+    profile:'Viajero 55+, amante del arte y la cultura, busca la experiencia más refinada.',
+    price:'Desde USD 4.500 por persona (7 noches)',
+  },
+  'Aqua Expeditions': {
+    domain:'aquaexpeditions.com',
+    tagline:'Luxury expedition · Amazonas, Mekong y Galápagos',
+    img:'https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?q=80&w=1200&fit=crop',
+    desc:'Aqua Expeditions es la naviera de expedición más exclusiva del mundo, con barcos de entre 16 y 40 pasajeros en destinos únicos: la selva amazónica peruana, el río Mekong en Vietnam y Camboya, y las Islas Galápagos. Gastronomía de autor, guías naturalistas y acceso a ecosistemas remotos.',
+    highlights:['Solo 16-40 pasajeros: máxima exclusividad','Gastronomía de chef reconocido internacionalmente','Guías naturalistas y biólogos a bordo','Destinos: Amazonas, Mekong, Galápagos','Cabinas de diseño con vistas panorámicas'],
+    ships:['Aqua Nera (Amazonas)','Aqua Mekong (Vietnam)','Aqua Mare (Galápagos)'],
+    profile:'Viajero 45-65, aventurero de lujo, busca destinos únicos e irrepetibles.',
+    price:'Desde USD 6.000 por persona (4 noches)',
+  },
+  'Ritz Carlton': {
+    domain:'ritzcarlton.com/yachts',
+    tagline:'The world\'s most exclusive yachts · Servicio Ritz-Carlton en el mar',
+    img:'https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=1200&fit=crop',
+    desc:'The Ritz-Carlton Yacht Collection lleva los estándares legendarios del hotel al océano. Sus yates de lujo (298-456 pasajeros) ofrecen el ratio de espacio por pasajero más alto del sector, servicio personalizado al nivel de un hotel Ritz-Carlton y gastronomía de los mejores chefs del mundo.',
+    highlights:['Servicio Ritz-Carlton: el más alto estándar hotelero','Ratio espacio/pasajero: el mayor de la industria','Evrima, Ilma y Luminara — diseño icónico','Destinos exclusivos: Mediterráneo, Caribe, Ártico','Restaurantes de autor y spa Espa a bordo'],
+    ships:['Evrima (298 pax)','Ilma (456 pax)','Luminara (456 pax)'],
+    profile:'Viajero top 1%, busca el máximo lujo hotelero trasladado al mar.',
+    price:'Desde USD 10.000 por persona (7 noches)',
+  },
+};
+
+// Itinerarios — datos de Rita/scraping naviera
+// ══════════════════════════════════════════════════
+// ITINERARIOS — fetch desde Google Sheets (CSV en tiempo real)
+// ══════════════════════════════════════════════════
+const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQDMLu2CxOhn4gFTrBz9yusO9RIZB5eEk6Mn6UOLOeoW1v3iYqEXVb7oh3150puDmYtcnaiEr4FisOx/pub?output=csv';
+
+const REGION_IMGS = {
+  'Europe':              'https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?q=80&w=800&fit=crop',
+  'Mediterranean':       'https://images.unsplash.com/photo-1555993539-1732b0258235?q=80&w=800&fit=crop',
+  'Asia':                'https://images.unsplash.com/photo-1480796927426-f609979314bd?q=80&w=800&fit=crop',
+  'Caribbean':           'https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&fit=crop',
+  'Northern Europe':     'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&fit=crop',
+  'France':              'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=800&fit=crop',
+  'South America':       'https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?q=80&w=800&fit=crop',
+  'Alaska':              'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=800&fit=crop',
+  'Australia & Pacific': 'https://images.unsplash.com/photo-1471922694854-ff1b63b20054?q=80&w=800&fit=crop',
+  'Africa & Indian Ocean':'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=800&fit=crop',
+  'Galapagos':           'https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&fit=crop',
+  'Transatlantic':       'https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=800&fit=crop',
+  'Portugal':            'https://images.unsplash.com/photo-1555993539-1732b0258235?q=80&w=800&fit=crop',
+};
+const NAVIERA_LABELS = {
+  'SILVERSEA':'Silversea','CRYSTAL':'Crystal','PONANT':'Ponant',
+  'PAUL GAUGUIN':'Paul Gauguin','EXPLORA':'Explora','SCENIC':'Scenic','EMERALD':'Emerald'
+};
+
+const MES_ES = ['','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+
+let ALL_ITINS = [];
+let SHOWN = 12;
+
+function parseCSV(text) {
+  // Format: first line is "chunk", second line is one big quoted cell with pipe-delimited rows separated by \n
+  const cleaned = text.replace(/^chunk\r?\n/, '').replace(/^"|"$/g, '').trim();
+  const rows = cleaned.split('\n').map(r => r.trim()).filter(Boolean);
+  if(!rows.length) return [];
+  const headers = rows[0].split('|').map(h => h.trim());
+  return rows.slice(1).map(row => {
+    const cols = row.split('|');
+    const obj = {};
+    headers.forEach((h,i) => obj[h] = (cols[i]||'').trim());
+    return obj;
+  }).filter(r => r.naviera && r.naviera !== 'naviera');
+}
+
+function formatPrice(p, moneda) {
+  if(!p || p === '0' || p === '') return 'A cotizar';
+  const n = parseFloat(p);
+  if(isNaN(n) || n === 0) return 'A cotizar';
+  return `${moneda||'USD'} ${n.toLocaleString('es-AR')}`;
+}
+
+function buildCard(it) {
+  const navLabel = NAVIERA_LABELS[it.naviera] || it.naviera;
+  const img = REGION_IMGS[it.region] || REGION_IMGS['Mediterranean'];
+  const dest = it.puerto_salida && it.puerto_llegada && it.puerto_salida !== it.puerto_llegada
+    ? `${it.puerto_salida} → ${it.puerto_llegada}`
+    : it.barco || it.puerto_salida || it.region;
+  const d = new Date(it.fecha);
+  const fechaFmt = isNaN(d) ? it.fecha : `${d.getDate().toString().padStart(2,'0')}/${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getFullYear()}`;
+  const precio = formatPrice(it.precio, it.moneda);
+  const waMsg = encodeURIComponent(`Hola Rita! Me interesa el itinerario ${dest} con ${navLabel} el ${fechaFmt}. ¿Podés cotizarme?`);
+  return `
+    <div class="itin-card" style="background-image:url('${img}')">
+      <span class="itin-badge">${navLabel}</span>
+      <div class="itin-body">
+        <div class="itin-dest">${dest}</div>
+        <div class="itin-meta"><span>🗓 ${fechaFmt}</span><span>⏱ ${it.duracion_dias} días</span><span>🌍 ${it.region}</span></div>
+        <div class="itin-foot">
+          <div class="itin-price"><div class="label">Desde</div><div class="value">${precio}</div></div>
+          <a href="https://wa.me/5491125447248?text=${waMsg}" target="_blank" rel="noopener" class="btn btn-gold">Cotizar</a>
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderItins() {
+  const region  = document.getElementById('f-region').value;
+  const naviera = document.getElementById('f-naviera').value;
+  const dias    = document.getElementById('f-dias').value;
+  const mes     = document.getElementById('f-mes').value;
+
+  const filtered = ALL_ITINS.filter(it => {
+    if(region  && it.region !== region) return false;
+    if(naviera && it.naviera !== naviera) return false;
+    if(mes) { const d = new Date(it.fecha); if(isNaN(d) || (d.getMonth()+1) !== +mes) return false; }
+    if(dias) {
+      const n = +it.duracion_dias;
+      if(dias==='1-7'  && !(n>=1 && n<=7))   return false;
+      if(dias==='8-14' && !(n>=8 && n<=14))  return false;
+      if(dias==='15-21'&& !(n>=15 && n<=21)) return false;
+      if(dias==='22'   && n<22)              return false;
+    }
+    return true;
+  });
+
+  const grid = document.getElementById('itin-grid');
+  const moreDiv = document.getElementById('itin-more');
+  const countEl = document.getElementById('itin-count');
+
+  if(filtered.length === 0) {
+    grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;padding:56px;color:#9aa3b5;font-size:16px;">Sin resultados para esos filtros. Consultá con Rita para opciones adicionales.</p>';
+    moreDiv.style.display = 'none';
+    return;
+  }
+
+  const slice = filtered.slice(0, SHOWN);
+  grid.innerHTML = slice.map(buildCard).join('');
+  countEl.textContent = `Mostrando ${slice.length} de ${filtered.length.toLocaleString('es-AR')} itinerarios`;
+  moreDiv.style.display = filtered.length > SHOWN ? 'flex' : 'none';
+}
+
+function showMore() { SHOWN += 12; renderItins(); }
+
+function clearFilters() {
+  ['f-region','f-naviera','f-dias','f-mes'].forEach(id => document.getElementById(id).value = '');
+  SHOWN = 12;
+  renderItins();
+}
+
+['f-region','f-naviera','f-dias','f-mes'].forEach(id =>
+  document.getElementById(id).addEventListener('change', () => { SHOWN=12; renderItins(); }));
+
+// ── Carga inicial desde Google Sheets ──
+(async () => {
+  const status = document.getElementById('itin-status');
+  status.style.display = 'block';
+  try {
+    const res = await fetch(CSV_URL, { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const text = await res.text();
+    if (!text || text.trim().length < 10) throw new Error('empty response');
+    ALL_ITINS = parseCSV(text);
+    if (!ALL_ITINS.length) throw new Error('parse returned 0 rows');
+    status.style.display = 'none';
+    renderItins();
+  } catch(e) {
+    console.error('CSV load error:', e.message, e);
+    // Retry once after 3s (handles transient Google Sheets redirect issues)
+    setTimeout(async () => {
+      try {
+        const res2 = await fetch(CSV_URL + '&r=' + Date.now());
+        const text2 = await res2.text();
+        ALL_ITINS = parseCSV(text2);
+        if (ALL_ITINS.length) {
+          status.style.display = 'none';
+          renderItins();
+          return;
+        }
+      } catch(e2) { console.error('Retry failed:', e2); }
+      status.innerHTML = 'No se pudieron cargar los itinerarios. <a href="https://wa.me/5491125447248" target="_blank" style="color:var(--gold)">Consultá con Rita →</a>';
+    }, 3000);
+  }
+})();
+
+const FAQS = [
+  ['¿Reservar con RTS me cuesta más que ir directo a la naviera?','No. Como representantes oficiales ofrecemos exactamente las mismas tarifas, sin recargos, pero con asesoramiento dedicado en todo el proceso.'],
+  ['¿Qué incluye un crucero de lujo?','Varía por naviera. Líneas como Silversea o Seabourn incluyen bebidas, excursiones y gratuidades. Scenic incluye literalmente todo. Te detallamos cada caso en la cotización personalizada.'],
+  ['¿Puedo financiar mi reserva?','Sí. Trabajamos con opciones de pago según la naviera y la fecha de embarque. Consultá con tu asesor las alternativas disponibles.'],
+  ['¿Qué pasa si necesito cancelar?','Cada naviera tiene sus propias políticas. Te asesoramos sobre las condiciones específicas y recomendamos siempre contratar un seguro de viaje integral.'],
+  ['Soy agencia de viajes, ¿cómo accedo al portal de partners?','Contactanos para activar tu cuenta y acceder al buscador con tarifas netas, material comercial por naviera y soporte dedicado para tus clientes de alta gama.'],
+  ['¿Rita puede armar cotizaciones para mi agencia?','Sí. Rita está disponible para agencias también, con acceso a tarifas netas y disponibilidad en tiempo real. Registrá tu agencia en el portal de partners.'],
+];
+
+// ══════════════════════════════════════════════════
+// NAVBAR
+// ══════════════════════════════════════════════════
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', scrollY > 50));
+
+const menu = document.getElementById('mobile-menu');
+document.getElementById('burger').addEventListener('click', () => menu.classList.add('open'));
+document.getElementById('menu-close').addEventListener('click', () => menu.classList.remove('open'));
+document.querySelectorAll('.mm-link').forEach(l => l.addEventListener('click', () => menu.classList.remove('open')));
+
+// ══════════════════════════════════════════════════
+// REVEAL
+// ══════════════════════════════════════════════════
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ══════════════════════════════════════════════════
+// LOGO GRID
+// ══════════════════════════════════════════════════
+
+const LOCAL_LOGOS = {
+  'Silversea':          'logos/navieras/silversea.png',
+  'Crystal':            'logos/navieras/crystal.png',
+  'Ponant':             'logos/navieras/ponant.png',
+  'Paul Gauguin':       'logos/navieras/paulgauguin.png',
+  'Scenic':             'logos/navieras/scenic.png',
+  'Emerald':            'logos/navieras/emerald.png',
+  'Riverside':          'logos/navieras/riverside.png',
+  'Viking':             'logos/navieras/viking.png',
+  'Aqua Expeditions':   'logos/navieras/aqua.jpg',
+  'Explora':            'logos/navieras/explora.png',
+  'Uniworld':           'logos/navieras/uniworld.jpg',
+  'Ritz Carlton':       'logos/navieras/ritzcarlton.png',
+};
+
+const logoGrid = document.getElementById('logo-grid');
+Object.entries(NAVIERAS_DATA).forEach(([name, data]) => {
+  const cell = document.createElement('button');
+  cell.className = 'logo-cell';
+  cell.setAttribute('aria-label', `Ver guía de ${name}`);
+
+  const img = document.createElement('img');
+  img.src = LOCAL_LOGOS[name] || `https://logo.clearbit.com/${data.domain}`;
+  img.alt = name;
+  img.style.display = 'none';
+  img.onload  = () => { img.style.display='block'; word.style.display='none'; };
+  img.onerror = () => { img.style.display='none'; word.style.display='block'; };
+
+  const word = document.createElement('span');
+  word.className = 'logo-word'; word.textContent = name; word.style.display='block';
+
+  const hint = document.createElement('span');
+  hint.className = 'logo-hint'; hint.textContent = 'Ver guía →';
+
+  cell.append(img, word, hint);
+  cell.addEventListener('click', () => openModal(name));
+  logoGrid.append(cell);
+});
+
+// ══════════════════════════════════════════════════
+// NAVIERA MODAL
+// ══════════════════════════════════════════════════
+function openModal(name) {
+  const d = NAVIERAS_DATA[name];
+  const overlay = document.getElementById('n-modal-overlay');
+  document.getElementById('n-modal-img').style.backgroundImage = `url('${d.img}')`;
+  document.getElementById('n-modal-name').textContent = name;
+  document.getElementById('n-modal-tagline').textContent = d.tagline;
+
+  const waMsg = encodeURIComponent(`Hola Rita! Quisiera cotizar un crucero con ${name}. ¿Podés ayudarme?`);
+  document.getElementById('n-modal-body').innerHTML = `
+    <div class="n-section">
+      <h4>Perfil de la naviera</h4>
+      <p>${d.desc}</p>
+    </div>
+    <div class="n-section">
+      <h4>Principales diferenciadores</h4>
+      <div class="n-chips">${d.highlights.map(h=>`<span class="n-chip">✓ ${h}</span>`).join('')}</div>
+    </div>
+    <div class="n-section">
+      <h4>Flota</h4>
+      <div class="n-chips">${d.ships.map(s=>`<span class="n-chip">🚢 ${s}</span>`).join('')}</div>
+    </div>
+    <div class="n-grid-2">
+      <div class="n-info-box"><div class="label">Perfil del pasajero</div><div class="value">${d.profile}</div></div>
+      <div class="n-info-box"><div class="label">Precio orientativo</div><div class="value">${d.price}</div></div>
+    </div>
+    <div class="n-ctas">
+      <a href="https://wa.me/5491125447248?text=${waMsg}" target="_blank" rel="noopener" class="btn btn-gold">Cotizar ${name} con Rita</a>
+      <button class="btn btn-ghost" onclick="closeModal()">Cerrar</button>
+    </div>`;
+
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('n-modal-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('n-modal-overlay').addEventListener('click', e => {
+  if(e.target === e.currentTarget) closeModal();
+});
+
+function openRita() { closeModal(); window.open('https://wa.me/5491125447248','_blank','noopener'); }
+
+// ══════════════════════════════════════════════════
+// ITINERARIES
+// ══════════════════════════════════════════════════
+
+// ══════════════════════════════════════════════════
+// GUIDES CHIPS
+// ══════════════════════════════════════════════════
+const chips = document.getElementById('guides-chips');
+if (chips) {
+  Object.keys(NAVIERAS_DATA).forEach(name => {
+    const btn = document.createElement('button');
+    btn.className = 'guide-chip';
+    btn.innerHTML = `${name} <span class="arr">→</span>`;
+    btn.addEventListener('click', () => {
+      document.getElementById('navieras').scrollIntoView({behavior:'smooth'});
+      setTimeout(() => openModal(name), 400);
+    });
+    chips.append(btn);
+  });
+}
+
+// ══════════════════════════════════════════════════
+// TABS
+// ══════════════════════════════════════════════════
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ══════════════════════════════════════════════════
+// FAQ
+// ══════════════════════════════════════════════════
+const faqList = document.getElementById('faq-list');
+FAQS.forEach(([q, a]) => {
+  const item = document.createElement('div'); item.className = 'faq-item';
+  item.innerHTML = `<button class="faq-q">${q}<span class="faq-icon">+</span></button><div class="faq-a"><p>${a}</p></div>`;
+  item.querySelector('.faq-q').addEventListener('click', () => {
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+    if(!wasOpen) item.classList.add('open');
+  });
+  faqList.append(item);
+});
+
+// ══════════════════════════════════════════════════
+// CHAT ANIMATION
+// ══════════════════════════════════════════════════
+const chatBody = document.getElementById('chat-body');
+const script = [
+  {from:'in', text:'¡Hola! Soy Rita. ¿Buscás un crucero de lujo? Contame destino y fechas 🛳️', t:'21:14'},
+  {from:'out',text:'Hola! Queremos Alaska en junio, 2 personas, algo exclusivo', t:'21:15'},
+  {from:'in', text:'✨ Crystal Seward → Vancouver, 7 días, 23/06/2026, desde USD 4.500/persona. ¿Con balcón o suite?', t:'21:15'},
+  {from:'out',text:'Suite! Y que incluya excursiones si es posible 🙏', t:'21:16'},
+  {from:'in', text:'Perfecto. Crystal incluye excursiones en la suite. Te armo la cotización completa en 5 minutos.', t:'21:16'},
+];
+let typingEl = null;
+function addTyping(){ typingEl=document.createElement('div');typingEl.className='typing';typingEl.innerHTML='<span></span><span></span><span></span>';chatBody.append(typingEl);chatBody.scrollTop=chatBody.scrollHeight;}
+function removeTyping(){ if(typingEl){typingEl.remove();typingEl=null;} }
+function addBubble(m){ const div=document.createElement('div');div.className=`bubble ${m.from}`;div.innerHTML=`${m.text}<span class="time">${m.t}</span>`;chatBody.append(div);chatBody.scrollTop=chatBody.scrollHeight;}
+script.forEach((m,i)=>{
+  if(m.from==='in'&&i>0) setTimeout(()=>addTyping(),i*2600-500);
+  setTimeout(()=>{removeTyping();addBubble(m);},i*2600+(m.from==='in'?700:0));
+});
+</script>
+</body>
+</html>
