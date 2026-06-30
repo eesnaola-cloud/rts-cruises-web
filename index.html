@@ -71,7 +71,7 @@ h3{font-size:clamp(17px,2vw,22px);}
 /* ── HERO ── */
 .hero{display:flex;flex-direction:column;position:relative;color:#fff;overflow:hidden;}
 .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,21,41,.45) 0%,rgba(7,21,41,.65) 50%,rgba(7,21,41,.97) 100%);z-index:1;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,21,41,.55) 0%,rgba(7,21,41,.72) 50%,rgba(7,21,41,.97) 100%);z-index:1;}
 .hero-body{flex:1;position:relative;z-index:2;}
 .hero-stats{position:relative;z-index:2;}
 .hero-body{flex:1;padding-top:140px;padding-bottom:80px;}
@@ -389,8 +389,8 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
 
 <!-- HERO -->
 <section class="hero">
-  <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1548574505-5e239809ee19?q=80&w=2400&fit=crop">
-    <source src="https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_25fps.mp4" type="video/mp4">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="hero.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-body">
