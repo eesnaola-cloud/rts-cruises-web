@@ -94,7 +94,7 @@ h3{font-size:clamp(17px,2vw,22px);}
 .logo-cell{background:#fff;padding:clamp(28px,3.5vw,44px) clamp(16px,2vw,28px);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:160px;cursor:pointer;transition:background .3s;position:relative;gap:12px;}
 .logo-cell:hover{background:var(--navy);}
 .logo-cell img{max-height:52px;max-width:80%;object-fit:contain;filter:grayscale(1) opacity(.7);transition:filter .3s;}
-.logo-cell img[src*="aqua"]{max-height:90px;max-width:95%;}
+.logo-cell img[src*="aqua.png"]{max-height:90px;max-width:95%;}
 .logo-cell:hover img{filter:brightness(0) invert(1) opacity(1);}
 .logo-word{font-family:var(--serif);font-size:11px;font-weight:700;color:var(--navy);text-align:center;transition:color .3s;display:block;word-break:break-word;hyphens:auto;max-width:100%;line-height:1.3;}
 .logo-cell:hover .logo-word{color:var(--gold-light);}
@@ -325,7 +325,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
   .logo-grid{grid-template-columns:repeat(2,1fr);}
   .logo-cell{min-height:120px;padding:20px 12px;}
   .logo-cell img{max-height:44px;}
-  .logo-cell img[src*="aqua"]{max-height:80px;max-width:95%;}
+  .logo-cell img[src*="aqua.png"]{max-height:80px;max-width:95%;}
   .steps{grid-template-columns:1fr;gap:36px;}
   .footer-grid{grid-template-columns:1fr;}
   .social-strip{flex-direction:column;align-items:flex-start;gap:18px;}
@@ -397,7 +397,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
     <div class="wrap">
       <div class="hero-badge reveal">
         <span class="dot"></span>
-        +40 años creando viajes inolvidables · Desde 1984
+        +40 años creando viajes inolvidables 
       </div>
       <h1 class="reveal">El lujo de navegar,<br><em>guiado por expertos.</em></h1>
       <p class="hero-lead reveal">Representante oficial de las navieras de lujo más prestigiosas del mundo. Asesoría personalizada, el mismo precio que la naviera.</p>
@@ -527,7 +527,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
       <h2>La diferencia de la representación directa</h2>
     </div>
     <div class="why-grid reveal">
-      <div class="why-card"><div class="why-num">01</div><h3>+40 años de trayectoria</h3><p>Desde 1984 conectamos viajeros argentinos con las navieras de lujo más exigentes del mundo.</p></div>
+      <div class="why-card"><div class="why-num">01</div><h3>+40 años de trayectoria</h3><p> conectamos viajeros argentinos con las navieras de lujo más exigentes del mundo.</p></div>
       <div class="why-card"><div class="why-num">02</div><h3>Representación directa</h3><p>Somos representantes oficiales, no intermediarios. Acceso directo a condiciones especiales y tarifas netas.</p></div>
       <div class="why-card"><div class="why-num">03</div><h3>Mismo precio que la naviera</h3><p>Pagás exactamente lo mismo que reservando directo, con el respaldo de un equipo experto en cada travesía.</p></div>
       <div class="why-card"><div class="why-num">04</div><h3>160+ agencias clientes</h3><p>La red de agencias de viajes más grande de Argentina confía en RTS para sus pasajeros de alta gama.</p></div>
@@ -654,6 +654,13 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
         <a class="social-ico" href="https://instagram.com/rocatransport" target="_blank" rel="noopener">IG</a>
         <a class="social-ico" href="https://www.linkedin.com/company/roca-transport-system/" target="_blank" rel="noopener">in</a>
       </div>
+    </div>
+    <!-- Instagram feed – últimos 3 posts via Behold widget -->
+    <div class="ig-feed reveal" style="margin-top:32px;">
+      <div id="ig-posts" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;"></div>
+      <p style="text-align:center;margin-top:16px;font-size:13px;color:var(--grey-500);">
+        <a href="https://instagram.com/rocatransport" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">@rocatransport</a> en Instagram
+      </p>
     </div>
   </div>
 </section>
@@ -1023,6 +1030,25 @@ function clearFilters() {
 ['f-region','f-naviera','f-dias','f-mes','f-sort'].forEach(id =>
   document.getElementById(id).addEventListener('change', () => { SHOWN=12; renderItins(); }));
 document.getElementById('f-search').addEventListener('input', () => { SHOWN=12; renderItins(); });
+
+// ── Instagram últimos 3 posts (Behold widget) ──
+// Para activar: crear cuenta gratis en behold.so, conectar @rocatransport
+// y reemplazar el data-feed-id con el ID que te dan.
+// Por ahora mostramos placeholders que linkean al perfil.
+(function() {
+  const container = document.getElementById('ig-posts');
+  if (!container) return;
+  const IG_URL = 'https://instagram.com/rocatransport';
+  for (let i = 0; i < 3; i++) {
+    const a = document.createElement('a');
+    a.href = IG_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.style.cssText = 'display:block;aspect-ratio:1;background:var(--navy-deep);border-radius:6px;overflow:hidden;position:relative;';
+    a.innerHTML = `<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.18);font-size:28px;">▷</div>`;
+    container.appendChild(a);
+  }
+})();
 
 // ── Carga inicial desde Google Sheets ──
 (async () => {
