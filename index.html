@@ -657,7 +657,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
     </div>
     <!-- Instagram feed – últimos 3 posts via Behold widget -->
     <div class="ig-feed reveal" style="margin-top:32px;">
-      <div id="ig-posts" style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;"></div>
+      <div id="ig-posts" style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px;"></div>
       <p style="text-align:center;margin-top:16px;font-size:13px;color:var(--grey-500);">
         <a href="https://instagram.com/rocatransport" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">@rocatransport</a> en Instagram
       </p>
@@ -1060,22 +1060,39 @@ function clearFilters() {
   document.getElementById(id).addEventListener('change', () => { SHOWN=12; renderItins(); }));
 document.getElementById('f-search').addEventListener('input', () => { SHOWN=12; renderItins(); });
 
-// ── Instagram últimos 3 posts (Behold widget) ──
-// Para activar: crear cuenta gratis en behold.so, conectar @rocatransport
-// y reemplazar el data-feed-id con el ID que te dan.
-// Por ahora mostramos placeholders que linkean al perfil.
-(function() {
+// ── Instagram feed via Behold ──
+(async function() {
   const container = document.getElementById('ig-posts');
   if (!container) return;
-  const IG_URL = 'https://instagram.com/rocatransport';
-  for (let i = 0; i < 3; i++) {
-    const a = document.createElement('a');
-    a.href = IG_URL;
-    a.target = '_blank';
-    a.rel = 'noopener';
-    a.style.cssText = 'display:block;aspect-ratio:1;background:var(--navy-deep);border-radius:6px;overflow:hidden;position:relative;';
-    a.innerHTML = `<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.18);font-size:28px;">▷</div>`;
-    container.appendChild(a);
+  try {
+    const res = await fetch('https://feeds.behold.so/u7dcJPGCuSuJU1fPuYB3');
+    if (!res.ok) throw new Error('behold ' + res.status);
+    const data = await res.json();
+    const posts = (data.posts || []).slice(0, 6);
+    posts.forEach(post => {
+      const imgUrl = (post.sizes && post.sizes.medium && post.sizes.medium.mediaUrl)
+        || (post.thumbnailUrl)
+        || post.mediaUrl;
+      const caption = (post.prunedCaption || post.caption || '').slice(0, 120);
+      const isVideo = post.mediaType === 'VIDEO';
+      const a = document.createElement('a');
+      a.href = post.permalink;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.style.cssText = 'display:block;aspect-ratio:1;border-radius:6px;overflow:hidden;position:relative;background:var(--navy-deep);';
+      a.innerHTML = `
+        <img src="${imgUrl}" alt="" loading="lazy"
+          style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s;">
+        ${isVideo ? '<div style="position:absolute;top:8px;right:8px;background:rgba(0,0,0,.5);border-radius:4px;padding:2px 6px;font-size:11px;color:#fff;">▶ Reel</div>' : ''}
+        <div style="position:absolute;inset:0;background:rgba(7,21,41,.7);opacity:0;transition:opacity .3s;display:flex;align-items:flex-end;padding:12px;">
+          <p style="color:#fff;font-size:12px;line-height:1.4;margin:0;">${caption}</p>
+        </div>`;
+      a.addEventListener('mouseenter', () => a.querySelector('div:last-child').style.opacity = '1');
+      a.addEventListener('mouseleave', () => a.querySelector('div:last-child').style.opacity = '0');
+      container.appendChild(a);
+    });
+  } catch(e) {
+    console.warn('Behold feed error:', e);
   }
 })();
 
