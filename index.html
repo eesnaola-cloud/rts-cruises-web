@@ -978,7 +978,12 @@ function renderItins() {
   const search  = (document.getElementById('f-search').value || '').toLowerCase().trim();
   const sort    = document.getElementById('f-sort').value;
 
+  const minDate = new Date();
+  minDate.setDate(minDate.getDate() + 14);
+
   let filtered = ALL_ITINS.filter(it => {
+    const fechaD = new Date(it.fecha);
+    if(isNaN(fechaD) || fechaD < minDate) return false;
     if(region  && it.region !== region) return false;
     if(naviera && it.naviera !== naviera) return false;
     if(mes) { const d = new Date(it.fecha); if(isNaN(d) || (d.getMonth()+1) !== +mes) return false; }
