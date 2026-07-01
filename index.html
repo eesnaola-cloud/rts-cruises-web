@@ -1024,6 +1024,13 @@ function renderItins() {
   if(sort === 'fecha-asc')   filtered.sort((a,b) => new Date(a.fecha) - new Date(b.fecha));
   if(sort === 'fecha-desc')  filtered.sort((a,b) => new Date(b.fecha) - new Date(a.fecha));
 
+  // Pin up to 3 Silversea itineraries at the top when no naviera filter is active
+  if(!naviera && !search) {
+    const ss = filtered.filter(it => it.naviera === 'SILVERSEA').slice(0, 3);
+    const rest = filtered.filter(it => it.naviera !== 'SILVERSEA');
+    filtered = [...ss, ...rest];
+  }
+
   const grid = document.getElementById('itin-grid');
   const moreDiv = document.getElementById('itin-more');
   const countEl = document.getElementById('itin-count');
