@@ -917,7 +917,24 @@ const REGION_IMGS = {
 };
 const NAVIERA_LABELS = {
   'SILVERSEA':'Silversea','CRYSTAL':'Crystal','PONANT':'Ponant',
-  'PAUL GAUGUIN':'Paul Gauguin','EXPLORA':'Explora','SCENIC':'Scenic','EMERALD':'Emerald'
+  'PAUL GAUGUIN':'Paul Gauguin','EXPLORA':'Explora','SCENIC':'Scenic','EMERALD':'Emerald',
+  'RIVERSIDE':'Riverside','VIKING':'Viking','UNIWORLD':'Uniworld',
+  'AQUA EXPEDITIONS':'Aqua Expeditions','RITZ CARLTON':'Ritz Carlton'
+};
+
+const NAVIERA_IMGS = {
+  'SILVERSEA':        'logos/navieras/banners/silversea.jpg',
+  'CRYSTAL':          'logos/navieras/banners/crystal.jpg',
+  'PONANT':           'logos/navieras/banners/ponant.jpg',
+  'PAUL GAUGUIN':     'logos/navieras/banners/paulgauguin.jpg',
+  'EXPLORA':          'logos/navieras/banners/explora.jpg',
+  'SCENIC':           'logos/navieras/banners/scenic.jpg',
+  'EMERALD':          'logos/navieras/banners/emerald.jpg',
+  'RIVERSIDE':        'logos/navieras/banners/riverside.jpg',
+  'VIKING':           'logos/navieras/banners/viking.jpg',
+  'UNIWORLD':         'logos/navieras/banners/uniworld.jpg',
+  'AQUA EXPEDITIONS': 'logos/navieras/banners/aqua.jpg',
+  'RITZ CARLTON':     'logos/navieras/banners/ritzcarlton.jpg',
 };
 
 const MES_ES = ['','Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
@@ -948,7 +965,7 @@ function formatPrice(p, moneda) {
 
 function buildCard(it) {
   const navLabel = NAVIERA_LABELS[it.naviera] || it.naviera;
-  const img = REGION_IMGS[it.region] || REGION_IMGS['Mediterranean'];
+  const img = NAVIERA_IMGS[it.naviera] || REGION_IMGS[it.region] || REGION_IMGS['Mediterranean'];
   const dest = it.puerto_salida && it.puerto_llegada && it.puerto_salida !== it.puerto_llegada
     ? `${it.puerto_salida} → ${it.puerto_llegada}`
     : it.barco || it.puerto_salida || it.region;
