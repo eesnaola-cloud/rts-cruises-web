@@ -1,7 +1,63 @@
 {
-  "updatedAt": "2026-07-02T12:49:53.885Z",
+  "updatedAt": "2026-07-02T20:58:43.202Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Miami, FL to Miami, FL",
+      "origin": "Miami, FL",
+      "dates": "NOV 30 → DEC 10, 2026",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-11-30"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Fusina (Venice) to Civitavecchia (Rome)",
+      "origin": "Fusina (Venice)",
+      "dates": "NOV 13 → 23, 2026",
+      "ship": "SILVER NOVA",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-11-13"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "San Juan to San Juan",
+      "origin": "San Juan",
+      "dates": "JAN 3 → 10, 2027",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-01-03"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Athens (Piraeus) to Athens (Piraeus)",
+      "origin": "Athens (Piraeus)",
+      "dates": "OCT 28 → NOV 7, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-10-28"
+    },
     {
       "region": "MEDITERRANEAN",
       "route": "Barcelona to Barcelona",
@@ -17,17 +73,32 @@
       "departureDate": "2026-10-29"
     },
     {
-      "region": "NORTHERN EUROPE & BRITISH ISLES",
-      "route": "Copenhagen to Copenhagen",
-      "origin": "Copenhagen",
-      "dates": "JUL 15 → 25, 2026",
-      "ship": "SILVER DAWN",
+      "region": "ALASKA",
+      "route": "Seward (Anchorage, Alaska) to Vancouver",
+      "origin": "Seward (Anchorage, Alaska)",
+      "dates": "JUN 3 → 10, 2027",
+      "ship": "SILVER MOON",
       "discounts": [
-        "SAVE 10%"
+        "SAVE 20%",
+        "SAVE 40%"
       ],
-      "maxDiscount": 10,
-      "label": "OFERTA · AHORRÁ 10%",
-      "departureDate": "2026-07-15"
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-06-03"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Miami, FL to Miami, FL",
+      "origin": "Miami, FL",
+      "dates": "DEC 11 → 22, 2026",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-12-11"
     },
     {
       "region": "MEDITERRANEAN",
@@ -44,87 +115,18 @@
       "departureDate": "2026-09-28"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Barcelona to Monte Carlo",
-      "origin": "Barcelona",
-      "dates": "SEP 5 → 17, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-09-05"
-    },
-    {
-      "region": "MEDITERRANEAN",
-      "route": "Athens (Piraeus) to Athens (Piraeus)",
-      "origin": "Athens (Piraeus)",
-      "dates": "OCT 26 → NOV 6, 2026",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-10-26"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "San Juan to Miami, FL",
-      "origin": "San Juan",
-      "dates": "DEC 29, 2026 → JAN 6, 2027",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-12-29"
-    },
-    {
-      "region": "GALÁPAGOS ISLANDS",
-      "route": "San Cristóbal, Galapagos to San Cristóbal, Galapagos",
-      "origin": "San Cristóbal, Galapagos",
-      "dates": "JUL 4 → 11, 2026",
-      "ship": "SILVER ORIGIN",
-      "discounts": [
-        "SAVE 10%"
-      ],
-      "maxDiscount": 10,
-      "label": "OFERTA · AHORRÁ 10%",
-      "departureDate": "2026-07-04"
-    },
-    {
-      "region": "AFRICA & INDIAN OCEAN",
-      "route": "Lisbon to Cape Town",
-      "origin": "Lisbon",
-      "dates": "OCT 21 → NOV 10, 2026",
-      "ship": "SILVER MUSE",
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "MAR 19 → 31, 2027",
+      "ship": "SILVER SPIRIT",
       "discounts": [
         "SAVE 20%",
         "SAVE 40%"
       ],
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-10-21"
-    },
-    {
-      "region": "ASIA",
-      "route": "Singapore to Tokyo",
-      "origin": "Singapore",
-      "dates": "MAR 14 → 29, 2027",
-      "ship": "SILVER MUSE",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2027-03-14"
+      "departureDate": "2027-03-19"
     }
   ]
 }
