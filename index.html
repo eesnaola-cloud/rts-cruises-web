@@ -1016,7 +1016,6 @@ function buildCard(it) {
     ? `${String(fd).padStart(2,'0')}/${String(fm).padStart(2,'0')}/${fy}`
     : it.fecha;
   const precio = formatPrice(it.precio, it.moneda);
-  const waMsg = encodeURIComponent(`Hola Rita! Me interesa el itinerario ${dest} con ${navLabel} el ${fechaFmt}. ¿Podés cotizarme?`);
   const promo = promoForItin(it);
 
   // Build price block — show original + discounted when promo applies
@@ -1046,7 +1045,7 @@ function buildCard(it) {
         <div class="itin-meta"><span>🗓 ${fechaFmt}</span><span>⏱ ${it.duracion_dias} días</span><span>🌍 ${it.region}</span></div>
         <div class="itin-foot">
           ${precioHtml}
-          <a href="https://wa.me/5491125447248?text=${waMsg}" target="_blank" rel="noopener" class="btn btn-gold">Cotizar</a>
+          <a href="mailto:delfina.gorostiaga@rocatransport.com.ar,paloma.medina@rocatransport.com.ar?subject=${encodeURIComponent(`Consulta de itinerario: ${dest} con ${navLabel} - ${fechaFmt}`)}&body=${encodeURIComponent(`Hola,\n\nUn cliente está interesado en el siguiente itinerario:\n\nNaviera: ${navLabel}\nRuta: ${dest}\nFecha de salida: ${fechaFmt}\nDuración: ${it.duracion_dias} días\nRegión: ${it.region}\nPrecio desde: ${precio}\n\nURL del itinerario en la naviera:\n${it.url || 'No disponible'}\n\nPor favor, confirmar disponibilidad y cotización.`)}" class="btn btn-gold">Cotizar</a>
         </div>
       </div>
     </div>`;
