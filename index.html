@@ -485,11 +485,6 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
           <option value="EXPLORA">Explora Journeys</option>
           <option value="SCENIC">Scenic</option>
           <option value="EMERALD">Emerald Cruises</option>
-          <option value="RIVERSIDE">Riverside Luxury Cruises</option>
-          <option value="VIKING">Viking</option>
-          <option value="UNIWORLD">Uniworld</option>
-          <option value="AQUA EXPEDITIONS">Aqua Expeditions</option>
-          <option value="RITZ CARLTON">Ritz Carlton</option>
         </select>
       </div>
       <div class="filter-group">
@@ -989,7 +984,7 @@ function parseCSV(text) {
     const obj = {};
     headers.forEach((h,i) => obj[h] = (cols[i]||'').trim());
     return obj;
-  }).filter(r => r.naviera && r.naviera !== 'naviera');
+  }).filter(r => r.naviera && !r.naviera.startsWith('"') && r.naviera !== 'naviera');
 }
 
 function formatPrice(p, moneda) {
