@@ -135,6 +135,8 @@ h3{font-size:clamp(17px,2vw,22px);}
 .itin-card::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,21,41,.04) 0%,rgba(7,21,41,.88) 100%);transition:background .35s;}
 .itin-card:hover::before{background:linear-gradient(180deg,rgba(7,21,41,.1) 0%,rgba(7,21,41,.95) 100%);}
 .itin-badge{position:absolute;top:16px;left:16px;z-index:2;background:var(--gold);color:var(--navy-deep);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 13px;border-radius:20px;}
+.itin-promo-badge{position:absolute;top:16px;right:16px;z-index:2;background:#e63946;color:#fff;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 13px;border-radius:20px;}
+.itin-card--promo{box-shadow:0 0 0 2px #e63946;}
 .itin-body{position:absolute;bottom:0;left:0;right:0;padding:22px;z-index:2;color:#fff;}
 .itin-dest{font-family:var(--serif);font-size:19px;font-weight:700;margin-bottom:7px;line-height:1.25;}
 .itin-meta{display:flex;gap:14px;font-size:12px;color:rgba(255,255,255,.7);margin-bottom:13px;}
@@ -899,6 +901,33 @@ const NAVIERAS_DATA = {
 // ITINERARIOS — fetch desde Google Sheets (CSV en tiempo real)
 // ══════════════════════════════════════════════════
 const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQDMLu2CxOhn4gFTrBz9yusO9RIZB5eEk6Mn6UOLOeoW1v3iYqEXVb7oh3150puDmYtcnaiEr4FisOx/pub?output=csv';
+const PROMOS_URL = 'silversea-promos.json';
+let SS_PROMOS = [];
+
+function normalize(str) {
+  return (str || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]/g,' ').trim();
+}
+function promoForItin(it) {
+  if (it.naviera !== 'SILVERSEA' || !SS_PROMOS.length) return null;
+  const itDate = new Date(it.fecha);
+  const itOrigin = normalize(it.puerto_salida);
+  return SS_PROMOS.find(p => {
+    if (!p.departureDate) return false;
+    const pDate = new Date(p.departureDate);
+    const diffDays = Math.abs((itDate - pDate) / 86400000);
+    if (diffDays > 3) return false;
+    const pOrigin = normalize(p.origin);
+    // Check if either origin contains words from the other
+    const itWords = itOrigin.split(' ').filter(w => w.length > 3);
+    return itWords.some(w => pOrigin.includes(w));
+  }) || null;
+}
+
+// Load Silversea promos (generated daily by GitHub Actions)
+fetch(PROMOS_URL).then(r => r.json()).then(d => {
+  SS_PROMOS = d.promos || [];
+  console.log(`Loaded ${SS_PROMOS.length} Silversea promos`);
+}).catch(() => {});
 
 const REGION_IMGS = {
   'Europe':              'https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?q=80&w=800&fit=crop',
@@ -973,9 +1002,11 @@ function buildCard(it) {
   const fechaFmt = isNaN(d) ? it.fecha : `${d.getDate().toString().padStart(2,'0')}/${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getFullYear()}`;
   const precio = formatPrice(it.precio, it.moneda);
   const waMsg = encodeURIComponent(`Hola Rita! Me interesa el itinerario ${dest} con ${navLabel} el ${fechaFmt}. ¿Podés cotizarme?`);
+  const promo = promoForItin(it);
   return `
-    <div class="itin-card" style="background-image:url('${img}')">
+    <div class="itin-card${promo ? ' itin-card--promo' : ''}" style="background-image:url('${img}')">
       <span class="itin-badge">${navLabel}</span>
+      ${promo ? `<span class="itin-promo-badge">🔥 AHORRÁ ${promo.maxDiscount}%</span>` : ''}
       <div class="itin-body">
         <div class="itin-dest">${dest}</div>
         <div class="itin-meta"><span>🗓 ${fechaFmt}</span><span>⏱ ${it.duracion_dias} días</span><span>🌍 ${it.region}</span></div>
