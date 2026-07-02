@@ -1,0 +1,65 @@
+name: Scrape Naviera Itineraries
+
+on:
+  schedule:
+    - cron: '15 8 * * *'   # 5:15am Argentina (offset from scrape-promos.yml's 8:00 run)
+  workflow_dispatch:        # allow manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        naviera: [riverside, viking, uniworld, aqua, ritzcarlton]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Playwright browser
+        run: npx playwright install chromium --with-deps
+
+      - name: Run scraper
+        continue-on-error: true
+        run: node scripts/itineraries/${{ matrix.naviera }}.js
+
+      - name: Upload result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: itinerarios-${{ matrix.naviera }}
+          path: itinerarios-${{ matrix.naviera }}.json
+          if-no-files-found: ignore
+
+  commit:
+    needs: scrape
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all scraper artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+
+      - name: Copy JSON files that were produced into repo root
+        run: find artifacts -name 'itinerarios-*.json' -exec cp {} . \;
+
+      - name: Commit itinerary JSON if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add itinerarios-*.json
+          git diff --cached --quiet || git commit -m "chore: update naviera itineraries [skip ci]"
+          git push
