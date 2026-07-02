@@ -999,8 +999,11 @@ function buildCard(it) {
   const dest = it.puerto_salida && it.puerto_llegada && it.puerto_salida !== it.puerto_llegada
     ? `${it.puerto_salida} → ${it.puerto_llegada}`
     : it.puerto_salida || it.region;
-  const d = new Date(it.fecha);
-  const fechaFmt = isNaN(d) ? it.fecha : `${d.getDate().toString().padStart(2,'0')}/${(d.getMonth()+1).toString().padStart(2,'0')}/${d.getFullYear()}`;
+  // Parse as local date to avoid UTC-offset shifting the day
+  const [fy,fm,fd] = (it.fecha||'').split('-').map(Number);
+  const fechaFmt = (fy && fm && fd)
+    ? `${String(fd).padStart(2,'0')}/${String(fm).padStart(2,'0')}/${fy}`
+    : it.fecha;
   const precio = formatPrice(it.precio, it.moneda);
   const waMsg = encodeURIComponent(`Hola Rita! Me interesa el itinerario ${dest} con ${navLabel} el ${fechaFmt}. ¿Podés cotizarme?`);
   const promo = promoForItin(it);
