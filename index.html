@@ -135,8 +135,10 @@ h3{font-size:clamp(17px,2vw,22px);}
 .itin-card::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,21,41,.04) 0%,rgba(7,21,41,.88) 100%);transition:background .35s;}
 .itin-card:hover::before{background:linear-gradient(180deg,rgba(7,21,41,.1) 0%,rgba(7,21,41,.95) 100%);}
 .itin-badge{position:absolute;top:16px;left:16px;z-index:2;background:var(--gold);color:var(--navy-deep);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 13px;border-radius:20px;}
-.itin-promo-badge{position:absolute;top:16px;right:16px;z-index:2;background:#e63946;color:#fff;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:5px 13px;border-radius:20px;}
-.itin-card--promo{box-shadow:0 0 0 2px #e63946;}
+.itin-promo-badge{position:absolute;top:16px;right:16px;z-index:2;background:#e63946;color:#fff;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:6px 14px;border-radius:20px;box-shadow:0 2px 8px rgba(230,57,70,.5);}
+.itin-card--promo{box-shadow:0 0 0 2px #e63946,0 20px 40px -10px rgba(230,57,70,.3);}
+.value--strike{text-decoration:line-through;opacity:.55;font-size:13px !important;}
+.value--promo{color:#ff6b6b;font-size:20px;font-weight:700;}
 .itin-body{position:absolute;bottom:0;left:0;right:0;padding:22px;z-index:2;color:#fff;}
 .itin-dest{font-family:var(--serif);font-size:19px;font-weight:700;margin-bottom:7px;line-height:1.25;}
 .itin-meta{display:flex;gap:14px;font-size:12px;color:rgba(255,255,255,.7);margin-bottom:13px;}
@@ -926,7 +928,7 @@ function promoForItin(it) {
 // Load Silversea promos (generated daily by GitHub Actions)
 fetch(PROMOS_URL).then(r => r.json()).then(d => {
   SS_PROMOS = d.promos || [];
-  console.log(`Loaded ${SS_PROMOS.length} Silversea promos`);
+  if (ALL_ITINS.length) renderItins(); // re-render with promo badges now available
 }).catch(() => {});
 
 const REGION_IMGS = {
@@ -1003,6 +1005,25 @@ function buildCard(it) {
   const precio = formatPrice(it.precio, it.moneda);
   const waMsg = encodeURIComponent(`Hola Rita! Me interesa el itinerario ${dest} con ${navLabel} el ${fechaFmt}. ¿Podés cotizarme?`);
   const promo = promoForItin(it);
+
+  // Build price block — show original + discounted when promo applies
+  let precioHtml;
+  if (promo && it.precio && +it.precio > 0) {
+    const original = +it.precio;
+    const discounted = Math.round(original * (1 - promo.maxDiscount / 100));
+    const origFmt  = formatPrice(String(original), it.moneda);
+    const discFmt  = formatPrice(String(discounted), it.moneda);
+    precioHtml = `
+      <div class="itin-price">
+        <div class="label">Antes</div>
+        <div class="value value--strike">${origFmt}</div>
+        <div class="label" style="margin-top:4px;color:#ff6b6b;">Ahora</div>
+        <div class="value value--promo">${discFmt}</div>
+      </div>`;
+  } else {
+    precioHtml = `<div class="itin-price"><div class="label">Desde</div><div class="value">${precio}</div></div>`;
+  }
+
   return `
     <div class="itin-card${promo ? ' itin-card--promo' : ''}" style="background-image:url('${img}')">
       <span class="itin-badge">${navLabel}</span>
@@ -1011,7 +1032,7 @@ function buildCard(it) {
         <div class="itin-dest">${dest}</div>
         <div class="itin-meta"><span>🗓 ${fechaFmt}</span><span>⏱ ${it.duracion_dias} días</span><span>🌍 ${it.region}</span></div>
         <div class="itin-foot">
-          <div class="itin-price"><div class="label">Desde</div><div class="value">${precio}</div></div>
+          ${precioHtml}
           <a href="https://wa.me/5491125447248?text=${waMsg}" target="_blank" rel="noopener" class="btn btn-gold">Cotizar</a>
         </div>
       </div>
@@ -1055,11 +1076,11 @@ function renderItins() {
   if(sort === 'fecha-asc')   filtered.sort((a,b) => new Date(a.fecha) - new Date(b.fecha));
   if(sort === 'fecha-desc')  filtered.sort((a,b) => new Date(b.fecha) - new Date(a.fecha));
 
-  // Pin up to 3 Silversea itineraries at the top when no naviera filter is active
+  // Pin up to 3 Silversea PROMO itineraries at the top when no naviera filter is active
   if(!naviera && !search) {
-    const ss = filtered.filter(it => it.naviera === 'SILVERSEA').slice(0, 3);
-    const rest = filtered.filter(it => it.naviera !== 'SILVERSEA');
-    filtered = [...ss, ...rest];
+    const ssPromo = filtered.filter(it => it.naviera === 'SILVERSEA' && promoForItin(it));
+    const rest    = filtered.filter(it => !(it.naviera === 'SILVERSEA' && promoForItin(it)));
+    filtered = [...ssPromo.slice(0, 3), ...rest];
   }
 
   const grid = document.getElementById('itin-grid');
