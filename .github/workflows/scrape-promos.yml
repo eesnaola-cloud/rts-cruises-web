@@ -2,7 +2,9 @@ name: Scrape Silversea Promos
 
 on:
   schedule:
-    - cron: '0 8 * * *'   # 8am UTC (5am Argentina) every day
+    - cron: '0 8 * * *'    # 5am Argentina
+    - cron: '0 14 * * *'   # 11am Argentina
+    - cron: '0 20 * * *'   # 5pm Argentina
   workflow_dispatch:        # allow manual trigger
 
 jobs:
