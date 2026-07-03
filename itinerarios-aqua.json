@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T15:31:27.920Z",
+  "updatedAt": "2026-07-03T11:01:30.269Z",
   "source": "https://www.aquaexpeditions.com/",
   "itineraries": [
     {
@@ -8781,8 +8781,32 @@
       "puerto_salida": "Nauta",
       "puerto_llegada": "Nauta",
       "fecha": "2027-10-01",
+      "duracion_dias": 7,
+      "precio": "8750",
+      "moneda": "USD",
+      "url": "https://www.aquaexpeditions.com/"
+    },
+    {
+      "naviera": "AQUA EXPEDITIONS",
+      "barco": "Aria Amazon",
+      "region": "South America",
+      "puerto_salida": "Nauta",
+      "puerto_llegada": "Nauta",
+      "fecha": "2027-10-01",
       "duracion_dias": 3,
       "precio": "3930",
+      "moneda": "USD",
+      "url": "https://www.aquaexpeditions.com/"
+    },
+    {
+      "naviera": "AQUA EXPEDITIONS",
+      "barco": "Aria Amazon",
+      "region": "South America",
+      "puerto_salida": "Nauta",
+      "puerto_llegada": "Nauta",
+      "fecha": "2027-10-04",
+      "duracion_dias": 4,
+      "precio": "5240",
       "moneda": "USD",
       "url": "https://www.aquaexpeditions.com/"
     },
