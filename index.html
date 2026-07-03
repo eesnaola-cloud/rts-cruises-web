@@ -142,6 +142,12 @@ h3{font-size:clamp(17px,2vw,22px);}
 .itin-card::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,21,41,.04) 0%,rgba(7,21,41,.88) 100%);transition:background .35s;}
 .itin-card:hover::before{background:linear-gradient(180deg,rgba(7,21,41,.1) 0%,rgba(7,21,41,.95) 100%);}
 .itin-badge{position:absolute;top:16px;left:16px;z-index:2;background:var(--gold);color:var(--navy-deep);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 13px;border-radius:20px;}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;}
+.team-card{background:#fff;border-radius:10px;padding:28px 20px;text-align:center;box-shadow:0 4px 20px rgba(11,28,61,.07);border:1px solid var(--grey-200);transition:transform .25s,box-shadow .25s;}
+.team-card:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(11,28,61,.13);}
+.team-avatar{width:64px;height:64px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:var(--serif);font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
+.team-name{font-weight:700;font-size:15px;color:var(--navy);margin-bottom:4px;}
+.team-role{font-size:12px;color:var(--grey-500);letter-spacing:.5px;text-transform:uppercase;}
 .itin-promo-badge{position:absolute;top:16px;right:16px;z-index:2;background:#e63946;color:#fff;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:6px 14px;border-radius:20px;box-shadow:0 2px 8px rgba(230,57,70,.5);}
 .itin-card--promo{box-shadow:0 0 0 2px #e63946,0 20px 40px -10px rgba(230,57,70,.3);}
 .value--strike{text-decoration:line-through;opacity:.55;font-size:13px !important;}
@@ -554,6 +560,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- EQUIPO -->
+<section class="section" id="equipo" style="background:var(--grey-100)">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:clamp(32px,5vw,56px);" class="reveal">
+      <span class="eyebrow">Las personas detrás de RTS</span>
+      <h2 style="font-family:var(--serif);font-size:clamp(26px,3.5vw,38px);color:var(--navy);">Nuestro equipo</h2>
+    </div>
+    <div class="team-grid reveal">
+      <div class="team-card">
+        <div class="team-avatar">RR</div>
+        <div class="team-name">Raul Roca</div>
+        <div class="team-role">CEO</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">CL</div>
+        <div class="team-name">Claudia Lamesa</div>
+        <div class="team-role">Managing Partner</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">DG</div>
+        <div class="team-name">Delfina Gorostiaga</div>
+        <div class="team-role">Managing Partner</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">MC</div>
+        <div class="team-name">Maria Laura Córdova</div>
+        <div class="team-role">Administration Manager</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">EE</div>
+        <div class="team-name">Ezequiel Esnaola</div>
+        <div class="team-role">CMO</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">PM</div>
+        <div class="team-name">Paloma Medina</div>
+        <div class="team-role">Sales & Operations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- RITA -->
 <section class="section" id="rita">
   <div class="wrap">
@@ -569,7 +617,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="https://wa.me/5491125447248" target="_blank" rel="noopener" class="btn btn-gold">Hablar con Rita</a>
-          <a href="tel:+541140000000" class="btn btn-ghost">Llamar a un asesor</a>
+          <a href="tel:+541131357260" class="btn btn-ghost">Llamar a un asesor</a>
         </div>
       </div>
       <div class="phone">
@@ -766,8 +814,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h4>Contacto</h4>
         <ul>
           <li><a href="#">📍 Buenos Aires, Argentina</a></li>
-          <li><a href="tel:+541143157622">📞 (5411) 4315-7622</a></li>
-          <li><a href="tel:+541143156868">📞 (5411) 4315-6868</a></li>
+          <li><a href="tel:+541131357260">📞 (5411) 3135-7260</a></li>
           <li><a href="mailto:info@rtscruises.com">✉️ info@rtscruises.com</a></li>
           <li><a href="https://wa.me/5491125447248" target="_blank" rel="noopener">💬 WhatsApp Rita 24/7</a></li>
         </ul>
