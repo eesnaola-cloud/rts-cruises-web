@@ -142,13 +142,24 @@ h3{font-size:clamp(17px,2vw,22px);}
 .itin-card::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,21,41,.04) 0%,rgba(7,21,41,.88) 100%);transition:background .35s;}
 .itin-card:hover::before{background:linear-gradient(180deg,rgba(7,21,41,.1) 0%,rgba(7,21,41,.95) 100%);}
 .itin-badge{position:absolute;top:16px;left:16px;z-index:2;background:var(--gold);color:var(--navy-deep);font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 13px;border-radius:20px;}
-.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;}
-.team-card{background:#fff;border-radius:10px;padding:28px 20px;text-align:center;box-shadow:0 4px 20px rgba(11,28,61,.07);border:1px solid var(--grey-200);transition:transform .25s,box-shadow .25s;}
-.team-card:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(11,28,61,.13);}
-.team-avatar{width:100px;height:100px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:var(--serif);font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;overflow:hidden;border:3px solid var(--grey-200);}
+.team-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.team-card-wrap{flex:0 0 calc(25% - 15px);min-width:180px;max-width:220px;perspective:1000px;cursor:pointer;}
+.team-card{position:relative;width:100%;height:280px;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.4,0,.2,1);border-radius:12px;}
+.team-card-wrap.flipped .team-card{transform:rotateY(180deg);}
+.team-face,.team-back{position:absolute;inset:0;border-radius:12px;backface-visibility:hidden;-webkit-backface-visibility:hidden;}
+.team-face{background:#fff;box-shadow:0 4px 20px rgba(11,28,61,.08);border:1px solid var(--grey-200);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 16px;}
+.team-back{background:var(--navy);box-shadow:0 4px 20px rgba(11,28,61,.2);transform:rotateY(180deg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px 16px;}
+.team-avatar{width:90px;height:90px;border-radius:50%;overflow:hidden;border:3px solid var(--grey-200);margin-bottom:12px;flex-shrink:0;}
 .team-avatar img{width:100%;height:100%;object-fit:cover;object-position:top;}
-.team-name{font-weight:700;font-size:15px;color:var(--navy);margin-bottom:4px;}
-.team-role{font-size:12px;color:var(--grey-500);letter-spacing:.5px;text-transform:uppercase;}
+.team-name{font-weight:700;font-size:14px;color:var(--navy);margin-bottom:3px;text-align:center;}
+.team-role{font-size:11px;color:var(--grey-500);letter-spacing:.5px;text-transform:uppercase;text-align:center;}
+.team-hint{font-size:10px;color:var(--grey-500);margin-top:8px;letter-spacing:.3px;}
+.team-back-name{font-family:var(--serif);font-size:15px;color:#fff;font-weight:600;text-align:center;}
+.team-back-role{font-size:10px;color:var(--gold-light);letter-spacing:1px;text-transform:uppercase;text-align:center;margin-top:-8px;}
+.team-contact{display:flex;flex-direction:column;align-items:center;gap:8px;width:100%;}
+.team-email{font-size:11px;color:rgba(255,255,255,.7);word-break:break-all;text-align:center;}
+.team-wa{display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#fff;font-size:11px;font-weight:700;padding:7px 14px;border-radius:20px;text-decoration:none;transition:background .2s;}
+.team-wa:hover{background:#1ebe5a;}
 .itin-promo-badge{position:absolute;top:16px;right:16px;z-index:2;background:#e63946;color:#fff;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:6px 14px;border-radius:20px;box-shadow:0 2px 8px rgba(230,57,70,.5);}
 .itin-card--promo{box-shadow:0 0 0 2px #e63946,0 20px 40px -10px rgba(230,57,70,.3);}
 .value--strike{text-decoration:line-through;opacity:.55;font-size:13px !important;}
@@ -569,35 +580,115 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 style="font-family:var(--serif);font-size:clamp(26px,3.5vw,38px);color:var(--navy);">Nuestro equipo</h2>
     </div>
     <div class="team-grid reveal">
-      <div class="team-card">
-        <div class="team-avatar"><img src="team/raul.jpg" alt="Raul Roca"></div>
-        <div class="team-name">Raul Roca</div>
-        <div class="team-role">CEO</div>
+      <div class="team-card-wrap" onclick="this.classList.toggle('flipped')">
+        <div class="team-card">
+          <div class="team-face">
+            <div class="team-avatar"><img src="team/raul.jpg" alt="Raul Roca"></div>
+            <div class="team-name">Raul Roca</div>
+            <div class="team-role">CEO</div>
+            <div class="team-hint">tocá para contactar</div>
+          </div>
+          <div class="team-back">
+            <div class="team-back-name">Raul Roca</div>
+            <div class="team-back-role">CEO</div>
+            <div class="team-contact">
+              <a href="mailto:raul.roca@rocatransport.com.ar" class="team-email">raul.roca@rocatransport.com.ar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="team-card">
-        <div class="team-avatar"><img src="team/claudia.jpg" alt="Claudia Lamesa"></div>
-        <div class="team-name">Claudia Lamesa</div>
-        <div class="team-role">Managing Partner</div>
+      <div class="team-card-wrap" onclick="this.classList.toggle('flipped')">
+        <div class="team-card">
+          <div class="team-face">
+            <div class="team-avatar"><img src="team/claudia.jpg" alt="Claudia Lamesa"></div>
+            <div class="team-name">Claudia Lamesa</div>
+            <div class="team-role">Managing Partner</div>
+            <div class="team-hint">tocá para contactar</div>
+          </div>
+          <div class="team-back">
+            <div class="team-back-name">Claudia Lamesa</div>
+            <div class="team-back-role">Managing Partner</div>
+            <div class="team-contact">
+              <a href="mailto:claudia.lamesa@rocatransport.com.ar" class="team-email">claudia.lamesa@rocatransport.com.ar</a>
+              <a href="https://wa.me/5491133457933" target="_blank" rel="noopener" class="team-wa">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.139.561 4.143 1.538 5.881L0 24l6.268-1.525A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 01-5.028-1.381l-.36-.214-3.724.906.951-3.624-.235-.374A9.786 9.786 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="team-card">
-        <div class="team-avatar"><img src="team/delfina.jpg" alt="Delfina Gorostiaga"></div>
-        <div class="team-name">Delfina Gorostiaga</div>
-        <div class="team-role">Managing Partner</div>
+      <div class="team-card-wrap" onclick="this.classList.toggle('flipped')">
+        <div class="team-card">
+          <div class="team-face">
+            <div class="team-avatar"><img src="team/delfina.jpg" alt="Delfina Gorostiaga"></div>
+            <div class="team-name">Delfina Gorostiaga</div>
+            <div class="team-role">Managing Partner</div>
+            <div class="team-hint">tocá para contactar</div>
+          </div>
+          <div class="team-back">
+            <div class="team-back-name">Delfina Gorostiaga</div>
+            <div class="team-back-role">Managing Partner</div>
+            <div class="team-contact">
+              <a href="mailto:delfina.gorostiaga@rocatransport.com.ar" class="team-email">delfina.gorostiaga@rocatransport.com.ar</a>
+              <a href="https://wa.me/5491167891588" target="_blank" rel="noopener" class="team-wa">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.139.561 4.143 1.538 5.881L0 24l6.268-1.525A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 01-5.028-1.381l-.36-.214-3.724.906.951-3.624-.235-.374A9.786 9.786 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="team-card">
-        <div class="team-avatar"><img src="team/maria.jpg" alt="Maria Laura Córdova"></div>
-        <div class="team-name">Maria Laura Córdova</div>
-        <div class="team-role">Administration Manager</div>
+      <div class="team-card-wrap" onclick="this.classList.toggle('flipped')">
+        <div class="team-card">
+          <div class="team-face">
+            <div class="team-avatar"><img src="team/maria.jpg" alt="Maria Laura Córdova"></div>
+            <div class="team-name">Maria Laura Córdova</div>
+            <div class="team-role">Administration Manager</div>
+            <div class="team-hint">tocá para contactar</div>
+          </div>
+          <div class="team-back">
+            <div class="team-back-name">Maria Laura Córdova</div>
+            <div class="team-back-role">Administration Manager</div>
+            <div class="team-contact">
+              <a href="mailto:ml.cordoba@rocatransport.com.ar" class="team-email">ml.cordoba@rocatransport.com.ar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="team-card">
-        <div class="team-avatar"><img src="team/ezequiel.jpg" alt="Ezequiel Esnaola"></div>
-        <div class="team-name">Ezequiel Esnaola</div>
-        <div class="team-role">CMO</div>
+      <div class="team-card-wrap" onclick="this.classList.toggle('flipped')">
+        <div class="team-card">
+          <div class="team-face">
+            <div class="team-avatar"><img src="team/ezequiel.jpg" alt="Ezequiel Esnaola"></div>
+            <div class="team-name">Ezequiel Esnaola</div>
+            <div class="team-role">CMO</div>
+            <div class="team-hint">tocá para contactar</div>
+          </div>
+          <div class="team-back">
+            <div class="team-back-name">Ezequiel Esnaola</div>
+            <div class="team-back-role">CMO</div>
+            <div class="team-contact">
+              <a href="mailto:ezequiel.esnaola@rocatransport.com.ar" class="team-email">ezequiel.esnaola@rocatransport.com.ar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="team-card">
-        <div class="team-avatar"><img src="team/paloma.jpg" alt="Paloma Medina"></div>
-        <div class="team-name">Paloma Medina</div>
-        <div class="team-role">Sales & Operations</div>
+      <div class="team-card-wrap" onclick="this.classList.toggle('flipped')">
+        <div class="team-card">
+          <div class="team-face">
+            <div class="team-avatar"><img src="team/paloma.jpg" alt="Paloma Medina"></div>
+            <div class="team-name">Paloma Medina</div>
+            <div class="team-role">Sales & Operations</div>
+            <div class="team-hint">tocá para contactar</div>
+          </div>
+          <div class="team-back">
+            <div class="team-back-name">Paloma Medina</div>
+            <div class="team-back-role">Sales & Operations</div>
+            <div class="team-contact">
+              <a href="mailto:paloma.medina@rocatransport.com.ar" class="team-email">paloma.medina@rocatransport.com.ar</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
