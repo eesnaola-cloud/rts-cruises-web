@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T20:58:43.202Z",
+  "updatedAt": "2026-07-03T10:47:05.892Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -59,20 +59,6 @@
       "departureDate": "2026-10-28"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Barcelona to Barcelona",
-      "origin": "Barcelona",
-      "dates": "OCT 29 → NOV 8, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-10-29"
-    },
-    {
       "region": "ALASKA",
       "route": "Seward (Anchorage, Alaska) to Vancouver",
       "origin": "Seward (Anchorage, Alaska)",
@@ -85,6 +71,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2027-06-03"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Barcelona to Barcelona",
+      "origin": "Barcelona",
+      "dates": "OCT 29 → NOV 8, 2026",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-10-29"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -115,18 +115,18 @@
       "departureDate": "2026-09-28"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Miami, FL to Bridgetown",
-      "origin": "Miami, FL",
-      "dates": "MAR 19 → 31, 2027",
-      "ship": "SILVER SPIRIT",
+      "region": "AFRICA & INDIAN OCEAN",
+      "route": "Lisbon to Cape Town",
+      "origin": "Lisbon",
+      "dates": "OCT 21 → NOV 10, 2026",
+      "ship": "SILVER MUSE",
       "discounts": [
         "SAVE 20%",
         "SAVE 40%"
       ],
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-03-19"
+      "departureDate": "2026-10-21"
     }
   ]
 }
