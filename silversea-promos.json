@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-03T15:54:55.912Z",
+  "updatedAt": "2026-07-03T20:57:36.682Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -45,20 +45,6 @@
       "departureDate": "2027-01-03"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Athens (Piraeus) to Athens (Piraeus)",
-      "origin": "Athens (Piraeus)",
-      "dates": "OCT 28 → NOV 7, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-10-28"
-    },
-    {
       "region": "ALASKA",
       "route": "Seward (Anchorage, Alaska) to Vancouver",
       "origin": "Seward (Anchorage, Alaska)",
@@ -71,6 +57,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2027-06-03"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Athens (Piraeus) to Athens (Piraeus)",
+      "origin": "Athens (Piraeus)",
+      "dates": "OCT 28 → NOV 7, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-10-28"
     },
     {
       "region": "MEDITERRANEAN",
