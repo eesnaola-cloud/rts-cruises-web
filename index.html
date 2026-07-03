@@ -145,7 +145,8 @@ h3{font-size:clamp(17px,2vw,22px);}
 .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;}
 .team-card{background:#fff;border-radius:10px;padding:28px 20px;text-align:center;box-shadow:0 4px 20px rgba(11,28,61,.07);border:1px solid var(--grey-200);transition:transform .25s,box-shadow .25s;}
 .team-card:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(11,28,61,.13);}
-.team-avatar{width:64px;height:64px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:var(--serif);font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
+.team-avatar{width:100px;height:100px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:var(--serif);font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;overflow:hidden;border:3px solid var(--grey-200);}
+.team-avatar img{width:100%;height:100%;object-fit:cover;object-position:top;}
 .team-name{font-weight:700;font-size:15px;color:var(--navy);margin-bottom:4px;}
 .team-role{font-size:12px;color:var(--grey-500);letter-spacing:.5px;text-transform:uppercase;}
 .itin-promo-badge{position:absolute;top:16px;right:16px;z-index:2;background:#e63946;color:#fff;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:6px 14px;border-radius:20px;box-shadow:0 2px 8px rgba(230,57,70,.5);}
@@ -569,32 +570,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="team-grid reveal">
       <div class="team-card">
-        <div class="team-avatar">RR</div>
+        <div class="team-avatar"><img src="team/raul.jpg" alt="Raul Roca"></div>
         <div class="team-name">Raul Roca</div>
         <div class="team-role">CEO</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar">CL</div>
+        <div class="team-avatar"><img src="team/claudia.jpg" alt="Claudia Lamesa"></div>
         <div class="team-name">Claudia Lamesa</div>
         <div class="team-role">Managing Partner</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar">DG</div>
+        <div class="team-avatar"><img src="team/delfina.jpg" alt="Delfina Gorostiaga"></div>
         <div class="team-name">Delfina Gorostiaga</div>
         <div class="team-role">Managing Partner</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar">MC</div>
+        <div class="team-avatar"><img src="team/maria.jpg" alt="Maria Laura Córdova"></div>
         <div class="team-name">Maria Laura Córdova</div>
         <div class="team-role">Administration Manager</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar">EE</div>
+        <div class="team-avatar"><img src="team/ezequiel.jpg" alt="Ezequiel Esnaola"></div>
         <div class="team-name">Ezequiel Esnaola</div>
         <div class="team-role">CMO</div>
       </div>
       <div class="team-card">
-        <div class="team-avatar">PM</div>
+        <div class="team-avatar"><img src="team/paloma.jpg" alt="Paloma Medina"></div>
         <div class="team-name">Paloma Medina</div>
         <div class="team-role">Sales & Operations</div>
       </div>
