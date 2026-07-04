@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T15:11:22.820Z",
+  "updatedAt": "2026-07-04T20:48:05.673Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -101,20 +101,6 @@
       "departureDate": "2026-12-11"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Barcelona to Civitavecchia (Rome)",
-      "origin": "Barcelona",
-      "dates": "SEP 28 → OCT 8, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-09-28"
-    },
-    {
       "region": "AFRICA & INDIAN OCEAN",
       "route": "Lisbon to Cape Town",
       "origin": "Lisbon",
@@ -127,6 +113,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-10-21"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Barcelona to Civitavecchia (Rome)",
+      "origin": "Barcelona",
+      "dates": "SEP 28 → OCT 8, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-09-28"
     }
   ]
 }
