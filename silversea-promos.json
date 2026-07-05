@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T15:17:41.464Z",
+  "updatedAt": "2026-07-05T20:51:45.912Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -45,20 +45,6 @@
       "departureDate": "2027-01-03"
     },
     {
-      "region": "ALASKA",
-      "route": "Seward (Anchorage, Alaska) to Vancouver",
-      "origin": "Seward (Anchorage, Alaska)",
-      "dates": "JUN 3 → 10, 2027",
-      "ship": "SILVER MOON",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-06-03"
-    },
-    {
       "region": "MEDITERRANEAN",
       "route": "Athens (Piraeus) to Athens (Piraeus)",
       "origin": "Athens (Piraeus)",
@@ -71,6 +57,20 @@
       "maxDiscount": 30,
       "label": "OFERTA · AHORRÁ 30%",
       "departureDate": "2026-10-28"
+    },
+    {
+      "region": "ALASKA",
+      "route": "Seward (Anchorage, Alaska) to Vancouver",
+      "origin": "Seward (Anchorage, Alaska)",
+      "dates": "JUN 3 → 10, 2027",
+      "ship": "SILVER MOON",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-06-03"
     },
     {
       "region": "MEDITERRANEAN",
@@ -101,6 +101,20 @@
       "departureDate": "2026-12-11"
     },
     {
+      "region": "MEDITERRANEAN",
+      "route": "Barcelona to Lisbon",
+      "origin": "Barcelona",
+      "dates": "NOV 18 → 28, 2026",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-11-18"
+    },
+    {
       "region": "AFRICA & INDIAN OCEAN",
       "route": "Lisbon to Cape Town",
       "origin": "Lisbon",
@@ -113,20 +127,6 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-10-21"
-    },
-    {
-      "region": "MEDITERRANEAN",
-      "route": "Barcelona to Civitavecchia (Rome)",
-      "origin": "Barcelona",
-      "dates": "SEP 28 → OCT 8, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-09-28"
     }
   ]
 }
