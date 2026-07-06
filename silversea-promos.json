@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T16:54:36.260Z",
+  "updatedAt": "2026-07-06T21:24:18.564Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -101,20 +101,6 @@
       "departureDate": "2026-11-18"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Miami, FL to Miami, FL",
-      "origin": "Miami, FL",
-      "dates": "DEC 11 → 22, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-12-11"
-    },
-    {
       "region": "AFRICA & INDIAN OCEAN",
       "route": "Lisbon to Cape Town",
       "origin": "Lisbon",
@@ -127,6 +113,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-10-21"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Miami, FL to Miami, FL",
+      "origin": "Miami, FL",
+      "dates": "DEC 11 → 22, 2026",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-12-11"
     }
   ]
 }
