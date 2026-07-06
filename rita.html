@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WVDNKBT7');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rita — Tu asesora de cruceros 24/7 · RTS Cruises</title>
+<meta name="description" content="Rita es la asistente de inteligencia artificial de RTS Cruises. Disponible 24/7 por WhatsApp para cotizar, recomendar y conectarte con el equipo.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;overflow-x:hidden;}
+:root{
+  --navy:#0B1C3D;--navy-deep:#071529;--navy-light:#13294f;
+  --gold:#C49A3C;--gold-light:#dab35e;
+  --grey-100:#f5f5f5;--grey-200:#e8e8e8;--grey-500:#999;
+  --serif:'Playfair Display',serif;--sans:'DM Sans',sans-serif;
+}
+body{font-family:var(--sans);color:var(--navy);background:#fff;line-height:1.6;}
+a{text-decoration:none;}
+.wrap{max-width:1100px;margin:0 auto;padding:0 clamp(16px,4vw,40px);}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:2px;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:.8px;text-transform:uppercase;border:1.5px solid transparent;transition:all .3s;cursor:pointer;}
+.btn-gold{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 22px -6px rgba(196,154,60,.55);}
+.btn-navy{background:var(--navy);color:#fff;border-color:var(--navy);}
+.btn-navy:hover{background:var(--navy-light);}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
+.btn-ghost:hover{background:rgba(255,255,255,.1);}
+.btn-ghost-dark{background:transparent;color:var(--navy);border-color:var(--navy);}
+.btn-ghost-dark:hover{background:var(--navy);color:#fff;}
+.eyebrow{display:block;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:12px;}
+.section{padding:clamp(64px,9vw,110px) 0;}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+/* NAV */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;background:rgba(7,21,41,.97);backdrop-filter:blur(12px);box-shadow:0 4px 24px rgba(0,0,0,.25);}
+.navbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.nav-logo{display:flex;align-items:center;gap:8px;}
+.nav-logo img{height:40px;width:auto;object-fit:contain;}
+.nav-logo .sub{font-size:8px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;font-weight:700;}
+.nav-right{display:flex;align-items:center;gap:16px;}
+.nav-back{font-size:13px;color:rgba(255,255,255,.6);transition:color .2s;}
+.nav-back:hover{color:var(--gold-light);}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--navy-deep);display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(196,154,60,.08) 0%,transparent 70%);}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(196,154,60,.4);background:rgba(196,154,60,.08);padding:8px 18px;border-radius:30px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);font-weight:700;margin-bottom:24px;}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:#25D366;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-family:var(--serif);font-size:clamp(36px,5vw,60px);color:#fff;line-height:1.15;margin-bottom:20px;}
+.hero h1 em{font-style:italic;color:var(--gold-light);}
+.hero .lead{font-size:clamp(15px,1.8vw,18px);color:rgba(255,255,255,.65);line-height:1.7;margin-bottom:32px;max-width:480px;}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;}
+
+/* PHONE MOCKUP */
+.phone-wrap{display:flex;justify-content:center;}
+.phone{max-width:300px;width:100%;}
+.phone-frame{background:#1c1c1e;border-radius:44px;padding:12px;box-shadow:0 40px 80px -20px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.08);}
+.phone-screen{background:#ece5dd;border-radius:32px;overflow:hidden;min-height:520px;display:flex;flex-direction:column;}
+.chat-head{background:#075e54;padding:14px 16px;display:flex;align-items:center;gap:10px;}
+.chat-av{width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:var(--navy-deep);flex-shrink:0;}
+.chat-info .name{font-size:14px;font-weight:600;color:#fff;}
+.chat-info .status{font-size:11px;color:rgba(255,255,255,.7);}
+.chat-body{flex:1;padding:12px 10px;display:flex;flex-direction:column;gap:8px;overflow:hidden;}
+.msg{max-width:82%;padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.5;position:relative;}
+.msg-rita{background:#fff;align-self:flex-start;border-radius:2px 8px 8px 8px;}
+.msg-user{background:#dcf8c6;align-self:flex-end;border-radius:8px 2px 8px 8px;text-align:right;}
+.msg-time{font-size:9px;color:rgba(0,0,0,.45);margin-top:3px;}
+.chat-input-bar{background:#f0f0f0;padding:10px;display:flex;align-items:center;gap:8px;}
+.chat-field{flex:1;background:#fff;border-radius:20px;padding:8px 14px;font-size:12px;color:#aaa;}
+
+/* STATS STRIP */
+.stats-strip{background:var(--gold);padding:clamp(28px,4vw,48px) 0;}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;}
+.stat-num{font-family:var(--serif);font-size:clamp(28px,4vw,42px);color:var(--navy-deep);font-weight:700;line-height:1;}
+.stat-label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(11,28,61,.65);margin-top:6px;}
+
+/* CAPABILITIES */
+.cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.cap-card{background:var(--grey-100);border-radius:10px;padding:clamp(24px,3vw,36px);border:1px solid var(--grey-200);}
+.cap-ico{font-size:32px;margin-bottom:16px;}
+.cap-card h3{font-family:var(--serif);font-size:19px;color:var(--navy);margin-bottom:10px;}
+.cap-card p{font-size:14px;color:#555;line-height:1.65;}
+
+/* CONVERSATIONS */
+.convos-section{background:var(--navy);}
+.convos-intro{text-align:center;margin-bottom:clamp(40px,6vw,64px);}
+.convos-intro h2{font-family:var(--serif);font-size:clamp(26px,3.5vw,38px);color:#fff;margin-top:8px;}
+.convos-intro p{color:rgba(255,255,255,.55);font-size:15px;max-width:540px;margin:12px auto 0;}
+.convos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.convo-card{background:#ece5dd;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.35);}
+.convo-header{background:#075e54;padding:14px 16px;display:flex;align-items:center;gap:10px;}
+.convo-av{width:36px;height:36px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:var(--navy-deep);flex-shrink:0;}
+.convo-name{font-size:13px;font-weight:600;color:#fff;}
+.convo-status{font-size:10px;color:rgba(255,255,255,.65);}
+.convo-body{padding:14px 12px;display:flex;flex-direction:column;gap:8px;min-height:320px;}
+.cm{padding:8px 11px;border-radius:7px;font-size:12px;line-height:1.55;max-width:90%;}
+.cm-rita{background:#fff;align-self:flex-start;border-radius:2px 7px 7px 7px;}
+.cm-user{background:#dcf8c6;align-self:flex-end;text-align:right;border-radius:7px 2px 7px 7px;}
+.cm-time{font-size:10px;color:rgba(0,0,0,.4);margin-top:3px;}
+.cm strong{display:block;margin-bottom:3px;}
+.cm-bullet{padding-left:10px;font-size:11.5px;line-height:1.6;}
+.cm-link{color:#128c7e;font-size:11px;word-break:break-all;text-decoration:underline;}
+
+/* VIDEO PLACEHOLDER */
+.video-section{background:var(--grey-100);}
+.video-wrap{max-width:800px;margin:0 auto;}
+.video-placeholder{background:var(--navy);border-radius:16px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;box-shadow:0 20px 60px rgba(11,28,61,.2);}
+.video-play{width:72px;height:72px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;}
+.video-play svg{margin-left:4px;}
+.video-placeholder p{color:rgba(255,255,255,.5);font-size:14px;}
+
+/* HOW IT WORKS */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;}
+.steps-grid::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:1px;background:var(--grey-200);z-index:0;}
+.step-box{text-align:center;position:relative;z-index:1;}
+.step-num{width:56px;height:56px;border-radius:50%;background:var(--navy);color:var(--gold);font-family:var(--serif);font-size:22px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;border:3px solid #fff;box-shadow:0 0 0 2px var(--navy);}
+.step-box h4{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.step-box p{font-size:13px;color:#666;line-height:1.6;}
+
+/* CTA FINAL */
+.cta-section{background:var(--navy-deep);text-align:center;padding:clamp(80px,10vw,130px) 0;background:linear-gradient(rgba(7,21,41,.85),rgba(7,21,41,.97)),url('logos/navieras/banners/silversea.jpg') center/cover no-repeat;}
+.cta-section h2{font-family:var(--serif);font-size:clamp(28px,4vw,46px);color:#fff;margin:12px 0 16px;}
+.cta-section p{color:rgba(255,255,255,.6);font-size:16px;margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto;}
+.wa-cta-btn{display:inline-flex;align-items:center;gap:12px;background:#25D366;color:#fff;font-family:var(--sans);font-weight:700;font-size:16px;padding:18px 40px;border-radius:4px;transition:all .3s;box-shadow:0 8px 30px rgba(37,211,102,.4);}
+.wa-cta-btn:hover{background:#1ebe5a;transform:translateY(-2px);box-shadow:0 14px 40px rgba(37,211,102,.5);}
+
+/* FOOTER */
+footer{background:var(--navy-deep);color:rgba(255,255,255,.45);padding:32px 0;text-align:center;font-size:13px;border-top:1px solid rgba(255,255,255,.06);}
+footer a{color:rgba(255,255,255,.45);}
+footer a:hover{color:var(--gold-light);}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;}
+  .phone-wrap{display:none;}
+  .convos-grid{grid-template-columns:1fr;}
+  .cap-grid{grid-template-columns:1fr 1fr;}
+  .steps-grid{grid-template-columns:1fr 1fr;}
+  .steps-grid::before{display:none;}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+  .cap-grid{grid-template-columns:1fr;}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVDNKBT7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav class="navbar">
+  <div class="wrap">
+    <a href="index.html" class="nav-logo">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVUAAAEsCAYAAABzISAnAABYbklEQVR42u19d7wkVZn281b3vRNgmGGGMAww5JyDgIBIBslgwLQgun7o+plZdXXddV1dV9cNurr6rRlMoAiCiCA5J8lDjgMMM8AwA5Nu6Krn++O8hzlzqOp0u/t2932f369+fW/fvl1Vp855zptfgcFQB0iWAIiIVIL3BgDsBGAfAHsB2AHAXAAzAawFIAEwBGBZlmU/LpVKnyNZEpHURtTQrxAbAkMVIhUlxkxEqO9NB/BmAMcCeBOArQEM1PF1q5R05ys5ZzbCBoNhokmm4e/7k/w+yQV8PVKSFX3Ncv4+qq/fz/tug8Fg6GsyVQnV//wOktfkkOhoAYlm0RG+t4rkliSFZGKjbTAY+lrVDyVIku8meWdElqMBQXrpdDQg2Grw0uoPTFo1GAwTRtUneSjJ6wMyrOiRBSRaDUMkXyW5hORIRMqp/n1rk1YNMEeVoV8dUSKSkpydZdlXkyR5v/45DeZHBqAc/ft8APcBuBfAIwCeBvAigFcAVACMwjmyfqf/n+j7ZQA/FZEzLBLAYDD0E6Emwc9vI/lM5HSqRCr9EMkrSZ5Fci+SU+s5T5qmDwbf66XVYZLbmbRqMBj6SUIFyUkkvxvZPWMyvY/kZ0luk0fMJMt6lPT3RMlyQD/zd5FN1b+ebbZVg8HQLw4pIbkZyZsiu2klINOrSJ7syTEi0cQTcy1JmOTm6vVn5OQaIblj7CAzGAyGXiPVsr5+IlDrQ9xE8pj4f5pR0z1ZkrwoiB4IpdVfmrRqMBj6hVQ/FUiMGclnSX4wMA1IGLPa7Ln0e04KJOI41nVns60aDIZ+INUvKLn5sKd9AhW/1GJTwxSS8wMyDQn2XJNWDf0Ekw4mLtYK5kAK4MWgaEpLwpy0XkBJRFYB+BVWh2f582YA3kpyNwCZEavBSNXQy5gWzIFhACNKpmzxeTyJnq3kXQpipDP9/R98wRaDwUjV0KuYEZDbSgArvNbeypOISEYyEZF5AG7Q83lJuKzEehLJPU1aNRipGnoRnjTXDd5bHpBqO+fZjwuuJzFp1WAw9Hrg/42BJ/7ODp1zBskXg5jVMBIgJfkGmNPKYJKqoZcIVUSo4Uuzgj8tjlNXW2wCoOb5LwVwPlbXFoil1X+0p2QwUjWgR51UM4Pfn+/gfPiJvobSaAnOtnoMyf20wEuph7PVcg+bdkaqBvRtVbKZcI4qLy0+2/YTO6IUALcDuDPw/ofSqnSjtOqTEzQZohzVO3gtQUJEWO0I44BzaiYY6fYJyjYEE5JUN4LrKzWqUuJTHTp/SUQqJH8GYM+gJGAorR5N8gARubHTpQGV2MKDQX8u1vH/AwAGdV0lQUjZCIBREalU683l44T1nNbDy0jV0EOkulkUCfBkO8KpcuAJ8jwAX1EzBIPr8uf/RwBHtvN6cgjUExlzPrsWgA10M9oUwCYA5gDYEMB6KvWvDZdQ4Um1FNzzKIAhkssBLAGwCMAzAJ4A8Kge88MNRO3bCYDUoiKMVA3dj60C6TANJFW22QTgHVYLSV4C4J16/nIkrR5B8iARua5V0mpAogkA5iU6aI3YzQBsB2BHuO6v2yiJblBn19hmsArAEyTvAHA1gGtF5ClvHtHUYpNeDQZ0b97/OUE403O+4HQn7HreBknyiKgWAKOaAFeONSIhKFVYKij2sq0W6P46yT9roe6sSquYLOrLNRoV9E6DYtxZVOowzenrVdTbawXJP5F8H8kZeU0ZDQZDd8Wo3hos4OvaGU5VxfEzQPLhAmL1vx/USNxqUFmrnPO3SST3IPlhkj8n+VBUNSsm9tGoaHfG9iELqnbF1/QMya+S3KyofbjBYBhf" alt="RTS Cruises">
+      <span class="sub">RTS Cruises</span>
+    </a>
+    <div class="nav-right">
+      <a href="index.html" class="nav-back">← Volver al inicio</a>
+      <a href="https://wa.me/5491125447248?text=Hola%20Rita%2C%20estoy%20en%20la%20web%20de%20RTSC%20y%20quiero%20consultarte" target="_blank" rel="noopener" class="btn btn-gold" style="padding:10px 18px;font-size:11px;">Hablar con Rita</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge"><span class="dot"></span>Disponible ahora · WhatsApp</div>
+        <h1>Conocé a <em>Rita</em>,<br>tu asesora de<br>cruceros 24/7</h1>
+        <p class="lead">Rita es la asistente de inteligencia artificial de RTS Cruises. Responde consultas, recomienda itinerarios y arma cotizaciones personalizadas — a cualquier hora, cualquier día.</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/5491125447248?text=Hola%20Rita%2C%20estoy%20en%20la%20web%20de%20RTSC%20y%20quiero%20consultarte" target="_blank" rel="noopener" class="btn btn-gold">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.139.561 4.143 1.538 5.881L0 24l6.268-1.525A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 01-5.028-1.381l-.36-.214-3.724.906.951-3.624-.235-.374A9.786 9.786 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+            Escribile a Rita
+          </a>
+          <a href="#como-funciona" class="btn btn-ghost">Cómo funciona →</a>
+        </div>
+      </div>
+      <div class="phone-wrap reveal">
+        <div class="phone">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="chat-head">
+                <div class="chat-av">R</div>
+                <div class="chat-info"><div class="name">Rita · RTS Cruises</div><div class="status">en línea</div></div>
+              </div>
+              <div class="chat-body">
+                <div class="msg msg-user">Quiero un crucero por el Mediterráneo en octubre<div class="msg-time">18:30 ✓✓</div></div>
+                <div class="msg msg-rita">¡Excelente destino! Para darte las mejores opciones, ¿viajás solo/a o en pareja? ¿Tenés fechas aproximadas?<div class="msg-time">18:30</div></div>
+                <div class="msg msg-user">En pareja, primera quincena de octubre<div class="msg-time">18:31 ✓✓</div></div>
+                <div class="msg msg-rita">Perfecto. Te muestro 3 opciones ideales para 2 personas en octubre: <br><br>🚢 <strong>Silversea</strong> – 10 oct, 10 días desde USD 8.200 pp<br>🚢 <strong>Ponant</strong> – 7 oct, 8 días desde USD 6.400 pp<br>🚢 <strong>Crystal</strong> – 12 oct, 12 días desde USD 7.500 pp<div class="msg-time">18:31</div></div>
+                <div class="msg msg-user">Me interesa el de Silversea<div class="msg-time">18:32 ✓✓</div></div>
+                <div class="msg msg-rita">Conectándote ahora con un asesor del equipo RTS para continuar 🤝<div class="msg-time">18:32</div></div>
+              </div>
+              <div class="chat-input-bar">
+                <div class="chat-field">Escribir un mensaje...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div><div class="stat-num">24/7</div><div class="stat-label">Disponibilidad</div></div>
+      <div><div class="stat-num">&lt;2 min</div><div class="stat-label">Tiempo de respuesta</div></div>
+      <div><div class="stat-num">12</div><div class="stat-label">Navieras en catálogo</div></div>
+      <div><div class="stat-num">5.000+</div><div class="stat-label">Itinerarios disponibles</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CAPACIDADES -->
+<section class="section">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:clamp(36px,5vw,56px);" class="reveal">
+      <span class="eyebrow">Qué puede hacer</span>
+      <h2 style="font-family:var(--serif);font-size:clamp(26px,3.5vw,38px);color:var(--navy);">Todo lo que Rita hace por vos</h2>
+    </div>
+    <div class="cap-grid reveal">
+      <div class="cap-card">
+        <div class="cap-ico">⚡</div>
+        <h3>Respuestas inmediatas</h3>
+        <p>Cotizaciones en minutos, incluso de madrugada. Sin esperas, sin horarios de oficina.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-ico">🧭</div>
+        <h3>Curaduría experta</h3>
+        <p>Sugiere itinerarios filtrando por destino, fechas, presupuesto y número de pasajeros. Solo opciones reales y disponibles.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-ico">🤝</div>
+        <h3>Derivación al equipo</h3>
+        <p>Para reservas de alto valor, Rita conecta directamente con un asesor humano del equipo RTS.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-ico">🏢</div>
+        <h3>Soporte a agencias</h3>
+        <p>Agencias partners pueden consultar disponibilidad e itinerarios para sus clientes directamente por WhatsApp.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-ico">🌍</div>
+        <h3>12 navieras de lujo</h3>
+        <p>Accede al catálogo completo de RTS: Silversea, Crystal, Ponant, Explora, Emerald, Scenic y más.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-ico">📲</div>
+        <h3>Sin app, sin registro</h3>
+        <p>Solo WhatsApp. Sin formularios, sin contraseñas. Solo escribís y Rita responde.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="section video-section">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:36px;" class="reveal">
+      <span class="eyebrow">Demo</span>
+      <h2 style="font-family:var(--serif);font-size:clamp(26px,3.5vw,38px);color:var(--navy);">Rita en acción</h2>
+      <p style="color:#666;margin-top:10px;font-size:15px;">Mirá cómo Rita asesora a un pasajero en tiempo real.</p>
+    </div>
+    <div class="video-wrap reveal">
+      <div class="video-placeholder" id="video-container">
+        <!-- VIDEO: reemplazar este bloque con el tag <video> o <iframe> cuando esté disponible -->
+        <div class="video-play">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#0B1C3D"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <p>Video demo · Próximamente</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONVERSACIONES REALES -->
+<section class="section convos-section">
+  <div class="wrap">
+    <div class="convos-intro reveal">
+      <span class="eyebrow">Casos reales</span>
+      <h2>Rita en conversaciones reales</h2>
+      <p>Así responde Rita a consultas reales de pasajeros y agencias.</p>
+    </div>
+    <div class="convos-grid reveal">
+
+      <!-- Conversación 1: Familia Caribe -->
+      <div class="convo-card">
+        <div class="convo-header">
+          <div class="convo-av">R</div>
+          <div><div class="convo-name">Rita RTS</div><div class="convo-status">Cuenta de empresa</div></div>
+        </div>
+        <div class="convo-body">
+          <div class="cm cm-user">Quiero irme de vacaciones al Caribe con mi marido y mis dos hijos<div class="cm-time">7:51 p.m. ✓✓</div></div>
+          <div class="cm cm-rita">¡Qué buena idea! El Caribe es perfecto para una familia.<br><br>Para recomendarte las mejores opciones, necesito:<br>• ¿En qué mes o fechas pensás viajar?<br>• ¿Trabajás con alguna agencia o vas por tu cuenta?<div class="cm-time">7:52 p.m.</div></div>
+          <div class="cm cm-user">Mayo 2027, voy por mi cuenta<div class="cm-time">7:52 p.m. ✓✓</div></div>
+          <div class="cm cm-rita">Perfecto. Para recomendarte bien, ¿cuántos años tienen tus hijos?<div class="cm-time">7:52 p.m.</div></div>
+          <div class="cm cm-user">16 y 18 años<div class="cm-time">7:53 p.m. ✓✓</div></div>
+          <div class="cm cm-rita">Excelente, así pueden disfrutar de todo sin restricciones.<br><br>Para ustedes 4 en el Caribe en mayo 2027:<br><br><strong>1. CRYSTAL | Guayaquil to San Juan</strong><br class="cm-bullet">• Salida: 5 sep 2026 · 9 días<br class="cm-bullet">• Desde USD 4.800 pp (base doble)<div class="cm-time">7:53 p.m.</div></div>
+        </div>
+      </div>
+
+      <!-- Conversación 2: Navidad Europa -->
+      <div class="convo-card">
+        <div class="convo-header">
+          <div class="convo-av">R</div>
+          <div><div class="convo-name">Rita RTS</div><div class="convo-status">Cuenta de empresa</div></div>
+        </div>
+        <div class="convo-body">
+          <div class="cm cm-user">Hola Rita! Me llamo Horacio, estoy buscando un crucero para pasar navidad con mi mujer, ¿qué me recomendás?<div class="cm-time">7:46 p.m. ✓✓</div></div>
+          <div class="cm cm-rita">¡Hola Horacio! 👋<br><br>Qué lindo idea pasar Navidad en un crucero.<br><br>Para recomendarte mejor:<br>• ¿Qué región te atrae?<br>• ¿Navidad 2026 o 2027?<div class="cm-time">7:46 p.m.</div></div>
+          <div class="cm cm-user">Europa, voy por mi cuenta, navidad 2026<div class="cm-time">7:49 p.m. ✓✓</div></div>
+          <div class="cm cm-rita">Entendido, Horacio. Opciones en Europa para Navidad 2026:<br><br><strong>1. EMERALD | Christmas Markets on the Rhine</strong><br class="cm-bullet">• Salida: 1 dic 2026 · 8 días<br class="cm-bullet">• Desde USD 6.059 pp<br><br><strong>2. EMERALD | Christmas Markets on the Danube</strong><br class="cm-bullet">• Salida: 8 dic 2026 · 8 días<br class="cm-bullet">• Desde USD 5.114 pp<div class="cm-time">7:49 p.m.</div></div>
+        </div>
+      </div>
+
+      <!-- Conversación 3: Agencia Danubio -->
+      <div class="convo-card">
+        <div class="convo-header">
+          <div class="convo-av">R</div>
+          <div><div class="convo-name">Rita RTS</div><div class="convo-status">Cuenta de empresa</div></div>
+        </div>
+        <div class="convo-body">
+          <div class="cm cm-user">Hola Rita! Soy Martín de la agencia Batista viajes, quería preguntarte por un viaje al Danubio para 2 personas, en abril 2027<div class="cm-time">7:39 p.m. ✓✓</div></div>
+          <div class="cm cm-rita">¡Hola Martín! 👋<br><br>Con gusto los ayudamos. Vamos a dar aviso también a Batista viajes para mantenerla informada.<br><br>Tres opciones reales para el Danubio en abril 2027:<br><br><strong>1. EMERALD | Danube Delights</strong><br class="cm-bullet">• Salida: 1 abr 2027 · 8 días<br class="cm-bullet">• Desde USD 3.814 pp<br><br><strong>2. EMERALD | Danube Delights & Classic Prague</strong><br class="cm-bullet">• Salida: 7 abr 2027 · 11 días<br class="cm-bullet">• Desde USD 4.272 pp<div class="cm-time">7:39 p.m.</div></div>
+          <div class="cm cm-user">Me gustó la opción 2<div class="cm-time">7:40 p.m. ✓✓</div></div>
+          <div class="cm cm-rita">Excelente, Martín. La opción 2 combina el Danubio con Praga — dos destinos hermosos. Conectándote con el equipo RTS 🤝<div class="cm-time">7:40 p.m.</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="section" id="como-funciona">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:clamp(40px,6vw,64px);" class="reveal">
+      <span class="eyebrow">El proceso</span>
+      <h2 style="font-family:var(--serif);font-size:clamp(26px,3.5vw,38px);color:var(--navy);">En 4 pasos simples</h2>
+    </div>
+    <div class="steps-grid reveal">
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <h4>Escribís a Rita</h4>
+        <p>Por WhatsApp, a cualquier hora. Contás tu destino, fechas y preferencias.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <h4>Rita recomienda</h4>
+        <p>En minutos recibís opciones reales con precio, naviera y enlace al itinerario.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <h4>Elegís tu favorito</h4>
+        <p>Elegís la opción que más te gusta y Rita solicita al equipo que confirme.</p>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <h4>El equipo toma el control</h4>
+        <p>Un asesor de RTS confirma disponibilidad y cierra la reserva con vos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <div class="wrap">
+    <span class="eyebrow">Empezá ahora</span>
+    <h2>¿Listo para tu próximo crucero?</h2>
+    <p>Rita está online ahora. Escribile y recibí recomendaciones personalizadas en menos de 2 minutos.</p>
+    <a href="https://wa.me/5491125447248?text=Hola%20Rita%2C%20estoy%20en%20la%20web%20de%20RTSC%20y%20quiero%20consultarte" target="_blank" rel="noopener" class="wa-cta-btn">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.139.561 4.143 1.538 5.881L0 24l6.268-1.525A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 01-5.028-1.381l-.36-.214-3.724.906.951-3.624-.235-.374A9.786 9.786 0 012.182 12C2.182 6.579 6.579 2.182 12 2.182S21.818 6.579 21.818 12 17.421 21.818 12 21.818z"/></svg>
+      Hola Rita, quiero consultarte
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2025 RTS Cruises SRL · CUIT 30-71941848-8 · Marcelo T. de Alvear 590, Piso 10, CABA</p>
+    <p style="margin-top:8px;">
+      <a href="index.html">Inicio</a> &nbsp;·&nbsp;
+      <a href="partners.html">Para agencias</a> &nbsp;·&nbsp;
+      <a href="terminos.html">Términos</a> &nbsp;·&nbsp;
+      <a href="privacidad.html">Privacidad</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, {threshold: 0.1});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
