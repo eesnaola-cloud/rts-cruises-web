@@ -43,8 +43,8 @@ a{text-decoration:none;}
 .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;background:rgba(7,21,41,.97);backdrop-filter:blur(12px);box-shadow:0 4px 24px rgba(0,0,0,.25);}
 .navbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;}
 .nav-logo{display:flex;align-items:center;gap:8px;}
-.nav-logo img{height:40px;width:auto;object-fit:contain;}
-.nav-logo .sub{font-size:8px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;font-weight:700;}
+
+
 .nav-right{display:flex;align-items:center;gap:16px;}
 .nav-back{font-size:13px;color:rgba(255,255,255,.6);transition:color .2s;}
 .nav-back:hover{color:var(--gold-light);}
@@ -160,8 +160,7 @@ footer a:hover{color:var(--gold-light);}
 <nav class="navbar">
   <div class="wrap">
     <a href="index.html" class="nav-logo">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVUAAAEsCAYAAABzISAnAABYbklEQVR42u19d7wkVZn281b3vRNgmGGGMAww5JyDgIBIBslgwLQgun7o+plZdXXddV1dV9cNurr6rRlMoAiCiCA5J8lDjgMMM8AwA5Nu6Krn++O8hzlzqOp0u/t2932f369+fW/fvl1Vp855zptfgcFQB0iWAIiIVIL3BgDsBGAfAHsB2AHAXAAzAawFIAEwBGBZlmU/LpVKnyNZEpHURtTQrxAbAkMVIhUlxkxEqO9NB/BmAMcCeBOArQEM1PF1q5R05ys5ZzbCBoNhokmm4e/7k/w+yQV8PVKSFX3Ncv4+qq/fz/tug8Fg6GsyVQnV//wOktfkkOhoAYlm0RG+t4rkliSFZGKjbTAY+lrVDyVIku8meWdElqMBQXrpdDQg2Grw0uoPTFo1GAwTRtUneSjJ6wMyrOiRBSRaDUMkXyW5hORIRMqp/n1rk1YNMEeVoV8dUSKSkpydZdlXkyR5v/45DeZHBqAc/ft8APcBuBfAIwCeBvAigFcAVACMwjmyfqf/n+j7ZQA/FZEzLBLAYDD0E6Emwc9vI/lM5HSqRCr9EMkrSZ5Fci+SU+s5T5qmDwbf66XVYZLbmbRqMBj6SUIFyUkkvxvZPWMyvY/kZ0luk0fMJMt6lPT3RMlyQD/zd5FN1b+ebbZVg8HQLw4pIbkZyZsiu2klINOrSJ7syTEi0cQTcy1JmOTm6vVn5OQaIblj7CAzGAyGXiPVsr5+IlDrQ9xE8pj4f5pR0z1ZkrwoiB4IpdVfmrRqMBj6hVQ/FUiMGclnSX4wMA1IGLPa7Ln0e04KJOI41nVns60aDIZ+INUvKLn5sKd9AhW/1GJTwxSS8wMyDQn2XJNWDf0Ekw4mLtYK5kAK4MWgaEpLwpy0XkBJRFYB+BVWh2f582YA3kpyNwCZEavBSNXQy5gWzIFhACNKpmzxeTyJnq3kXQpipDP9/R98wRaDwUjV0KuYEZDbSgArvNbeypOISEYyEZF5AG7Q83lJuKzEehLJPU1aNRipGnoRnjTXDd5bHpBqO+fZjwuuJzFp1WAw9Hrg/42BJ/7ODp1zBskXg5jVMBIgJfkGmNPKYJKqoZcIVUSo4Uuzgj8tjlNXW2wCoOb5LwVwPlbXFoil1X+0p2QwUjWgR51UM4Pfn+/gfPiJvobSaAnOtnoMyf20wEuph7PVcg+bdkaqBvRtVbKZcI4qLy0+2/YTO6IUALcDuDPw/ofSqnSjtOqTEzQZohzVO3gtQUJEWO0I44BzaiYY6fYJyjYEE5JUN4LrKzWqUuJTHTp/SUQqJH8GYM+gJGAorR5N8gARubHTpQGV2MKDQX8u1vH/AwAGdV0lQUjZCIBREalU683l44T1nNbDy0jV0EOkulkUCfBkO8KpcuAJ8jwAX1EzBIPr8uf/RwBHtvN6cgjUExlzPrsWgA10M9oUwCYA5gDYEMB6KvWvDZdQ4Um1FNzzKIAhkssBLAGwCMAzAJ4A8Kge88MNRO3bCYDUoiKMVA3dj60C6TANJFW22QTgHVYLSV4C4J16/nIkrR5B8iARua5V0mpAogkA5iU6aI3YzQBsB2BHuO6v2yiJblBn19hmsArAEyTvAHA1gGtF5ClvHtHUYpNeDQZ0b97/OUE403O+4HQn7HreBknyiKgWAKOaAFeONSIhKFVYKij2sq0W6P46yT9roe6sSquYLOrLNRoV9E6DYtxZVOowzenrVdTbawXJP5F8H8kZeU0ZDQZDd8Wo3hos4OvaGU5VxfEzQPLhAmL1vx/USNxqUFmrnPO3SST3IPlhkj8n+VBUNSsm9tGoaHfG9iELqnbF1/QMya+S3KyofbjBYBhf" alt="RTS Cruises">
-      <span class="sub">RTS Cruises</span>
+      <span style="font-family:var(--serif);font-size:20px;color:#fff;font-weight:700;letter-spacing:.5px;">RTS Cruises</span>
     </a>
     <div class="nav-right">
       <a href="index.html" class="nav-back">← Volver al inicio</a>
