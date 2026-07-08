@@ -187,13 +187,10 @@ footer a:hover{color:var(--gold-light);}
     </div>
     <!-- VIDEO HERO -->
     <div class="hero-video-wrap reveal">
-      <div class="video-placeholder" id="video-container">
-        <!-- VIDEO: reemplazar este bloque con <video> o <iframe> cuando esté disponible -->
-        <div class="video-play">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="#0B1C3D"><path d="M8 5v14l11-7z"/></svg>
-        </div>
-        <p>Video demo · Próximamente</p>
-      </div>
+      <video controls playsinline preload="metadata" poster=""
+        style="width:100%;border-radius:12px;display:block;box-shadow:0 30px 80px rgba(0,0,0,.5);">
+        <source src="rita-video.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
