@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T16:04:15.279Z",
+  "updatedAt": "2026-07-08T21:00:23.531Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -31,20 +31,6 @@
       "departureDate": "2026-11-13"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "San Juan to San Juan",
-      "origin": "San Juan",
-      "dates": "JAN 3 → 10, 2027",
-      "ship": "SILVER SHADOW",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-01-03"
-    },
-    {
       "region": "ALASKA",
       "route": "Seward (Anchorage, Alaska) to Vancouver",
       "origin": "Seward (Anchorage, Alaska)",
@@ -57,6 +43,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2027-06-03"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "San Juan to San Juan",
+      "origin": "San Juan",
+      "dates": "JAN 3 → 10, 2027",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-01-03"
     },
     {
       "region": "MEDITERRANEAN",
