@@ -372,5 +372,19 @@ const io = new IntersectionObserver(entries => {
 }, {threshold: 0.1});
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    // Visita página Rita
+    gtag('event', 'visita_pagina_rita', { page_title: 'Rita', page_location: window.location.href });
+
+    // Click WhatsApp Rita
+    document.querySelectorAll('a[href*="wa.me/5491125447248"]').forEach(function(el) {
+      el.addEventListener('click', function() {
+        gtag('event', 'click_whatsapp_rita', { link_url: el.href });
+      });
+    });
+  });
+</script>
 </body>
 </html>

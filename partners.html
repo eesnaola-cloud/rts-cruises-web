@@ -491,7 +491,8 @@ document.getElementById('partner-form').addEventListener('submit', function(e){
   if(!nombre||!agencia||!cuit||!email) return;
   const subject = encodeURIComponent(`Solicitud de partnership: ${agencia}`);
   const body = encodeURIComponent(`Hola,\n\nUna agencia ha completado el formulario de partnership:\n\nNombre: ${nombre}\nAgencia: ${agencia}\nCUIT: ${cuit}\nEmail: ${email}\n\nPor favor gestionar el alta de la agencia.`);
-  window.location.href = `mailto:paloma.medina@rocatransport.com.ar?subject=${subject}&body=${body}`;
+  gtag('event', 'submit_formulario_agencias', { form_name: 'partnership' });
+      window.location.href = `mailto:paloma.medina@rocatransport.com.ar?subject=${subject}&body=${body}`;
   this.style.display='none';
   document.getElementById('form-success').style.display='block';
 });
@@ -500,6 +501,12 @@ const io = new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});
 },{threshold:0.1});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    gtag('event', 'visita_pagina_agencias', { page_title: 'Agencias', page_location: window.location.href });
+  });
 </script>
 </body>
 </html>
