@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T21:18:24.071Z",
+  "updatedAt": "2026-07-08T10:28:29.549Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -87,20 +87,6 @@
       "departureDate": "2026-10-29"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Barcelona to Lisbon",
-      "origin": "Barcelona",
-      "dates": "NOV 18 → 28, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-11-18"
-    },
-    {
       "region": "AFRICA & INDIAN OCEAN",
       "route": "Lisbon to Cape Town",
       "origin": "Lisbon",
@@ -113,6 +99,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-10-21"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Barcelona to Lisbon",
+      "origin": "Barcelona",
+      "dates": "NOV 18 → 28, 2026",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-11-18"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
