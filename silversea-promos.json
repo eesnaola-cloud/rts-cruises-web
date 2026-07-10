@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T16:28:16.145Z",
+  "updatedAt": "2026-07-10T21:02:13.466Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -17,20 +17,6 @@
       "departureDate": "2026-11-30"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Italy Featuring Sicily & Kotor",
-      "origin": "Italy Featuring Sicily & Kotor",
-      "dates": "NOV 13 → 23, 2026",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-11-13"
-    },
-    {
       "region": "ALASKA",
       "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
       "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
@@ -43,6 +29,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2027-06-03"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Italy Featuring Sicily & Kotor",
+      "origin": "Italy Featuring Sicily & Kotor",
+      "dates": "NOV 13 → 23, 2026",
+      "ship": "SILVER NOVA",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-11-13"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
