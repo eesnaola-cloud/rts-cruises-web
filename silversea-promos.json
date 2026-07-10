@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T21:17:30.549Z",
+  "updatedAt": "2026-07-10T11:14:28.939Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -87,6 +87,20 @@
       "departureDate": "2026-10-29"
     },
     {
+      "region": "MEDITERRANEAN",
+      "route": "Spain & Morocco Featuring Casablanca",
+      "origin": "Spain & Morocco Featuring Casablanca",
+      "dates": "NOV 18 → 28, 2026",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-11-18"
+    },
+    {
       "region": "AFRICA & INDIAN OCEAN",
       "route": "West Africa Featuring Namibia & Portugal",
       "origin": "West Africa Featuring Namibia & Portugal",
@@ -113,20 +127,6 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-12-11"
-    },
-    {
-      "region": "MEDITERRANEAN",
-      "route": "Spain & Morocco Featuring Casablanca",
-      "origin": "Spain & Morocco Featuring Casablanca",
-      "dates": "NOV 18 → 28, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-11-18"
     }
   ]
 }
