@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-11T14:59:58.315Z",
+  "updatedAt": "2026-07-11T20:41:21.397Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -101,20 +101,6 @@
       "departureDate": "2026-11-18"
     },
     {
-      "region": "AFRICA & INDIAN OCEAN",
-      "route": "West Africa Featuring Namibia & Portugal",
-      "origin": "West Africa Featuring Namibia & Portugal",
-      "dates": "OCT 21 → NOV 10, 2026",
-      "ship": "SILVER MUSE",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-10-21"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Eastern Caribbean Featuring St. Barts & Guadeloupe",
       "origin": "Eastern Caribbean Featuring St. Barts & Guadeloupe",
@@ -127,6 +113,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-12-11"
+    },
+    {
+      "region": "AFRICA & INDIAN OCEAN",
+      "route": "West Africa Featuring Namibia & Portugal",
+      "origin": "West Africa Featuring Namibia & Portugal",
+      "dates": "OCT 21 → NOV 10, 2026",
+      "ship": "SILVER MUSE",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-10-21"
     }
   ]
 }
