@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T15:27:23.068Z",
+  "updatedAt": "2026-07-14T20:53:55.525Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -59,20 +59,6 @@
       "departureDate": "2026-10-28"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Eastern Caribbean Featuring St. Barts & Montserrat",
-      "origin": "Eastern Caribbean Featuring St. Barts & Montserrat",
-      "dates": "JAN 3 → 10, 2027",
-      "ship": "SILVER SHADOW",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-01-03"
-    },
-    {
       "region": "NORTHERN EUROPE & BRITISH ISLES",
       "route": "Edinburgh Military Tattoo",
       "origin": "Edinburgh Military Tattoo",
@@ -85,6 +71,20 @@
       "maxDiscount": 30,
       "label": "OFERTA · AHORRÁ 30%",
       "departureDate": "2027-08-14"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Eastern Caribbean Featuring St. Barts & Montserrat",
+      "origin": "Eastern Caribbean Featuring St. Barts & Montserrat",
+      "dates": "JAN 3 → 10, 2027",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-01-03"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -101,20 +101,6 @@
       "departureDate": "2026-12-20"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Eastern Caribbean Featuring St. Barts & Guadeloupe",
-      "origin": "Eastern Caribbean Featuring St. Barts & Guadeloupe",
-      "dates": "DEC 11 → 22, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-12-11"
-    },
-    {
       "region": "MEDITERRANEAN",
       "route": "Spain & Morocco Featuring Casablanca",
       "origin": "Spain & Morocco Featuring Casablanca",
@@ -127,6 +113,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-11-18"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Spain Featuring Valencia & Mallorca",
+      "origin": "Spain Featuring Valencia & Mallorca",
+      "dates": "OCT 25 → NOV 3, 2027",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-10-25"
     }
   ]
 }
