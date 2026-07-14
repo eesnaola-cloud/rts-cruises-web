@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T20:53:15.936Z",
+  "updatedAt": "2026-07-14T10:06:57.343Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -45,6 +45,20 @@
       "departureDate": "2026-11-13"
     },
     {
+      "region": "MEDITERRANEAN",
+      "route": "Greece & Turkey Featuring Istanbul",
+      "origin": "Greece & Turkey Featuring Istanbul",
+      "dates": "OCT 28 → NOV 7, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-10-28"
+    },
+    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Eastern Caribbean Featuring St. Barts & Montserrat",
       "origin": "Eastern Caribbean Featuring St. Barts & Montserrat",
@@ -59,18 +73,18 @@
       "departureDate": "2027-01-03"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Greece & Turkey Featuring Istanbul",
-      "origin": "Greece & Turkey Featuring Istanbul",
-      "dates": "OCT 28 → NOV 7, 2026",
+      "region": "NORTHERN EUROPE & BRITISH ISLES",
+      "route": "Edinburgh Military Tattoo",
+      "origin": "Edinburgh Military Tattoo",
+      "dates": "AUG 14 → 25, 2027",
       "ship": "SILVER SPIRIT",
       "discounts": [
-        "SAVE 20%",
+        "SAVE 10%",
         "SAVE 30%"
       ],
       "maxDiscount": 30,
       "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-10-28"
+      "departureDate": "2027-08-14"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -113,20 +127,6 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-11-18"
-    },
-    {
-      "region": "MEDITERRANEAN",
-      "route": "Spain & the French Riviera Featuring Valencia",
-      "origin": "Spain & the French Riviera Featuring Valencia",
-      "dates": "OCT 29 → NOV 8, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-10-29"
     }
   ]
 }
