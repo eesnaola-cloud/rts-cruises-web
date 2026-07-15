@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T15:37:55.004Z",
+  "updatedAt": "2026-07-15T20:53:08.454Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -73,18 +73,18 @@
       "departureDate": "2026-11-18"
     },
     {
-      "region": "NORTHERN EUROPE & BRITISH ISLES",
-      "route": "Edinburgh Military Tattoo",
-      "origin": "Edinburgh Military Tattoo",
-      "dates": "AUG 14 → 25, 2027",
-      "ship": "SILVER SPIRIT",
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring Montserrat & St. Lucia",
+      "origin": "Southern Caribbean Featuring Montserrat & St. Lucia",
+      "dates": "DEC 20 → 27, 2026",
+      "ship": "SILVER SHADOW",
       "discounts": [
-        "SAVE 10%",
+        "SAVE 20%",
         "SAVE 30%"
       ],
       "maxDiscount": 30,
       "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2027-08-14"
+      "departureDate": "2026-12-20"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -101,18 +101,18 @@
       "departureDate": "2027-01-03"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Montserrat & St. Lucia",
-      "origin": "Southern Caribbean Featuring Montserrat & St. Lucia",
-      "dates": "DEC 20 → 27, 2026",
-      "ship": "SILVER SHADOW",
+      "region": "NORTHERN EUROPE & BRITISH ISLES",
+      "route": "Edinburgh Military Tattoo",
+      "origin": "Edinburgh Military Tattoo",
+      "dates": "AUG 14 → 25, 2027",
+      "ship": "SILVER SPIRIT",
       "discounts": [
-        "SAVE 20%",
+        "SAVE 10%",
         "SAVE 30%"
       ],
       "maxDiscount": 30,
       "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-12-20"
+      "departureDate": "2027-08-14"
     },
     {
       "region": "MEDITERRANEAN",
