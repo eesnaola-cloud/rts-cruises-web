@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T20:53:08.454Z",
+  "updatedAt": "2026-07-16T10:19:32.179Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -101,24 +101,24 @@
       "departureDate": "2027-01-03"
     },
     {
-      "region": "NORTHERN EUROPE & BRITISH ISLES",
-      "route": "Edinburgh Military Tattoo",
-      "origin": "Edinburgh Military Tattoo",
-      "dates": "AUG 14 → 25, 2027",
-      "ship": "SILVER SPIRIT",
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
+      "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
+      "dates": "DEC 10 → 20, 2026",
+      "ship": "SILVER SHADOW",
       "discounts": [
-        "SAVE 10%",
-        "SAVE 30%"
+        "SAVE 20%",
+        "SAVE 40%"
       ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2027-08-14"
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-12-10"
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Spain Featuring Valencia & Mallorca",
-      "origin": "Spain Featuring Valencia & Mallorca",
-      "dates": "OCT 25 → NOV 3, 2027",
+      "route": "Spain & the French Riviera Featuring Valencia",
+      "origin": "Spain & the French Riviera Featuring Valencia",
+      "dates": "OCT 29 → NOV 8, 2026",
       "ship": "SILVER RAY",
       "discounts": [
         "SAVE 20%",
@@ -126,7 +126,7 @@
       ],
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-10-25"
+      "departureDate": "2026-10-29"
     }
   ]
 }
