@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T14:59:43.813Z",
+  "updatedAt": "2026-07-18T20:40:12.322Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -45,6 +45,20 @@
       "departureDate": "2027-06-03"
     },
     {
+      "region": "MEDITERRANEAN",
+      "route": "Greece & Turkey Featuring Istanbul",
+      "origin": "Greece & Turkey Featuring Istanbul",
+      "dates": "OCT 28 → NOV 7, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-10-28"
+    },
+    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
@@ -59,18 +73,18 @@
       "departureDate": "2026-12-10"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Greece & Turkey Featuring Istanbul",
-      "origin": "Greece & Turkey Featuring Istanbul",
-      "dates": "OCT 28 → NOV 7, 2026",
-      "ship": "SILVER SPIRIT",
+      "region": "ALASKA",
+      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
+      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
+      "dates": "AUG 26 → SEP 2, 2027",
+      "ship": "SILVER MOON",
       "discounts": [
         "SAVE 20%",
-        "SAVE 30%"
+        "SAVE 40%"
       ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-10-28"
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-08-26"
     },
     {
       "region": "MEDITERRANEAN",
@@ -99,20 +113,6 @@
       "maxDiscount": 30,
       "label": "OFERTA · AHORRÁ 30%",
       "departureDate": "2026-12-20"
-    },
-    {
-      "region": "ALASKA",
-      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "dates": "AUG 26 → SEP 2, 2027",
-      "ship": "SILVER MOON",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-08-26"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
