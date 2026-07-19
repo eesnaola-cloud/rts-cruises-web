@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-18T20:40:12.322Z",
+  "updatedAt": "2026-07-19T09:59:24.919Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -59,20 +59,6 @@
       "departureDate": "2026-10-28"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
-      "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
-      "dates": "DEC 10 → 20, 2026",
-      "ship": "SILVER SHADOW",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-12-10"
-    },
-    {
       "region": "ALASKA",
       "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
       "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
@@ -85,6 +71,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2027-08-26"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
+      "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
+      "dates": "DEC 10 → 20, 2026",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-12-10"
     },
     {
       "region": "MEDITERRANEAN",
