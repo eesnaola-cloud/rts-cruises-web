@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T21:05:12.992Z",
+  "updatedAt": "2026-07-21T10:32:29.653Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -17,20 +17,6 @@
       "departureDate": "2026-11-30"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Italy Featuring Sicily & Kotor",
-      "origin": "Italy Featuring Sicily & Kotor",
-      "dates": "NOV 13 → 23, 2026",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-11-13"
-    },
-    {
       "region": "ALASKA",
       "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
       "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
@@ -43,6 +29,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2027-08-26"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Italy Featuring Sicily & Kotor",
+      "origin": "Italy Featuring Sicily & Kotor",
+      "dates": "NOV 13 → 23, 2026",
+      "ship": "SILVER NOVA",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-11-13"
     },
     {
       "region": "MEDITERRANEAN",
@@ -74,8 +74,8 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Spain & Morocco Featuring Casablanca",
-      "origin": "Spain & Morocco Featuring Casablanca",
+      "route": "Spain & Morocco Featuring Málaga",
+      "origin": "Spain & Morocco Featuring Málaga",
       "dates": "NOV 18 → 28, 2026",
       "ship": "SILVER RAY",
       "discounts": [
@@ -87,18 +87,18 @@
       "departureDate": "2026-11-18"
     },
     {
-      "region": "ALASKA",
-      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "dates": "JUN 3 → 10, 2027",
-      "ship": "SILVER MOON",
+      "region": "MEDITERRANEAN",
+      "route": "Spain & the French Riviera Featuring Valencia",
+      "origin": "Spain & the French Riviera Featuring Valencia",
+      "dates": "OCT 29 → NOV 8, 2026",
+      "ship": "SILVER RAY",
       "discounts": [
         "SAVE 20%",
         "SAVE 40%"
       ],
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-06-03"
+      "departureDate": "2026-10-29"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -115,18 +115,18 @@
       "departureDate": "2026-12-20"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring St. Lucia & Dominica",
-      "origin": "Southern Caribbean Featuring St. Lucia & Dominica",
-      "dates": "DEC 12 → 19, 2026",
-      "ship": "SILVER SPIRIT",
+      "region": "MEDITERRANEAN",
+      "route": "Spain & Morocco Featuring Casablanca",
+      "origin": "Spain & Morocco Featuring Casablanca",
+      "dates": "NOV 30 → DEC 9, 2026",
+      "ship": "SILVER NOVA",
       "discounts": [
         "SAVE 20%",
         "SAVE 40%"
       ],
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-12-12"
+      "departureDate": "2026-11-30"
     }
   ]
 }
