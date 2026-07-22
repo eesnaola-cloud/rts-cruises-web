@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T21:00:50.145Z",
+  "updatedAt": "2026-07-22T10:32:58.901Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -74,31 +74,17 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Spain & Morocco Featuring Málaga",
-      "origin": "Spain & Morocco Featuring Málaga",
-      "dates": "NOV 18 → 28, 2026",
-      "ship": "SILVER RAY",
+      "route": "Spain & Morocco Featuring Casablanca",
+      "origin": "Spain & Morocco Featuring Casablanca",
+      "dates": "NOV 30 → DEC 9, 2026",
+      "ship": "SILVER NOVA",
       "discounts": [
         "SAVE 20%",
         "SAVE 40%"
       ],
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-11-18"
-    },
-    {
-      "region": "MEDITERRANEAN",
-      "route": "Spain & the French Riviera Featuring Valencia",
-      "origin": "Spain & the French Riviera Featuring Valencia",
-      "dates": "OCT 29 → NOV 8, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-10-29"
+      "departureDate": "2026-11-30"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -116,17 +102,31 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Spain & Morocco Featuring Casablanca",
-      "origin": "Spain & Morocco Featuring Casablanca",
-      "dates": "NOV 30 → DEC 9, 2026",
-      "ship": "SILVER NOVA",
+      "route": "Spain & the French Riviera Featuring Valencia",
+      "origin": "Spain & the French Riviera Featuring Valencia",
+      "dates": "OCT 29 → NOV 8, 2026",
+      "ship": "SILVER RAY",
       "discounts": [
         "SAVE 20%",
         "SAVE 40%"
       ],
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-11-30"
+      "departureDate": "2026-10-29"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Spain & Morocco Featuring Málaga",
+      "origin": "Spain & Morocco Featuring Málaga",
+      "dates": "NOV 18 → 28, 2026",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-11-18"
     }
   ]
 }
