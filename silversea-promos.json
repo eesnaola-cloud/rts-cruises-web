@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22T20:58:55.885Z",
+  "updatedAt": "2026-07-23T10:32:08.836Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -45,20 +45,6 @@
       "departureDate": "2026-11-13"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Greece & Turkey Featuring Istanbul",
-      "origin": "Greece & Turkey Featuring Istanbul",
-      "dates": "OCT 28 → NOV 7, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-10-28"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
@@ -71,6 +57,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-12-10"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Greece & Turkey Featuring Istanbul",
+      "origin": "Greece & Turkey Featuring Istanbul",
+      "dates": "OCT 28 → NOV 7, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-10-28"
     },
     {
       "region": "MEDITERRANEAN",
@@ -115,18 +115,17 @@
       "departureDate": "2026-10-29"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Spain & Morocco Featuring Málaga",
-      "origin": "Spain & Morocco Featuring Málaga",
-      "dates": "NOV 18 → 28, 2026",
-      "ship": "SILVER RAY",
+      "region": "NORTHERN EUROPE & BRITISH ISLES",
+      "route": "The British Isles Featuring the Shetland Islands & Falmouth",
+      "origin": "The British Isles Featuring the Shetland Islands & Falmouth",
+      "dates": "SEP 7 → 19, 2026",
+      "ship": "SILVER DAWN",
       "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
+        "SAVE 20%"
       ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-11-18"
+      "maxDiscount": 20,
+      "label": "OFERTA · AHORRÁ 20%",
+      "departureDate": "2026-09-07"
     }
   ]
 }
