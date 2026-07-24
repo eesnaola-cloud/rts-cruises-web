@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T20:55:37.762Z",
+  "updatedAt": "2026-07-24T10:26:55.251Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -31,20 +31,6 @@
       "departureDate": "2027-08-26"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Italy Featuring Sicily & Kotor",
-      "origin": "Italy Featuring Sicily & Kotor",
-      "dates": "NOV 13 → 23, 2026",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-11-13"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
@@ -60,17 +46,17 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Greece & Turkey Featuring Istanbul",
-      "origin": "Greece & Turkey Featuring Istanbul",
-      "dates": "OCT 28 → NOV 7, 2026",
-      "ship": "SILVER SPIRIT",
+      "route": "Italy Featuring Sicily & Kotor",
+      "origin": "Italy Featuring Sicily & Kotor",
+      "dates": "NOV 13 → 23, 2026",
+      "ship": "SILVER NOVA",
       "discounts": [
         "SAVE 20%",
-        "SAVE 30%"
+        "SAVE 40%"
       ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-10-28"
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-11-13"
     },
     {
       "region": "MEDITERRANEAN",
@@ -85,6 +71,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-11-30"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Greece & Turkey Featuring Istanbul",
+      "origin": "Greece & Turkey Featuring Istanbul",
+      "dates": "OCT 28 → NOV 7, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-10-28"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
