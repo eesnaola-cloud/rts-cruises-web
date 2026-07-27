@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T20:50:02.008Z",
+  "updatedAt": "2026-07-27T11:34:32.495Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -101,20 +101,6 @@
       "departureDate": "2026-12-20"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Spain & the French Riviera Featuring Valencia",
-      "origin": "Spain & the French Riviera Featuring Valencia",
-      "dates": "OCT 29 → NOV 8, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-10-29"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring St. Lucia & Dominica",
       "origin": "Southern Caribbean Featuring St. Lucia & Dominica",
@@ -127,6 +113,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-12-12"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Spain & the French Riviera Featuring Valencia",
+      "origin": "Spain & the French Riviera Featuring Valencia",
+      "dates": "OCT 29 → NOV 8, 2026",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-10-29"
     }
   ]
 }
