@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T21:02:47.451Z",
+  "updatedAt": "2026-07-29T10:46:59.971Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -88,6 +88,20 @@
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring Montserrat & St. Lucia",
+      "origin": "Southern Caribbean Featuring Montserrat & St. Lucia",
+      "dates": "DEC 20 → 27, 2026",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-12-20"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring St. Lucia & Dominica",
       "origin": "Southern Caribbean Featuring St. Lucia & Dominica",
       "dates": "DEC 12 → 19, 2026",
@@ -113,20 +127,6 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-10-29"
-    },
-    {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Montserrat & St. Lucia",
-      "origin": "Southern Caribbean Featuring Montserrat & St. Lucia",
-      "dates": "DEC 20 → 27, 2026",
-      "ship": "SILVER SHADOW",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-12-20"
     }
   ]
 }
