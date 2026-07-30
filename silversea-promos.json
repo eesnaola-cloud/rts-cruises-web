@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T20:46:31.838Z",
+  "updatedAt": "2026-07-30T10:32:39.564Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -73,20 +73,6 @@
       "departureDate": "2026-11-30"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Greece & Turkey Featuring Istanbul",
-      "origin": "Greece & Turkey Featuring Istanbul",
-      "dates": "OCT 28 → NOV 7, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-10-28"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Montserrat & St. Lucia",
       "origin": "Southern Caribbean Featuring Montserrat & St. Lucia",
@@ -101,18 +87,18 @@
       "departureDate": "2026-12-20"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring St. Lucia & Dominica",
-      "origin": "Southern Caribbean Featuring St. Lucia & Dominica",
-      "dates": "DEC 12 → 19, 2026",
+      "region": "MEDITERRANEAN",
+      "route": "Greece & Turkey Featuring Istanbul",
+      "origin": "Greece & Turkey Featuring Istanbul",
+      "dates": "OCT 28 → NOV 7, 2026",
       "ship": "SILVER SPIRIT",
       "discounts": [
         "SAVE 20%",
-        "SAVE 40%"
+        "SAVE 30%"
       ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-12-12"
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-10-28"
     },
     {
       "region": "MEDITERRANEAN",
@@ -127,6 +113,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-10-29"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring St. Lucia & Dominica",
+      "origin": "Southern Caribbean Featuring St. Lucia & Dominica",
+      "dates": "DEC 12 → 19, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-12-12"
     }
   ]
 }
