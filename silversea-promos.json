@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T21:00:36.394Z",
+  "updatedAt": "2026-07-31T10:48:03.692Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -45,20 +45,6 @@
       "departureDate": "2026-11-13"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
-      "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
-      "dates": "DEC 10 → 20, 2026",
-      "ship": "SILVER SHADOW",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-12-10"
-    },
-    {
       "region": "MEDITERRANEAN",
       "route": "Spain & Morocco Featuring Casablanca",
       "origin": "Spain & Morocco Featuring Casablanca",
@@ -74,17 +60,17 @@
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Montserrat & St. Lucia",
-      "origin": "Southern Caribbean Featuring Montserrat & St. Lucia",
-      "dates": "DEC 20 → 27, 2026",
+      "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
+      "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
+      "dates": "DEC 10 → 20, 2026",
       "ship": "SILVER SHADOW",
       "discounts": [
         "SAVE 20%",
-        "SAVE 30%"
+        "SAVE 40%"
       ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-12-20"
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-12-10"
     },
     {
       "region": "MEDITERRANEAN",
@@ -99,6 +85,20 @@
       "maxDiscount": 30,
       "label": "OFERTA · AHORRÁ 30%",
       "departureDate": "2026-10-28"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring Montserrat & St. Lucia",
+      "origin": "Southern Caribbean Featuring Montserrat & St. Lucia",
+      "dates": "DEC 20 → 27, 2026",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-12-20"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
