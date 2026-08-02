@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T20:42:42.862Z",
+  "updatedAt": "2026-08-02T10:05:18.055Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -45,20 +45,6 @@
       "departureDate": "2026-11-30"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Italy Featuring Sicily & Kotor",
-      "origin": "Italy Featuring Sicily & Kotor",
-      "dates": "NOV 13 → 23, 2026",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-11-13"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
@@ -71,6 +57,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-12-10"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Italy Featuring Sicily & Kotor",
+      "origin": "Italy Featuring Sicily & Kotor",
+      "dates": "NOV 13 → 23, 2026",
+      "ship": "SILVER NOVA",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-11-13"
     },
     {
       "region": "MEDITERRANEAN",
