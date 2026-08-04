@@ -1,0 +1,13 @@
+{
+  "name": "brevo-mailer",
+  "version": "1.0.0",
+  "description": "Standalone script to send emails via Brevo's REST API",
+  "main": "send.js",
+  "type": "commonjs",
+  "scripts": {
+    "send": "node send.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

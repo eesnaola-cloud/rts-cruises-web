@@ -11,6 +11,10 @@ rts_v2.html
 rts_v3.html
 rts_dashboard.html
 umbral-cero-gtm.html
+accesos-rapidos.html
+
+# Dependencias
+node_modules/
 
 # OS
 .DS_Store
@@ -19,3 +23,6 @@ Thumbs.db
 # Editor
 .vscode/
 *.swp
+
+# Claude Code local config (machine-specific)
+.claude/
