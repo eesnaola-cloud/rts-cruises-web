@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T21:00:59.520Z",
+  "updatedAt": "2026-08-06T10:47:30.976Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -31,20 +31,6 @@
       "departureDate": "2026-11-30"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Spain & Morocco Featuring Casablanca",
-      "origin": "Spain & Morocco Featuring Casablanca",
-      "dates": "NOV 30 → DEC 9, 2026",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-11-30"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
@@ -57,6 +43,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-12-10"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Spain & Morocco Featuring Casablanca",
+      "origin": "Spain & Morocco Featuring Casablanca",
+      "dates": "NOV 30 → DEC 9, 2026",
+      "ship": "SILVER NOVA",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-11-30"
     },
     {
       "region": "MEDITERRANEAN",
@@ -87,18 +87,18 @@
       "departureDate": "2026-11-13"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Spain & the French Riviera Featuring Valencia",
-      "origin": "Spain & the French Riviera Featuring Valencia",
-      "dates": "OCT 29 → NOV 8, 2026",
-      "ship": "SILVER RAY",
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring St. Lucia & Dominica",
+      "origin": "Southern Caribbean Featuring St. Lucia & Dominica",
+      "dates": "DEC 12 → 19, 2026",
+      "ship": "SILVER SPIRIT",
       "discounts": [
         "SAVE 20%",
         "SAVE 40%"
       ],
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-10-29"
+      "departureDate": "2026-12-12"
     },
     {
       "region": "NORTHERN EUROPE & BRITISH ISLES",
@@ -115,18 +115,18 @@
       "departureDate": "2027-08-02"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring St. Lucia & Dominica",
-      "origin": "Southern Caribbean Featuring St. Lucia & Dominica",
-      "dates": "DEC 12 → 19, 2026",
-      "ship": "SILVER SPIRIT",
+      "region": "MEDITERRANEAN",
+      "route": "Spain & the French Riviera Featuring Valencia",
+      "origin": "Spain & the French Riviera Featuring Valencia",
+      "dates": "OCT 29 → NOV 8, 2026",
+      "ship": "SILVER RAY",
       "discounts": [
         "SAVE 20%",
         "SAVE 40%"
       ],
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-12-12"
+      "departureDate": "2026-10-29"
     }
   ]
 }
