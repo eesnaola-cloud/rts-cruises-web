@@ -726,7 +726,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="p-benefit">
         <div class="p-ico">🔍</div>
         <h4>Buscador en tiempo real</h4>
-        <p>Disponibilidad y tarifas actualizadas al instante para las 12 navieras, desde una sola plataforma.</p>
+        <p>Disponibilidad y tarifas actualizadas al instante para las 8 navieras, desde una sola plataforma.</p>
       </div>
       <div class="p-benefit">
         <div class="p-ico">🤝</div>
@@ -1131,7 +1131,16 @@ function formatPrice(p, moneda) {
 
 function buildCard(it) {
   const navLabel = NAVIERA_LABELS[it.naviera] || it.naviera;
-  const img = NAVIERA_IMGS[it.naviera] || REGION_IMGS[it.region] || REGION_IMGS['Mediterranean'];
+  const RIVER_KEYWORDS = ['río', 'rio', 'river', 'rhine', 'danube', 'danubio', 'rin', 'sena', 'seine', 'mosela', 'moselle', 'douro', 'duero', 'garona'];
+  const isRiver = it.naviera === 'EMERALD' && RIVER_KEYWORDS.some(k =>
+    (it.region||'').toLowerCase().includes(k) ||
+    (it.destino||'').toLowerCase().includes(k) ||
+    (it.puerto_salida||'').toLowerCase().includes(k) ||
+    (it.puerto_llegada||'').toLowerCase().includes(k)
+  );
+  const img = (it.naviera === 'EMERALD' && !isRiver)
+    ? 'logos/navieras/banners/ponant.jpg'
+    : (NAVIERA_IMGS[it.naviera] || REGION_IMGS[it.region] || REGION_IMGS['Mediterranean']);
   const dest = it.puerto_salida && it.puerto_llegada && it.puerto_salida !== it.puerto_llegada
     ? `${it.puerto_salida} → ${it.puerto_llegada}`
     : it.puerto_salida || it.region;
