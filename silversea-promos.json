@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T20:24:02.902Z",
+  "updatedAt": "2026-08-10T09:41:49.539Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -74,20 +74,6 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Greece & Turkey Featuring Istanbul",
-      "origin": "Greece & Turkey Featuring Istanbul",
-      "dates": "OCT 28 → NOV 7, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-10-28"
-    },
-    {
-      "region": "MEDITERRANEAN",
       "route": "Italy & Spain Featuring Sicily",
       "origin": "Italy & Spain Featuring Sicily",
       "dates": "NOV 23 → 30, 2026",
@@ -101,18 +87,18 @@
       "departureDate": "2026-11-23"
     },
     {
-      "region": "NORTHERN EUROPE & BRITISH ISLES",
-      "route": "Norwegian Fjords & Denmark Featuring Oslo",
-      "origin": "Norwegian Fjords & Denmark Featuring Oslo",
-      "dates": "AUG 2 → 14, 2027",
+      "region": "MEDITERRANEAN",
+      "route": "Greece & Turkey Featuring Istanbul",
+      "origin": "Greece & Turkey Featuring Istanbul",
+      "dates": "OCT 28 → NOV 7, 2026",
       "ship": "SILVER SPIRIT",
       "discounts": [
         "SAVE 20%",
-        "SAVE 40%"
+        "SAVE 30%"
       ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-08-02"
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-10-28"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -127,6 +113,20 @@
       "maxDiscount": 30,
       "label": "OFERTA · AHORRÁ 30%",
       "departureDate": "2026-11-18"
+    },
+    {
+      "region": "NORTHERN EUROPE & BRITISH ISLES",
+      "route": "Norwegian Fjords & Denmark Featuring Oslo",
+      "origin": "Norwegian Fjords & Denmark Featuring Oslo",
+      "dates": "AUG 2 → 14, 2027",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-08-02"
     }
   ]
 }
