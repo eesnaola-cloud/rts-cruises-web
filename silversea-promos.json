@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T20:15:56.238Z",
+  "updatedAt": "2026-08-19T08:48:53.972Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -46,20 +46,6 @@
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Eastern Caribbean Featuring St. Barts & St. Kitts",
-      "origin": "Eastern Caribbean Featuring St. Barts & St. Kitts",
-      "dates": "NOV 30 → DEC 10, 2026",
-      "ship": "SILVER SHADOW",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-11-30"
-    },
-    {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "dates": "DEC 10 → 20, 2026",
@@ -71,6 +57,20 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2026-12-10"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Eastern Caribbean Featuring St. Barts & St. Kitts",
+      "origin": "Eastern Caribbean Featuring St. Barts & St. Kitts",
+      "dates": "NOV 30 → DEC 10, 2026",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-11-30"
     },
     {
       "region": "MEDITERRANEAN",
@@ -87,20 +87,6 @@
       "departureDate": "2026-11-30"
     },
     {
-      "region": "NORTHERN EUROPE & BRITISH ISLES",
-      "route": "Norwegian Fjords & Denmark Featuring Oslo",
-      "origin": "Norwegian Fjords & Denmark Featuring Oslo",
-      "dates": "AUG 2 → 14, 2027",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-08-02"
-    },
-    {
       "region": "MEDITERRANEAN",
       "route": "Greece & Turkey Featuring Istanbul",
       "origin": "Greece & Turkey Featuring Istanbul",
@@ -115,18 +101,32 @@
       "departureDate": "2026-10-28"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Eastern Caribbean Featuring St. Barts & Montserrat",
-      "origin": "Eastern Caribbean Featuring St. Barts & Montserrat",
-      "dates": "NOV 18 → 30, 2026",
-      "ship": "SILVER SHADOW",
+      "region": "NORTHERN EUROPE & BRITISH ISLES",
+      "route": "Norwegian Fjords & Denmark Featuring Oslo",
+      "origin": "Norwegian Fjords & Denmark Featuring Oslo",
+      "dates": "AUG 2 → 14, 2027",
+      "ship": "SILVER SPIRIT",
       "discounts": [
         "SAVE 20%",
-        "SAVE 30%"
+        "SAVE 40%"
       ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-11-18"
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-08-02"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring St. Lucia & Canouan",
+      "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
+      "dates": "DEC 19 → 27, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-12-19"
     }
   ]
 }
