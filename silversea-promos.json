@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T14:39:03.873Z",
+  "updatedAt": "2026-08-19T20:20:07.687Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -37,11 +37,10 @@
       "dates": "NOV 23 → 30, 2026",
       "ship": "SILVER NOVA",
       "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
+        "SAVE 20%"
       ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
+      "maxDiscount": 20,
+      "label": "OFERTA · AHORRÁ 20%",
       "departureDate": "2026-11-23"
     },
     {
@@ -51,11 +50,10 @@
       "dates": "DEC 10 → 20, 2026",
       "ship": "SILVER SHADOW",
       "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
+        "SAVE 20%"
       ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
+      "maxDiscount": 20,
+      "label": "OFERTA · AHORRÁ 20%",
       "departureDate": "2026-12-10"
     },
     {
@@ -79,11 +77,10 @@
       "dates": "NOV 30 → DEC 9, 2026",
       "ship": "SILVER NOVA",
       "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
+        "SAVE 20%"
       ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
+      "maxDiscount": 20,
+      "label": "OFERTA · AHORRÁ 20%",
       "departureDate": "2026-11-30"
     },
     {
@@ -94,10 +91,10 @@
       "ship": "SILVER SPIRIT",
       "discounts": [
         "SAVE 20%",
-        "SAVE 30%"
+        "SAVE 35%"
       ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
+      "maxDiscount": 35,
+      "label": "OFERTA · AHORRÁ 35%",
       "departureDate": "2026-10-28"
     },
     {
@@ -121,11 +118,10 @@
       "dates": "DEC 19 → 27, 2026",
       "ship": "SILVER SPIRIT",
       "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
+        "SAVE 20%"
       ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
+      "maxDiscount": 20,
+      "label": "OFERTA · AHORRÁ 20%",
       "departureDate": "2026-12-19"
     }
   ]
