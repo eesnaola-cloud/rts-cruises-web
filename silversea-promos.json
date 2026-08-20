@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-08-19T20:20:07.687Z",
+  "updatedAt": "2026-08-20T08:49:37.255Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Italy & Spain Featuring Sicily",
+      "origin": "Italy & Spain Featuring Sicily",
+      "dates": "NOV 23 → 30, 2026",
+      "ship": "SILVER NOVA",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-11-23"
+    },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Dominica & Canouan",
@@ -31,44 +45,18 @@
       "departureDate": "2027-08-26"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Italy & Spain Featuring Sicily",
-      "origin": "Italy & Spain Featuring Sicily",
-      "dates": "NOV 23 → 30, 2026",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%"
-      ],
-      "maxDiscount": 20,
-      "label": "OFERTA · AHORRÁ 20%",
-      "departureDate": "2026-11-23"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "dates": "DEC 10 → 20, 2026",
       "ship": "SILVER SHADOW",
       "discounts": [
-        "SAVE 20%"
-      ],
-      "maxDiscount": 20,
-      "label": "OFERTA · AHORRÁ 20%",
-      "departureDate": "2026-12-10"
-    },
-    {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Eastern Caribbean Featuring St. Barts & St. Kitts",
-      "origin": "Eastern Caribbean Featuring St. Barts & St. Kitts",
-      "dates": "NOV 30 → DEC 10, 2026",
-      "ship": "SILVER SHADOW",
-      "discounts": [
         "SAVE 20%",
-        "SAVE 30%"
+        "SAVE 45%"
       ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-11-30"
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-12-10"
     },
     {
       "region": "MEDITERRANEAN",
@@ -77,10 +65,11 @@
       "dates": "NOV 30 → DEC 9, 2026",
       "ship": "SILVER NOVA",
       "discounts": [
-        "SAVE 20%"
+        "SAVE 20%",
+        "SAVE 45%"
       ],
-      "maxDiscount": 20,
-      "label": "OFERTA · AHORRÁ 20%",
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2026-11-30"
     },
     {
@@ -98,6 +87,34 @@
       "departureDate": "2026-10-28"
     },
     {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Eastern Caribbean Featuring St. Barts & St. Kitts",
+      "origin": "Eastern Caribbean Featuring St. Barts & St. Kitts",
+      "dates": "NOV 30 → DEC 10, 2026",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 30%"
+      ],
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2026-11-30"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring St. Lucia & Canouan",
+      "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
+      "dates": "DEC 19 → 27, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-12-19"
+    },
+    {
       "region": "NORTHERN EUROPE & BRITISH ISLES",
       "route": "Norwegian Fjords & Denmark Featuring Oslo",
       "origin": "Norwegian Fjords & Denmark Featuring Oslo",
@@ -110,19 +127,6 @@
       "maxDiscount": 40,
       "label": "OFERTA · AHORRÁ 40%",
       "departureDate": "2027-08-02"
-    },
-    {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring St. Lucia & Canouan",
-      "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
-      "dates": "DEC 19 → 27, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%"
-      ],
-      "maxDiscount": 20,
-      "label": "OFERTA · AHORRÁ 20%",
-      "departureDate": "2026-12-19"
     }
   ]
 }
