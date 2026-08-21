@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T20:20:37.848Z",
+  "updatedAt": "2026-08-21T08:50:53.125Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -31,20 +31,6 @@
       "departureDate": "2026-12-12"
     },
     {
-      "region": "ALASKA",
-      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "dates": "AUG 26 → SEP 2, 2027",
-      "ship": "SILVER MOON",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-08-26"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
@@ -57,6 +43,20 @@
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2026-12-10"
+    },
+    {
+      "region": "ALASKA",
+      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
+      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
+      "dates": "AUG 26 → SEP 2, 2027",
+      "ship": "SILVER MOON",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-08-26"
     },
     {
       "region": "MEDITERRANEAN",
@@ -88,20 +88,6 @@
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Eastern Caribbean Featuring St. Barts & St. Kitts",
-      "origin": "Eastern Caribbean Featuring St. Barts & St. Kitts",
-      "dates": "NOV 30 → DEC 10, 2026",
-      "ship": "SILVER SHADOW",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 30%"
-      ],
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2026-11-30"
-    },
-    {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring St. Lucia & Canouan",
       "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
       "dates": "DEC 19 → 27, 2026",
@@ -115,18 +101,32 @@
       "departureDate": "2026-12-19"
     },
     {
-      "region": "NORTHERN EUROPE & BRITISH ISLES",
-      "route": "Norwegian Fjords & Denmark Featuring Oslo",
-      "origin": "Norwegian Fjords & Denmark Featuring Oslo",
-      "dates": "AUG 2 → 14, 2027",
-      "ship": "SILVER SPIRIT",
+      "region": "MEDITERRANEAN",
+      "route": "Italy, Malta & Spain Featuring Sicily",
+      "origin": "Italy, Malta & Spain Featuring Sicily",
+      "dates": "NOV 25 → DEC 9, 2026",
+      "ship": "SILVER DAWN",
       "discounts": [
         "SAVE 20%",
-        "SAVE 40%"
+        "SAVE 45%"
       ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-08-02"
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-11-25"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Spain & the French Riviera Featuring Valencia",
+      "origin": "Spain & the French Riviera Featuring Valencia",
+      "dates": "OCT 29 → NOV 8, 2026",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-10-29"
     }
   ]
 }
