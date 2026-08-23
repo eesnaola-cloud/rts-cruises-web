@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T20:15:23.496Z",
+  "updatedAt": "2026-08-23T08:39:51.346Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -31,20 +31,6 @@
       "departureDate": "2026-12-10"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Dominica & Canouan",
-      "origin": "Southern Caribbean Featuring Dominica & Canouan",
-      "dates": "DEC 12 → 19, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-12-12"
-    },
-    {
       "region": "ALASKA",
       "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
       "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
@@ -59,32 +45,18 @@
       "departureDate": "2027-08-26"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Spain & Morocco Featuring Casablanca",
-      "origin": "Spain & Morocco Featuring Casablanca",
-      "dates": "NOV 30 → DEC 9, 2026",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-11-30"
-    },
-    {
-      "region": "MEDITERRANEAN",
-      "route": "Greece & Turkey Featuring Istanbul",
-      "origin": "Greece & Turkey Featuring Istanbul",
-      "dates": "OCT 28 → NOV 7, 2026",
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring Dominica & Canouan",
+      "origin": "Southern Caribbean Featuring Dominica & Canouan",
+      "dates": "DEC 12 → 19, 2026",
       "ship": "SILVER SPIRIT",
       "discounts": [
         "SAVE 20%",
-        "SAVE 35%"
+        "SAVE 40%"
       ],
-      "maxDiscount": 35,
-      "label": "OFERTA · AHORRÁ 35%",
-      "departureDate": "2026-10-28"
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-12-12"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -102,6 +74,20 @@
     },
     {
       "region": "MEDITERRANEAN",
+      "route": "Spain & Morocco Featuring Casablanca",
+      "origin": "Spain & Morocco Featuring Casablanca",
+      "dates": "NOV 30 → DEC 9, 2026",
+      "ship": "SILVER NOVA",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-11-30"
+    },
+    {
+      "region": "MEDITERRANEAN",
       "route": "Italy, Malta & Spain Featuring Sicily",
       "origin": "Italy, Malta & Spain Featuring Sicily",
       "dates": "NOV 25 → DEC 9, 2026",
@@ -116,17 +102,31 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Spain & the French Riviera Featuring Valencia",
-      "origin": "Spain & the French Riviera Featuring Valencia",
-      "dates": "OCT 29 → NOV 8, 2026",
-      "ship": "SILVER RAY",
+      "route": "Greece & Turkey Featuring Istanbul",
+      "origin": "Greece & Turkey Featuring Istanbul",
+      "dates": "OCT 28 → NOV 7, 2026",
+      "ship": "SILVER SPIRIT",
       "discounts": [
         "SAVE 20%",
-        "SAVE 45%"
+        "SAVE 35%"
       ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-10-29"
+      "maxDiscount": 35,
+      "label": "OFERTA · AHORRÁ 35%",
+      "departureDate": "2026-10-28"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Italy & Greece Featuring Santorini",
+      "origin": "Italy & Greece Featuring Santorini",
+      "dates": "APR 16 → 25, 2027",
+      "ship": "SILVER NOVA",
+      "discounts": [
+        "SAVE 25%",
+        "SAVE 10%"
+      ],
+      "maxDiscount": 25,
+      "label": "OFERTA · AHORRÁ 25%",
+      "departureDate": "2027-04-16"
     }
   ]
 }
