@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T20:15:04.761Z",
+  "updatedAt": "2026-08-24T08:57:48.874Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -46,20 +46,6 @@
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Dominica & Canouan",
-      "origin": "Southern Caribbean Featuring Dominica & Canouan",
-      "dates": "DEC 12 → 19, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-12-12"
-    },
-    {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring St. Lucia & Canouan",
       "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
       "dates": "DEC 19 → 27, 2026",
@@ -74,20 +60,6 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Spain & Morocco Featuring Casablanca",
-      "origin": "Spain & Morocco Featuring Casablanca",
-      "dates": "NOV 30 → DEC 9, 2026",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-11-30"
-    },
-    {
-      "region": "MEDITERRANEAN",
       "route": "Italy, Malta & Spain Featuring Sicily",
       "origin": "Italy, Malta & Spain Featuring Sicily",
       "dates": "NOV 25 → DEC 9, 2026",
@@ -99,6 +71,34 @@
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2026-11-25"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring Dominica & Canouan",
+      "origin": "Southern Caribbean Featuring Dominica & Canouan",
+      "dates": "DEC 12 → 19, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2026-12-12"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Spain & Morocco Featuring Casablanca",
+      "origin": "Spain & Morocco Featuring Casablanca",
+      "dates": "NOV 30 → DEC 9, 2026",
+      "ship": "SILVER NOVA",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-11-30"
     },
     {
       "region": "MEDITERRANEAN",
