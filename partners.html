@@ -385,7 +385,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="form-success" id="form-success">
         <div class="form-success-icon">✅</div>
         <h4>¡Solicitud recibida!</h4>
-        <p>Un asesor RTS se contactará con vos en menos de 24 horas para activar tu cuenta de partner.</p>
+        <p>Tu solicitud fue enviada a nuestro equipo y vas a recibir una copia en tu email. Un asesor RTS se contactará con vos en menos de 24 horas para activar tu cuenta de partner.</p>
       </div>
     </div>
   </div>
@@ -489,12 +489,22 @@ document.getElementById('partner-form').addEventListener('submit', function(e){
   const cuit = document.getElementById('f-cuit').value.trim();
   const email = document.getElementById('f-email').value.trim();
   if(!nombre||!agencia||!cuit||!email) return;
-  const subject = encodeURIComponent(`Solicitud de partnership: ${agencia}`);
-  const body = encodeURIComponent(`Hola,\n\nUna agencia ha completado el formulario de partnership:\n\nNombre: ${nombre}\nAgencia: ${agencia}\nCUIT: ${cuit}\nEmail: ${email}\n\nPor favor gestionar el alta de la agencia.`);
-  gtag('event', 'submit_formulario_agencias', { form_name: 'partnership' });
-      window.location.href = `mailto:paloma.medina@rocatransport.com.ar?subject=${subject}&body=${body}`;
+  // Mostrar éxito primero
   this.style.display='none';
   document.getElementById('form-success').style.display='block';
+  document.getElementById('form-success').scrollIntoView({behavior:'smooth', block:'center'});
+
+  // Tracking
+  try { gtag('event', 'submit_formulario_agencias', { form_name: 'partnership' }); } catch(e){}
+
+  // Abrir mailto después de que el usuario vea el mensaje
+  setTimeout(function(){
+    const subject = encodeURIComponent(`Solicitud de partnership: ${agencia}`);
+    const body = encodeURIComponent(`Hola Paloma,\n\nUna agencia completó el formulario de partnership en rtscruises.com:\n\nNombre: ${nombre}\nAgencia: ${agencia}\nCUIT: ${cuit}\nEmail: ${email}\n\nPor favor gestionar el alta.`);
+    const link = document.createElement('a');
+    link.href = `mailto:paloma.medina@rocatransport.com.ar?cc=${encodeURIComponent(email)}&subject=${subject}&body=${body}`;
+    link.click();
+  }, 800);
 });
 
 const io = new IntersectionObserver(entries=>{
