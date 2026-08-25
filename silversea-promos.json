@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T20:22:30.012Z",
+  "updatedAt": "2026-08-25T08:53:07.748Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -74,17 +74,17 @@
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Dominica & Canouan",
-      "origin": "Southern Caribbean Featuring Dominica & Canouan",
-      "dates": "DEC 12 → 19, 2026",
+      "route": "Southern Caribbean Featuring St. Barts & Canouan",
+      "origin": "Southern Caribbean Featuring St. Barts & Canouan",
+      "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
       "discounts": [
         "SAVE 20%",
-        "SAVE 40%"
+        "SAVE 45%"
       ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2026-12-12"
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2027-03-19"
     },
     {
       "region": "MEDITERRANEAN",
