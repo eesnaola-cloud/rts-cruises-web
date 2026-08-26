@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T20:20:52.757Z",
+  "updatedAt": "2026-08-26T08:54:09.930Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -31,20 +31,6 @@
       "departureDate": "2026-12-10"
     },
     {
-      "region": "ALASKA",
-      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "dates": "AUG 26 → SEP 2, 2027",
-      "ship": "SILVER MOON",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
-      ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-08-26"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring St. Lucia & Canouan",
       "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
@@ -59,20 +45,6 @@
       "departureDate": "2026-12-19"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Italy, Malta & Spain Featuring Sicily",
-      "origin": "Italy, Malta & Spain Featuring Sicily",
-      "dates": "NOV 25 → DEC 9, 2026",
-      "ship": "SILVER DAWN",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-11-25"
-    },
-    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring St. Barts & Canouan",
       "origin": "Southern Caribbean Featuring St. Barts & Canouan",
@@ -85,6 +57,34 @@
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2027-03-19"
+    },
+    {
+      "region": "ALASKA",
+      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
+      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
+      "dates": "AUG 26 → SEP 2, 2027",
+      "ship": "SILVER MOON",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 40%"
+      ],
+      "maxDiscount": 40,
+      "label": "OFERTA · AHORRÁ 40%",
+      "departureDate": "2027-08-26"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Italy, Malta & Spain Featuring Sicily",
+      "origin": "Italy, Malta & Spain Featuring Sicily",
+      "dates": "NOV 25 → DEC 9, 2026",
+      "ship": "SILVER DAWN",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-11-25"
     },
     {
       "region": "MEDITERRANEAN",
