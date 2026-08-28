@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T23:41:19.588Z",
+  "updatedAt": "2026-08-28T03:57:56.949Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -59,6 +59,20 @@
       "departureDate": "2027-08-26"
     },
     {
+      "region": "MEDITERRANEAN",
+      "route": "Italy, Malta & Spain Featuring Sicily",
+      "origin": "Italy, Malta & Spain Featuring Sicily",
+      "dates": "NOV 25 → DEC 9, 2026",
+      "ship": "SILVER DAWN",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-11-25"
+    },
+    {
       "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring St. Lucia & Canouan",
       "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
@@ -74,17 +88,17 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Italy, Malta & Spain Featuring Sicily",
-      "origin": "Italy, Malta & Spain Featuring Sicily",
-      "dates": "NOV 25 → DEC 9, 2026",
-      "ship": "SILVER DAWN",
+      "route": "Spain & Morocco Featuring Casablanca",
+      "origin": "Spain & Morocco Featuring Casablanca",
+      "dates": "NOV 30 → DEC 9, 2026",
+      "ship": "SILVER NOVA",
       "discounts": [
         "SAVE 20%",
         "SAVE 45%"
       ],
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-11-25"
+      "departureDate": "2026-11-30"
     },
     {
       "region": "MEDITERRANEAN",
@@ -101,32 +115,18 @@
       "departureDate": "2027-04-16"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Greece & Turkey Featuring Istanbul",
-      "origin": "Greece & Turkey Featuring Istanbul",
-      "dates": "OCT 28 → NOV 7, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 35%"
-      ],
-      "maxDiscount": 35,
-      "label": "OFERTA · AHORRÁ 35%",
-      "departureDate": "2026-10-28"
-    },
-    {
-      "region": "MEDITERRANEAN",
-      "route": "Spain & Morocco Featuring Casablanca",
-      "origin": "Spain & Morocco Featuring Casablanca",
-      "dates": "NOV 30 → DEC 9, 2026",
-      "ship": "SILVER NOVA",
+      "region": "ALASKA",
+      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
+      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
+      "dates": "AUG 19 → 26, 2027",
+      "ship": "SILVER MOON",
       "discounts": [
         "SAVE 20%",
         "SAVE 45%"
       ],
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-11-30"
+      "departureDate": "2027-08-19"
     }
   ]
 }
