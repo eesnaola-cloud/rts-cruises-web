@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T23:29:43.515Z",
+  "updatedAt": "2026-08-29T02:38:37.387Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -15,6 +15,20 @@
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2026-11-23"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Italy, Malta & Spain Featuring Sicily",
+      "origin": "Italy, Malta & Spain Featuring Sicily",
+      "dates": "NOV 25 → DEC 9, 2026",
+      "ship": "SILVER DAWN",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-11-25"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -60,17 +74,17 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Italy, Malta & Spain Featuring Sicily",
-      "origin": "Italy, Malta & Spain Featuring Sicily",
-      "dates": "NOV 25 → DEC 9, 2026",
-      "ship": "SILVER DAWN",
+      "route": "Greece & Turkey Featuring Istanbul",
+      "origin": "Greece & Turkey Featuring Istanbul",
+      "dates": "OCT 28 → NOV 7, 2026",
+      "ship": "SILVER SPIRIT",
       "discounts": [
         "SAVE 20%",
-        "SAVE 45%"
+        "SAVE 35%"
       ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-11-25"
+      "maxDiscount": 35,
+      "label": "OFERTA · AHORRÁ 35%",
+      "departureDate": "2026-10-28"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -88,31 +102,17 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Spain & Morocco Featuring Casablanca",
-      "origin": "Spain & Morocco Featuring Casablanca",
-      "dates": "NOV 30 → DEC 9, 2026",
-      "ship": "SILVER NOVA",
+      "route": "Spain & the French Riviera Featuring Valencia",
+      "origin": "Spain & the French Riviera Featuring Valencia",
+      "dates": "OCT 29 → NOV 8, 2026",
+      "ship": "SILVER RAY",
       "discounts": [
         "SAVE 20%",
         "SAVE 45%"
       ],
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-11-30"
-    },
-    {
-      "region": "MEDITERRANEAN",
-      "route": "Italy & Greece Featuring Santorini",
-      "origin": "Italy & Greece Featuring Santorini",
-      "dates": "APR 16 → 25, 2027",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 25%",
-        "SAVE 10%"
-      ],
-      "maxDiscount": 25,
-      "label": "OFERTA · AHORRÁ 25%",
-      "departureDate": "2027-04-16"
+      "departureDate": "2026-10-29"
     },
     {
       "region": "ALASKA",
