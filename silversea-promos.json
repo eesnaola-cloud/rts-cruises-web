@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T22:10:30.391Z",
+  "updatedAt": "2026-08-30T13:45:28.410Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -32,20 +32,6 @@
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
-      "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
-      "dates": "DEC 10 → 20, 2026",
-      "ship": "SILVER SHADOW",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-12-10"
-    },
-    {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring St. Barts & Canouan",
       "origin": "Southern Caribbean Featuring St. Barts & Canouan",
       "dates": "MAR 19 → 31, 2027",
@@ -57,6 +43,20 @@
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2027-03-19"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
+      "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
+      "dates": "DEC 10 → 20, 2026",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-12-10"
     },
     {
       "region": "ALASKA",
@@ -73,18 +73,18 @@
       "departureDate": "2027-08-26"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Greece & Turkey Featuring Istanbul",
-      "origin": "Greece & Turkey Featuring Istanbul",
-      "dates": "OCT 28 → NOV 7, 2026",
-      "ship": "SILVER SPIRIT",
+      "region": "ALASKA",
+      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
+      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
+      "dates": "AUG 19 → 26, 2027",
+      "ship": "SILVER MOON",
       "discounts": [
         "SAVE 20%",
-        "SAVE 35%"
+        "SAVE 45%"
       ],
-      "maxDiscount": 35,
-      "label": "OFERTA · AHORRÁ 35%",
-      "departureDate": "2026-10-28"
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2027-08-19"
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
@@ -102,6 +102,20 @@
     },
     {
       "region": "MEDITERRANEAN",
+      "route": "Greece & Turkey Featuring Istanbul",
+      "origin": "Greece & Turkey Featuring Istanbul",
+      "dates": "OCT 28 → NOV 7, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 35%"
+      ],
+      "maxDiscount": 35,
+      "label": "OFERTA · AHORRÁ 35%",
+      "departureDate": "2026-10-28"
+    },
+    {
+      "region": "MEDITERRANEAN",
       "route": "Spain & the French Riviera Featuring Valencia",
       "origin": "Spain & the French Riviera Featuring Valencia",
       "dates": "OCT 29 → NOV 8, 2026",
@@ -113,20 +127,6 @@
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2026-10-29"
-    },
-    {
-      "region": "ALASKA",
-      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "dates": "AUG 19 → 26, 2027",
-      "ship": "SILVER MOON",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2027-08-19"
     }
   ]
 }
