@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T22:17:10.833Z",
+  "updatedAt": "2026-09-02T12:43:43.428Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -29,6 +29,20 @@
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2027-03-19"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring St. Lucia & Canouan",
+      "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
+      "dates": "DEC 19 → 27, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-12-19"
     },
     {
       "region": "MEDITERRANEAN",
@@ -87,20 +101,6 @@
       "departureDate": "2026-10-28"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring St. Lucia & Canouan",
-      "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
-      "dates": "DEC 19 → 27, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-12-19"
-    },
-    {
       "region": "MEDITERRANEAN",
       "route": "Spain & the French Riviera Featuring Valencia",
       "origin": "Spain & the French Riviera Featuring Valencia",
@@ -115,18 +115,18 @@
       "departureDate": "2026-10-29"
     },
     {
-      "region": "ALASKA",
-      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "dates": "AUG 26 → SEP 2, 2027",
-      "ship": "SILVER MOON",
+      "region": "MEDITERRANEAN",
+      "route": "Italy & Greece Featuring Santorini",
+      "origin": "Italy & Greece Featuring Santorini",
+      "dates": "APR 16 → 25, 2027",
+      "ship": "SILVER NOVA",
       "discounts": [
-        "SAVE 20%",
-        "SAVE 40%"
+        "SAVE 25%",
+        "SAVE 10%"
       ],
-      "maxDiscount": 40,
-      "label": "OFERTA · AHORRÁ 40%",
-      "departureDate": "2027-08-26"
+      "maxDiscount": 25,
+      "label": "OFERTA · AHORRÁ 25%",
+      "departureDate": "2027-04-16"
     }
   ]
 }
