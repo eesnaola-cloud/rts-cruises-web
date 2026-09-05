@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T22:00:11.186Z",
+  "updatedAt": "2026-09-05T11:48:01.875Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -31,20 +31,6 @@
       "departureDate": "2026-11-23"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring St. Lucia & Canouan",
-      "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
-      "dates": "DEC 19 → 27, 2026",
-      "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-12-19"
-    },
-    {
       "region": "ALASKA",
       "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
       "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
@@ -74,6 +60,20 @@
     },
     {
       "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring St. Lucia & Canouan",
+      "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
+      "dates": "DEC 19 → 27, 2026",
+      "ship": "SILVER SPIRIT",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-12-19"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
       "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
       "dates": "DEC 10 → 20, 2026",
@@ -88,20 +88,6 @@
     },
     {
       "region": "MEDITERRANEAN",
-      "route": "Spain & the French Riviera Featuring Valencia",
-      "origin": "Spain & the French Riviera Featuring Valencia",
-      "dates": "OCT 29 → NOV 8, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-10-29"
-    },
-    {
-      "region": "MEDITERRANEAN",
       "route": "Greece & Turkey Featuring Istanbul",
       "origin": "Greece & Turkey Featuring Istanbul",
       "dates": "OCT 28 → NOV 7, 2026",
@@ -113,6 +99,20 @@
       "maxDiscount": 35,
       "label": "OFERTA · AHORRÁ 35%",
       "departureDate": "2026-10-28"
+    },
+    {
+      "region": "MEDITERRANEAN",
+      "route": "Spain & the French Riviera Featuring Valencia",
+      "origin": "Spain & the French Riviera Featuring Valencia",
+      "dates": "OCT 29 → NOV 8, 2026",
+      "ship": "SILVER RAY",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-10-29"
     },
     {
       "region": "MEDITERRANEAN",
