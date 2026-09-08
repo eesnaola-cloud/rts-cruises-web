@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T22:26:16.244Z",
+  "updatedAt": "2026-09-08T12:49:36.329Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -73,20 +73,6 @@
       "departureDate": "2026-12-19"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
-      "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
-      "dates": "DEC 10 → 20, 2026",
-      "ship": "SILVER SHADOW",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-12-10"
-    },
-    {
       "region": "MEDITERRANEAN",
       "route": "Greece & Turkey Featuring Istanbul",
       "origin": "Greece & Turkey Featuring Istanbul",
@@ -99,6 +85,20 @@
       "maxDiscount": 35,
       "label": "OFERTA · AHORRÁ 35%",
       "departureDate": "2026-10-28"
+    },
+    {
+      "region": "CARIBBEAN & CENTRAL AMERICA",
+      "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
+      "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
+      "dates": "DEC 10 → 20, 2026",
+      "ship": "SILVER SHADOW",
+      "discounts": [
+        "SAVE 20%",
+        "SAVE 45%"
+      ],
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2026-12-10"
     },
     {
       "region": "MEDITERRANEAN",
