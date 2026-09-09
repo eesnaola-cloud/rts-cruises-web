@@ -1,132 +1,226 @@
 {
-  "updatedAt": "2026-09-08T22:15:50.570Z",
+  "updatedAt": "2026-09-09T13:06:07.986Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring St. Barts & Canouan",
-      "origin": "Southern Caribbean Featuring St. Barts & Canouan",
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
+      "priceFrom": 6800,
+      "priceNow": 4300,
+      "maxDiscount": 37,
+      "label": "OFERTA · AHORRÁ 37%",
       "departureDate": "2027-03-19"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Italy & Spain Featuring Sicily",
-      "origin": "Italy & Spain Featuring Sicily",
-      "dates": "NOV 23 → 30, 2026",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-11-23"
-    },
-    {
-      "region": "ALASKA",
-      "route": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "origin": "Alaska Glacier Cruise Featuring Juneau & Ketchikan",
-      "dates": "AUG 19 → 26, 2027",
-      "ship": "SILVER MOON",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2027-08-19"
-    },
-    {
-      "region": "MEDITERRANEAN",
-      "route": "Italy, Malta & Spain Featuring Sicily",
-      "origin": "Italy, Malta & Spain Featuring Sicily",
+      "route": "Civitavecchia (Rome) to Lisbon",
+      "origin": "Civitavecchia (Rome)",
       "dates": "NOV 25 → DEC 9, 2026",
       "ship": "SILVER DAWN",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
+      "priceFrom": null,
+      "priceNow": 5350,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2026-11-25"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring St. Lucia & Canouan",
-      "origin": "Southern Caribbean Featuring St. Lucia & Canouan",
+      "route": "Bridgetown to Bridgetown",
+      "origin": "Bridgetown",
       "dates": "DEC 19 → 27, 2026",
       "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
+      "priceFrom": null,
+      "priceNow": 3650,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2026-12-19"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Greece & Turkey Featuring Istanbul",
-      "origin": "Greece & Turkey Featuring Istanbul",
-      "dates": "OCT 28 → NOV 7, 2026",
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "MAR 7 → 19, 2027",
       "ship": "SILVER SPIRIT",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 35%"
-      ],
+      "priceFrom": 7200,
+      "priceNow": 4700,
       "maxDiscount": 35,
       "label": "OFERTA · AHORRÁ 35%",
-      "departureDate": "2026-10-28"
+      "departureDate": "2027-03-07"
     },
     {
-      "region": "CARIBBEAN & CENTRAL AMERICA",
-      "route": "Southern Caribbean Featuring Les Saintes & Montserrat",
-      "origin": "Southern Caribbean Featuring Les Saintes & Montserrat",
-      "dates": "DEC 10 → 20, 2026",
+      "route": "Barcelona to Lisbon",
+      "origin": "Barcelona",
+      "dates": "NOV 30 → DEC 9, 2026",
+      "ship": "SILVER NOVA",
+      "priceFrom": 7600,
+      "priceNow": 5100,
+      "maxDiscount": 33,
+      "label": "OFERTA · AHORRÁ 33%",
+      "departureDate": "2026-11-30"
+    },
+    {
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "JAN 6 → 18, 2027",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": 5750,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-06"
+    },
+    {
+      "route": "Fusina (Venice) to Civitavecchia (Rome)",
+      "origin": "Fusina (Venice)",
+      "dates": "OCT 28 → NOV 7, 2027",
+      "ship": "SILVER NOVA",
+      "priceFrom": 9500,
+      "priceNow": 7000,
+      "maxDiscount": 26,
+      "label": "OFERTA · AHORRÁ 26%",
+      "departureDate": "2027-10-28"
+    },
+    {
+      "route": "Miami, FL to Lisbon",
+      "origin": "Miami, FL",
+      "dates": "MAR 24 → APR 8, 2028",
+      "ship": "SILVER DAWN",
+      "priceFrom": 7200,
+      "priceNow": 4700,
+      "maxDiscount": 35,
+      "label": "OFERTA · AHORRÁ 35%",
+      "departureDate": "2028-03-24"
+    },
+    {
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "JAN 25 → FEB 6, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": null,
+      "priceNow": 4250,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-25"
+    },
+    {
+      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
+      "origin": "Papeete (Tahiti)",
+      "dates": "JAN 3 → 13, 2027",
+      "ship": "SILVER WHISPER",
+      "priceFrom": null,
+      "priceNow": 5250,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-03"
+    },
+    {
+      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
+      "origin": "Papeete (Tahiti)",
+      "dates": "OCT 18 → 25, 2026",
+      "ship": "SILVER WHISPER",
+      "priceFrom": null,
+      "priceNow": 6150,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-10-18"
+    },
+    {
+      "route": "Puerto Williams to King George Island",
+      "origin": "Puerto Williams",
+      "dates": "OCT 20 → 29, 2026",
+      "ship": "SILVER WIND",
+      "priceFrom": null,
+      "priceNow": 11350,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-10-20"
+    },
+    {
+      "route": "King George Island to King George Island",
+      "origin": "King George Island",
+      "dates": "OCT 20 → 26, 2026",
+      "ship": "SILVER ENDEAVOUR",
+      "priceFrom": null,
+      "priceNow": 19150,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-10-20"
+    },
+    {
+      "route": "Lisbon to Cape Town",
+      "origin": "Lisbon",
+      "dates": "OCT 21 → NOV 10, 2026",
+      "ship": "SILVER MUSE",
+      "priceFrom": null,
+      "priceNow": 7350,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-10-21"
+    },
+    {
+      "route": "Montreal to Miami, FL",
+      "origin": "Montreal",
+      "dates": "OCT 24 → NOV 7, 2026",
       "ship": "SILVER SHADOW",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2026-12-10"
+      "priceFrom": 11200,
+      "priceNow": 8700,
+      "maxDiscount": 22,
+      "label": "OFERTA · AHORRÁ 22%",
+      "departureDate": "2026-10-24"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Spain & the French Riviera Featuring Valencia",
-      "origin": "Spain & the French Riviera Featuring Valencia",
-      "dates": "OCT 29 → NOV 8, 2026",
-      "ship": "SILVER RAY",
-      "discounts": [
-        "SAVE 20%",
-        "SAVE 45%"
-      ],
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
+      "route": "Athens (Piraeus) to Athens (Piraeus)",
+      "origin": "Athens (Piraeus)",
+      "dates": "OCT 26 → NOV 6, 2026",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": 7350,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-10-26"
+    },
+    {
+      "route": "King George Island to Puerto Williams",
+      "origin": "King George Island",
+      "dates": "OCT 29 → NOV 7, 2026",
+      "ship": "SILVER WIND",
+      "priceFrom": null,
+      "priceNow": 11950,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2026-10-29"
     },
     {
-      "region": "MEDITERRANEAN",
-      "route": "Italy & Greece Featuring Santorini",
-      "origin": "Italy & Greece Featuring Santorini",
-      "dates": "APR 16 → 25, 2027",
-      "ship": "SILVER NOVA",
-      "discounts": [
-        "SAVE 25%",
-        "SAVE 10%"
-      ],
-      "maxDiscount": 25,
-      "label": "OFERTA · AHORRÁ 25%",
-      "departureDate": "2027-04-16"
+      "route": "Barcelona to Barcelona",
+      "origin": "Barcelona",
+      "dates": "NOV 8 → 18, 2026",
+      "ship": "SILVER RAY",
+      "priceFrom": null,
+      "priceNow": 5650,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-11-08"
+    },
+    {
+      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
+      "origin": "Papeete (Tahiti)",
+      "dates": "NOV 15 → 29, 2026",
+      "ship": "SILVER WHISPER",
+      "priceFrom": null,
+      "priceNow": 9350,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-11-15"
+    },
+    {
+      "route": "Singapore to Benoa, Bali",
+      "origin": "Singapore",
+      "dates": "NOV 16 → 20, 2026",
+      "ship": "SILVER MOON",
+      "priceFrom": null,
+      "priceNow": 3750,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-11-16"
     }
   ]
 }
