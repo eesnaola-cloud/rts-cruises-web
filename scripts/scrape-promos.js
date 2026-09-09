@@ -23,31 +23,43 @@ function parseDepartureDate(dateStr) {
   console.log('Navigating to Silversea promos page...');
   await page.goto(PROMO_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
-  // Wait for cruise cards to render
-  await page.waitForSelector('.EmotionalCruiseCard-module_card__hDV80', { timeout: 30000 });
+  // Wait for cruise cards to render. Silversea renamed the component and its
+  // webpack build hash on 2026-09-09 (EmotionalCruiseCard-module_card__hDV80 ->
+  // EmotionalCruiseCardSmall-module_card__qxSBz), breaking the exact-class selector.
+  // These hashes change on every Silversea deploy, so match on the stable
+  // "EmotionalCruiseCard...-module_card__" prefix instead of the full class.
+  await page.waitForSelector('[class*="EmotionalCruiseCard"][class*="-module_card__"]', { timeout: 30000 });
 
   const promos = await page.evaluate(() => {
-    const cards = document.querySelectorAll('.EmotionalCruiseCard-module_card__hDV80');
+    const cards = document.querySelectorAll('[class*="EmotionalCruiseCard"][class*="-module_card__"]');
     return Array.from(cards).map(card => {
       const lines = card.innerText.split('\n').map(l => l.trim()).filter(Boolean);
-      const discounts = lines.filter(l => /SAVE \d+%/.test(l));
-      const maxDiscount = discounts.reduce((max, d) => {
-        const n = parseInt(d.match(/\d+/)?.[0] || '0');
-        return n > max ? n : max;
-      }, 0);
-      const dateLine = lines.find(l => /\d{4}/.test(l) && l.includes('→'));
-      const ship = lines.find(l => /^SILVER /.test(l));
-      const routeLine = lines[1] || '';
+      // Card layout as of 2026-09-09 (no "region" line, no "SAVE X%" text):
+      //   {origin} to {destination}
+      //   {MON DD} → {[MON] DD, YYYY}
+      //    • {N} DAYS
+      //   {SHIP NAME}
+      //   [EXPEDITION CRUISE]         (optional)
+      //   FROM
+      //   [$was-price]                (optional, only when discounted)
+      //   $now-price
+      //   PER GUEST, WITH ... FARE
+      const routeLine = lines.find(l => l.includes(' to ')) || lines[0] || '';
       const [origin] = routeLine.split(' to ');
+      const dateLine = lines.find(l => /\d{4}/.test(l) && l.includes('→')) || '';
+      const ship = lines.find(l => /^SILVER /.test(l)) || '';
+      const prices = lines.filter(l => /^\$[\d,]+$/.test(l)).map(l => parseInt(l.replace(/[$,]/g, ''), 10));
+      const [wasPrice, nowPrice] = prices.length === 2 ? prices : [null, prices[0] ?? null];
+      const maxDiscount = (wasPrice && nowPrice) ? Math.round((1 - nowPrice / wasPrice) * 100) : 0;
       return {
-        region: lines[0] || '',
         route: routeLine,
         origin: (origin || '').trim(),
-        dates: dateLine || '',
-        ship: ship || '',
-        discounts,
+        dates: dateLine,
+        ship,
+        priceFrom: wasPrice,
+        priceNow: nowPrice,
         maxDiscount,
-        label: `OFERTA · AHORRÁ ${maxDiscount}%`,
+        label: maxDiscount > 0 ? `OFERTA · AHORRÁ ${maxDiscount}%` : 'OFERTA',
       };
     });
   });
