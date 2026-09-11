@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T22:10:14.907Z",
+  "updatedAt": "2026-09-11T12:46:53.116Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -7,10 +7,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 6800,
-      "priceNow": 4300,
-      "maxDiscount": 37,
-      "label": "OFERTA · AHORRÁ 37%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2027-03-19"
     },
     {
@@ -19,43 +19,32 @@
       "dates": "DEC 19 → 27, 2026",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": 3850,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-19"
-    },
-    {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "MAR 7 → 19, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 7800,
-      "priceNow": 5300,
-      "maxDiscount": 32,
-      "label": "OFERTA · AHORRÁ 32%",
-      "departureDate": "2027-03-07"
     },
     {
       "route": "Miami, FL to Lisbon",
       "origin": "Miami, FL",
       "dates": "MAR 24 → APR 8, 2028",
       "ship": "SILVER DAWN",
-      "priceFrom": 7100,
-      "priceNow": 4600,
-      "maxDiscount": 35,
-      "label": "OFERTA · AHORRÁ 35%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2028-03-24"
     },
     {
-      "route": "Fusina (Venice) to Civitavecchia (Rome)",
-      "origin": "Fusina (Venice)",
-      "dates": "OCT 28 → NOV 7, 2027",
-      "ship": "SILVER NOVA",
-      "priceFrom": 9500,
-      "priceNow": 7000,
-      "maxDiscount": 26,
-      "label": "OFERTA · AHORRÁ 26%",
-      "departureDate": "2027-10-28"
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "MAR 7 → 19, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-03-07"
     },
     {
       "route": "Miami, FL to Bridgetown",
@@ -63,21 +52,32 @@
       "dates": "JAN 6 → 18, 2027",
       "ship": "SILVER NOVA",
       "priceFrom": null,
-      "priceNow": 5750,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-06"
     },
     {
-      "route": "Miami, FL to Bridgetown",
-      "origin": "Miami, FL",
-      "dates": "FEB 6 → 18, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 7700,
-      "priceNow": 5200,
-      "maxDiscount": 32,
-      "label": "OFERTA · AHORRÁ 32%",
-      "departureDate": "2027-02-06"
+      "route": "Fusina (Venice) to Civitavecchia (Rome)",
+      "origin": "Fusina (Venice)",
+      "dates": "OCT 28 → NOV 7, 2027",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-10-28"
+    },
+    {
+      "route": "Bridgetown to San Juan",
+      "origin": "Bridgetown",
+      "dates": "DEC 21 → 29, 2026",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-21"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -85,7 +85,7 @@
       "dates": "JAN 3 → 13, 2027",
       "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": 5250,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-03"
@@ -95,10 +95,10 @@
       "origin": "Papeete (Tahiti)",
       "dates": "OCT 18 → 25, 2026",
       "ship": "SILVER WHISPER",
-      "priceFrom": 6150,
-      "priceNow": 4900,
-      "maxDiscount": 20,
-      "label": "OFERTA · AHORRÁ 20%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2026-10-18"
     },
     {
@@ -107,7 +107,7 @@
       "dates": "OCT 20 → 29, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 13050,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-20"
@@ -117,10 +117,10 @@
       "origin": "King George Island",
       "dates": "OCT 20 → 26, 2026",
       "ship": "SILVER ENDEAVOUR",
-      "priceFrom": 19150,
-      "priceNow": 17900,
-      "maxDiscount": 7,
-      "label": "OFERTA · AHORRÁ 7%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2026-10-20"
     },
     {
@@ -129,7 +129,7 @@
       "dates": "OCT 21 → NOV 10, 2026",
       "ship": "SILVER MUSE",
       "priceFrom": null,
-      "priceNow": 7350,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-21"
@@ -139,10 +139,10 @@
       "origin": "Montreal",
       "dates": "OCT 24 → NOV 7, 2026",
       "ship": "SILVER SHADOW",
-      "priceFrom": 11100,
-      "priceNow": 8600,
-      "maxDiscount": 23,
-      "label": "OFERTA · AHORRÁ 23%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2026-10-24"
     },
     {
@@ -151,7 +151,7 @@
       "dates": "OCT 29 → NOV 7, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 11950,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-29"
@@ -161,44 +161,22 @@
       "origin": "Papeete (Tahiti)",
       "dates": "NOV 15 → 29, 2026",
       "ship": "SILVER WHISPER",
-      "priceFrom": 9350,
-      "priceNow": 8100,
-      "maxDiscount": 13,
-      "label": "OFERTA · AHORRÁ 13%",
-      "departureDate": "2026-11-15"
-    },
-    {
-      "route": "Singapore to Benoa, Bali",
-      "origin": "Singapore",
-      "dates": "NOV 16 → 20, 2026",
-      "ship": "SILVER MOON",
       "priceFrom": null,
-      "priceNow": 3750,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
-      "departureDate": "2026-11-16"
+      "departureDate": "2026-11-15"
     },
     {
       "route": "Singapore to Sydney",
       "origin": "Singapore",
       "dates": "NOV 16 → DEC 4, 2026",
       "ship": "SILVER MOON",
-      "priceFrom": 12700,
-      "priceNow": 10200,
-      "maxDiscount": 20,
-      "label": "OFERTA · AHORRÁ 20%",
-      "departureDate": "2026-11-16"
-    },
-    {
-      "route": "Benoa, Bali to Sydney",
-      "origin": "Benoa, Bali",
-      "dates": "NOV 20 → DEC 4, 2026",
-      "ship": "SILVER MOON",
       "priceFrom": null,
-      "priceNow": 9750,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
-      "departureDate": "2026-11-20"
+      "departureDate": "2026-11-16"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -206,7 +184,7 @@
       "dates": "NOV 29 → DEC 13, 2026",
       "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": 6950,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-29"
@@ -217,10 +195,32 @@
       "dates": "DEC 2 → 20, 2026",
       "ship": "SILVER MUSE",
       "priceFrom": null,
-      "priceNow": 9950,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-02"
+    },
+    {
+      "route": "Lisbon to Bridgetown",
+      "origin": "Lisbon",
+      "dates": "DEC 9 → 21, 2026",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-09"
+    },
+    {
+      "route": "Lisbon to Miami, FL",
+      "origin": "Lisbon",
+      "dates": "DEC 9 → 21, 2026",
+      "ship": "SILVER DAWN",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-09"
     }
   ]
 }
