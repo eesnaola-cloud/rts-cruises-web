@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T22:08:48.581Z",
+  "updatedAt": "2026-09-12T12:07:09.747Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -7,10 +7,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 6800,
-      "priceNow": 4300,
-      "maxDiscount": 37,
-      "label": "OFERTA · AHORRÁ 37%",
+      "priceFrom": 7800,
+      "priceNow": 5300,
+      "maxDiscount": 32,
+      "label": "OFERTA · AHORRÁ 32%",
       "departureDate": "2027-03-19"
     },
     {
@@ -34,6 +34,17 @@
       "maxDiscount": 35,
       "label": "OFERTA · AHORRÁ 35%",
       "departureDate": "2028-03-24"
+    },
+    {
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "JAN 25 → FEB 6, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": null,
+      "priceNow": 4250,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-25"
     },
     {
       "route": "Bridgetown to Miami, FL",
@@ -82,17 +93,6 @@
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
       "origin": "Papeete (Tahiti)",
-      "dates": "JAN 3 → 13, 2027",
-      "ship": "SILVER WHISPER",
-      "priceFrom": null,
-      "priceNow": 5250,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-01-03"
-    },
-    {
-      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
-      "origin": "Papeete (Tahiti)",
       "dates": "OCT 18 → 25, 2026",
       "ship": "SILVER WHISPER",
       "priceFrom": 6150,
@@ -107,7 +107,7 @@
       "dates": "OCT 20 → 29, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 11350,
+      "priceNow": 10700,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-20"
@@ -139,10 +139,10 @@
       "origin": "Montreal",
       "dates": "OCT 24 → NOV 7, 2026",
       "ship": "SILVER SHADOW",
-      "priceFrom": 9900,
-      "priceNow": 7400,
-      "maxDiscount": 25,
-      "label": "OFERTA · AHORRÁ 25%",
+      "priceFrom": 11100,
+      "priceNow": 8600,
+      "maxDiscount": 23,
+      "label": "OFERTA · AHORRÁ 23%",
       "departureDate": "2026-10-24"
     },
     {
@@ -151,7 +151,7 @@
       "dates": "OCT 29 → NOV 7, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 11950,
+      "priceNow": 11500,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-29"
