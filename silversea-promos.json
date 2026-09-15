@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T22:54:21.420Z",
+  "updatedAt": "2026-09-15T13:25:30.414Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -56,6 +56,17 @@
       "maxDiscount": 21,
       "label": "OFERTA · AHORRÁ 21%",
       "departureDate": "2027-05-21"
+    },
+    {
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "JAN 25 → FEB 6, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": null,
+      "priceNow": 4250,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-25"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -210,17 +221,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-21"
-    },
-    {
-      "route": "King George Island to Puerto Williams",
-      "origin": "King George Island",
-      "dates": "JAN 2 → 15, 2027",
-      "ship": "SILVER ENDEAVOUR",
-      "priceFrom": null,
-      "priceNow": 26400,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-01-02"
     }
   ]
 }
