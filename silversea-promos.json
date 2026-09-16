@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T22:37:13.805Z",
+  "updatedAt": "2026-09-16T13:24:51.687Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -7,10 +7,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 6800,
-      "priceNow": 4300,
-      "maxDiscount": 37,
-      "label": "OFERTA · AHORRÁ 37%",
+      "priceFrom": 7200,
+      "priceNow": 4700,
+      "maxDiscount": 35,
+      "label": "OFERTA · AHORRÁ 35%",
       "departureDate": "2027-03-19"
     },
     {
@@ -19,7 +19,7 @@
       "dates": "DEC 19 → 27, 2026",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": 3850,
+      "priceNow": 3650,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-19"
@@ -34,6 +34,17 @@
       "maxDiscount": 35,
       "label": "OFERTA · AHORRÁ 35%",
       "departureDate": "2028-03-24"
+    },
+    {
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "JAN 25 → FEB 6, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": null,
+      "priceNow": 5350,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-25"
     },
     {
       "route": "Fusina (Venice) to Civitavecchia (Rome)",
@@ -58,17 +69,6 @@
       "departureDate": "2027-05-21"
     },
     {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "JAN 25 → FEB 6, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": null,
-      "priceNow": 4250,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-01-25"
-    },
-    {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
       "origin": "Papeete (Tahiti)",
       "dates": "OCT 18 → 25, 2026",
@@ -85,7 +85,7 @@
       "dates": "OCT 20 → 29, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 10700,
+      "priceNow": 12400,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-20"
@@ -95,10 +95,10 @@
       "origin": "King George Island",
       "dates": "OCT 20 → 26, 2026",
       "ship": "SILVER ENDEAVOUR",
-      "priceFrom": 19150,
-      "priceNow": 17900,
-      "maxDiscount": 7,
-      "label": "OFERTA · AHORRÁ 7%",
+      "priceFrom": 20050,
+      "priceNow": 18800,
+      "maxDiscount": 6,
+      "label": "OFERTA · AHORRÁ 6%",
       "departureDate": "2026-10-20"
     },
     {
@@ -157,12 +157,23 @@
       "departureDate": "2026-11-16"
     },
     {
+      "route": "King George Island to King George Island",
+      "origin": "King George Island",
+      "dates": "NOV 25 → DEC 1, 2026",
+      "ship": "SILVER ENDEAVOUR",
+      "priceFrom": null,
+      "priceNow": 21500,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-11-25"
+    },
+    {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
       "origin": "Papeete (Tahiti)",
       "dates": "NOV 29 → DEC 13, 2026",
       "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": 6950,
+      "priceNow": 7250,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-29"
@@ -173,7 +184,7 @@
       "dates": "DEC 2 → 20, 2026",
       "ship": "SILVER MUSE",
       "priceFrom": null,
-      "priceNow": 9950,
+      "priceNow": 9550,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-02"
@@ -205,22 +216,11 @@
       "origin": "Papeete (Tahiti)",
       "dates": "DEC 13 → 20, 2026",
       "ship": "SILVER WHISPER",
-      "priceFrom": 7050,
-      "priceNow": 5800,
-      "maxDiscount": 18,
-      "label": "OFERTA · AHORRÁ 18%",
+      "priceFrom": 6150,
+      "priceNow": 4900,
+      "maxDiscount": 20,
+      "label": "OFERTA · AHORRÁ 20%",
       "departureDate": "2026-12-13"
-    },
-    {
-      "route": "Bridgetown to San Juan",
-      "origin": "Bridgetown",
-      "dates": "DEC 21 → 29, 2026",
-      "ship": "SILVER NOVA",
-      "priceFrom": null,
-      "priceNow": 4050,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-12-21"
     }
   ]
 }
