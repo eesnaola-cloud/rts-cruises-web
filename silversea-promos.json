@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T22:32:55.022Z",
+  "updatedAt": "2026-09-17T13:20:54.105Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -7,10 +7,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 7200,
-      "priceNow": 4700,
-      "maxDiscount": 35,
-      "label": "OFERTA · AHORRÁ 35%",
+      "priceFrom": 7800,
+      "priceNow": 5300,
+      "maxDiscount": 32,
+      "label": "OFERTA · AHORRÁ 32%",
       "departureDate": "2027-03-19"
     },
     {
@@ -41,7 +41,7 @@
       "dates": "JAN 25 → FEB 6, 2027",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": 5350,
+      "priceNow": 4550,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-25"
@@ -62,10 +62,10 @@
       "origin": "Copenhagen",
       "dates": "MAY 21 → JUN 5, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 11900,
-      "priceNow": 9400,
-      "maxDiscount": 21,
-      "label": "OFERTA · AHORRÁ 21%",
+      "priceFrom": 12500,
+      "priceNow": 10000,
+      "maxDiscount": 20,
+      "label": "OFERTA · AHORRÁ 20%",
       "departureDate": "2027-05-21"
     },
     {
@@ -111,17 +111,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-21"
-    },
-    {
-      "route": "Montreal to Miami, FL",
-      "origin": "Montreal",
-      "dates": "OCT 24 → NOV 7, 2026",
-      "ship": "SILVER SHADOW",
-      "priceFrom": 23900,
-      "priceNow": 21400,
-      "maxDiscount": 10,
-      "label": "OFERTA · AHORRÁ 10%",
-      "departureDate": "2026-10-24"
     },
     {
       "route": "King George Island to Puerto Williams",
@@ -221,6 +210,17 @@
       "maxDiscount": 20,
       "label": "OFERTA · AHORRÁ 20%",
       "departureDate": "2026-12-13"
+    },
+    {
+      "route": "Bridgetown to San Juan",
+      "origin": "Bridgetown",
+      "dates": "DEC 21 → 29, 2026",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": 4050,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-21"
     }
   ]
 }
