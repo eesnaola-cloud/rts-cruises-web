@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T22:35:05.459Z",
+  "updatedAt": "2026-09-18T12:55:07.638Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -7,10 +7,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 7800,
-      "priceNow": 5300,
-      "maxDiscount": 32,
-      "label": "OFERTA · AHORRÁ 32%",
+      "priceFrom": 7200,
+      "priceNow": 4700,
+      "maxDiscount": 35,
+      "label": "OFERTA · AHORRÁ 35%",
       "departureDate": "2027-03-19"
     },
     {
@@ -19,7 +19,7 @@
       "dates": "DEC 19 → 27, 2026",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": 3650,
+      "priceNow": 3850,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-19"
@@ -58,6 +58,17 @@
       "departureDate": "2027-10-28"
     },
     {
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "FEB 6 → 18, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": null,
+      "priceNow": 4150,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-02-06"
+    },
+    {
       "route": "Copenhagen to Copenhagen",
       "origin": "Copenhagen",
       "dates": "MAY 21 → JUN 5, 2027",
@@ -67,6 +78,17 @@
       "maxDiscount": 20,
       "label": "OFERTA · AHORRÁ 20%",
       "departureDate": "2027-05-21"
+    },
+    {
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "MAR 7 → 19, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 6800,
+      "priceNow": 4300,
+      "maxDiscount": 37,
+      "label": "OFERTA · AHORRÁ 37%",
+      "departureDate": "2027-03-07"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -85,7 +107,7 @@
       "dates": "OCT 20 → 29, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 12400,
+      "priceNow": 10700,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-20"
@@ -199,28 +221,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-09"
-    },
-    {
-      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
-      "origin": "Papeete (Tahiti)",
-      "dates": "DEC 13 → 20, 2026",
-      "ship": "SILVER WHISPER",
-      "priceFrom": 6150,
-      "priceNow": 4900,
-      "maxDiscount": 20,
-      "label": "OFERTA · AHORRÁ 20%",
-      "departureDate": "2026-12-13"
-    },
-    {
-      "route": "Bridgetown to San Juan",
-      "origin": "Bridgetown",
-      "dates": "DEC 21 → 29, 2026",
-      "ship": "SILVER NOVA",
-      "priceFrom": null,
-      "priceNow": 4050,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-12-21"
     }
   ]
 }
