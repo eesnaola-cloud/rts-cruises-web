@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T22:09:09.414Z",
+  "updatedAt": "2026-09-19T12:26:59.880Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -7,10 +7,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 7200,
-      "priceNow": 4700,
-      "maxDiscount": 35,
-      "label": "OFERTA · AHORRÁ 35%",
+      "priceFrom": 8100,
+      "priceNow": 5600,
+      "maxDiscount": 31,
+      "label": "OFERTA · AHORRÁ 31%",
       "departureDate": "2027-03-19"
     },
     {
@@ -40,10 +40,10 @@
       "origin": "Bridgetown",
       "dates": "JAN 25 → FEB 6, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": null,
-      "priceNow": 4550,
-      "maxDiscount": 0,
-      "label": "OFERTA",
+      "priceFrom": 8300,
+      "priceNow": 5800,
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
       "departureDate": "2027-01-25"
     },
     {
@@ -69,25 +69,36 @@
       "departureDate": "2027-02-06"
     },
     {
-      "route": "Copenhagen to Copenhagen",
-      "origin": "Copenhagen",
-      "dates": "MAY 21 → JUN 5, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 12500,
-      "priceNow": 10000,
-      "maxDiscount": 20,
-      "label": "OFERTA · AHORRÁ 20%",
-      "departureDate": "2027-05-21"
+      "route": "Vancouver to Seward (Anchorage, Alaska)",
+      "origin": "Vancouver",
+      "dates": "AUG 26 → SEP 2, 2027",
+      "ship": "SILVER WHISPER",
+      "priceFrom": 6400,
+      "priceNow": 3900,
+      "maxDiscount": 39,
+      "label": "OFERTA · AHORRÁ 39%",
+      "departureDate": "2027-08-26"
+    },
+    {
+      "route": "Bridgetown to San Juan",
+      "origin": "Bridgetown",
+      "dates": "DEC 21 → 29, 2026",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": 4050,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-21"
     },
     {
       "route": "Bridgetown to Miami, FL",
       "origin": "Bridgetown",
       "dates": "MAR 7 → 19, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 6800,
-      "priceNow": 4300,
-      "maxDiscount": 37,
-      "label": "OFERTA · AHORRÁ 37%",
+      "priceFrom": 7700,
+      "priceNow": 5200,
+      "maxDiscount": 32,
+      "label": "OFERTA · AHORRÁ 32%",
       "departureDate": "2027-03-07"
     },
     {
@@ -117,8 +128,8 @@
       "origin": "King George Island",
       "dates": "OCT 20 → 26, 2026",
       "ship": "SILVER ENDEAVOUR",
-      "priceFrom": 20050,
-      "priceNow": 18800,
+      "priceFrom": 20850,
+      "priceNow": 19600,
       "maxDiscount": 6,
       "label": "OFERTA · AHORRÁ 6%",
       "departureDate": "2026-10-20"
@@ -140,7 +151,7 @@
       "dates": "OCT 29 → NOV 7, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 11500,
+      "priceNow": 13300,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-29"
@@ -207,17 +218,6 @@
       "ship": "SILVER NOVA",
       "priceFrom": null,
       "priceNow": 3950,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-12-09"
-    },
-    {
-      "route": "Lisbon to Miami, FL",
-      "origin": "Lisbon",
-      "dates": "DEC 9 → 21, 2026",
-      "ship": "SILVER DAWN",
-      "priceFrom": null,
-      "priceNow": 4050,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-09"
