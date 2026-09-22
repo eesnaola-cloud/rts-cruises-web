@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T22:57:37.524Z",
+  "updatedAt": "2026-09-22T13:21:16.683Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -18,10 +18,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 7300,
-      "priceNow": 4800,
-      "maxDiscount": 34,
-      "label": "OFERTA · AHORRÁ 34%",
+      "priceFrom": 8200,
+      "priceNow": 5700,
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
       "departureDate": "2027-03-19"
     },
     {
@@ -102,6 +102,17 @@
       "departureDate": "2026-12-21"
     },
     {
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "FEB 7 → 19, 2027",
+      "ship": "SILVER RAY",
+      "priceFrom": null,
+      "priceNow": 6450,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-02-07"
+    },
+    {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
       "origin": "Papeete (Tahiti)",
       "dates": "OCT 18 → 25, 2026",
@@ -128,8 +139,8 @@
       "origin": "King George Island",
       "dates": "OCT 20 → 26, 2026",
       "ship": "SILVER ENDEAVOUR",
-      "priceFrom": 20850,
-      "priceNow": 19600,
+      "priceFrom": 20050,
+      "priceNow": 18800,
       "maxDiscount": 6,
       "label": "OFERTA · AHORRÁ 6%",
       "departureDate": "2026-10-20"
@@ -146,12 +157,23 @@
       "departureDate": "2026-10-21"
     },
     {
+      "route": "Montreal to Miami, FL",
+      "origin": "Montreal",
+      "dates": "OCT 24 → NOV 7, 2026",
+      "ship": "SILVER SHADOW",
+      "priceFrom": 11700,
+      "priceNow": 9200,
+      "maxDiscount": 21,
+      "label": "OFERTA · AHORRÁ 21%",
+      "departureDate": "2026-10-24"
+    },
+    {
       "route": "King George Island to Puerto Williams",
       "origin": "King George Island",
       "dates": "OCT 29 → NOV 7, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 13300,
+      "priceNow": 11500,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-29"
@@ -199,28 +221,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-29"
-    },
-    {
-      "route": "Mumbai to Singapore",
-      "origin": "Mumbai",
-      "dates": "DEC 2 → 20, 2026",
-      "ship": "SILVER MUSE",
-      "priceFrom": null,
-      "priceNow": 9550,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-12-02"
-    },
-    {
-      "route": "Lisbon to Bridgetown",
-      "origin": "Lisbon",
-      "dates": "DEC 9 → 21, 2026",
-      "ship": "SILVER NOVA",
-      "priceFrom": null,
-      "priceNow": 3950,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-12-09"
     }
   ]
 }
