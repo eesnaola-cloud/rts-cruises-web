@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T22:36:38.439Z",
+  "updatedAt": "2026-09-24T13:29:54.449Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -8,21 +8,10 @@
       "dates": "DEC 19 → 27, 2026",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": 3850,
+      "priceNow": 3650,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-19"
-    },
-    {
-      "route": "Miami, FL to Bridgetown",
-      "origin": "Miami, FL",
-      "dates": "MAR 19 → 31, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 8200,
-      "priceNow": 5700,
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2027-03-19"
     },
     {
       "route": "Vancouver to Seward (Anchorage, Alaska)",
@@ -34,6 +23,17 @@
       "maxDiscount": 39,
       "label": "OFERTA · AHORRÁ 39%",
       "departureDate": "2027-08-26"
+    },
+    {
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "MAR 19 → 31, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 7300,
+      "priceNow": 4800,
+      "maxDiscount": 34,
+      "label": "OFERTA · AHORRÁ 34%",
+      "departureDate": "2027-03-19"
     },
     {
       "route": "Miami, FL to Bridgetown",
@@ -69,17 +69,6 @@
       "departureDate": "2028-03-24"
     },
     {
-      "route": "Fusina (Venice) to Civitavecchia (Rome)",
-      "origin": "Fusina (Venice)",
-      "dates": "OCT 28 → NOV 7, 2027",
-      "ship": "SILVER NOVA",
-      "priceFrom": 9500,
-      "priceNow": 7000,
-      "maxDiscount": 26,
-      "label": "OFERTA · AHORRÁ 26%",
-      "departureDate": "2027-10-28"
-    },
-    {
       "route": "Bridgetown to San Juan",
       "origin": "Bridgetown",
       "dates": "DEC 21 → 29, 2026",
@@ -91,26 +80,37 @@
       "departureDate": "2026-12-21"
     },
     {
+      "route": "Fusina (Venice) to Civitavecchia (Rome)",
+      "origin": "Fusina (Venice)",
+      "dates": "OCT 28 → NOV 7, 2027",
+      "ship": "SILVER NOVA",
+      "priceFrom": 9500,
+      "priceNow": 7000,
+      "maxDiscount": 26,
+      "label": "OFERTA · AHORRÁ 26%",
+      "departureDate": "2027-10-28"
+    },
+    {
       "route": "Bridgetown to Miami, FL",
       "origin": "Bridgetown",
       "dates": "MAR 7 → 19, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 7700,
-      "priceNow": 5200,
-      "maxDiscount": 32,
-      "label": "OFERTA · AHORRÁ 32%",
+      "priceFrom": 7300,
+      "priceNow": 4800,
+      "maxDiscount": 34,
+      "label": "OFERTA · AHORRÁ 34%",
       "departureDate": "2027-03-07"
     },
     {
-      "route": "Vancouver to Seward (Anchorage, Alaska)",
-      "origin": "Vancouver",
-      "dates": "AUG 5 → 12, 2027",
-      "ship": "SILVER MOON",
-      "priceFrom": 7400,
-      "priceNow": 4900,
-      "maxDiscount": 34,
-      "label": "OFERTA · AHORRÁ 34%",
-      "departureDate": "2027-08-05"
+      "route": "Puerto Williams to King George Island",
+      "origin": "Puerto Williams",
+      "dates": "OCT 20 → 29, 2026",
+      "ship": "SILVER WIND",
+      "priceFrom": null,
+      "priceNow": 12400,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-10-20"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -124,23 +124,12 @@
       "departureDate": "2026-10-18"
     },
     {
-      "route": "Puerto Williams to King George Island",
-      "origin": "Puerto Williams",
-      "dates": "OCT 20 → 29, 2026",
-      "ship": "SILVER WIND",
-      "priceFrom": null,
-      "priceNow": 10700,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-10-20"
-    },
-    {
       "route": "King George Island to King George Island",
       "origin": "King George Island",
       "dates": "OCT 20 → 26, 2026",
       "ship": "SILVER ENDEAVOUR",
-      "priceFrom": 20050,
-      "priceNow": 18800,
+      "priceFrom": 20850,
+      "priceNow": 19600,
       "maxDiscount": 6,
       "label": "OFERTA · AHORRÁ 6%",
       "departureDate": "2026-10-20"
@@ -155,28 +144,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-21"
-    },
-    {
-      "route": "Montreal to Miami, FL",
-      "origin": "Montreal",
-      "dates": "OCT 24 → NOV 7, 2026",
-      "ship": "SILVER SHADOW",
-      "priceFrom": 11700,
-      "priceNow": 9200,
-      "maxDiscount": 21,
-      "label": "OFERTA · AHORRÁ 21%",
-      "departureDate": "2026-10-24"
-    },
-    {
-      "route": "King George Island to Puerto Williams",
-      "origin": "King George Island",
-      "dates": "OCT 29 → NOV 7, 2026",
-      "ship": "SILVER WIND",
-      "priceFrom": null,
-      "priceNow": 11500,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-10-29"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -201,12 +168,23 @@
       "departureDate": "2026-11-16"
     },
     {
+      "route": "Puerto Williams to King George Island",
+      "origin": "Puerto Williams",
+      "dates": "NOV 25 → DEC 4, 2026",
+      "ship": "SILVER WIND",
+      "priceFrom": null,
+      "priceNow": 23600,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-11-25"
+    },
+    {
       "route": "King George Island to King George Island",
       "origin": "King George Island",
       "dates": "NOV 25 → DEC 1, 2026",
       "ship": "SILVER ENDEAVOUR",
       "priceFrom": null,
-      "priceNow": 21500,
+      "priceNow": 20900,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -221,6 +199,28 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-29"
+    },
+    {
+      "route": "Mumbai to Singapore",
+      "origin": "Mumbai",
+      "dates": "DEC 2 → 20, 2026",
+      "ship": "SILVER MUSE",
+      "priceFrom": null,
+      "priceNow": 9550,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-02"
+    },
+    {
+      "route": "Lisbon to Bridgetown",
+      "origin": "Lisbon",
+      "dates": "DEC 9 → 21, 2026",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": 3950,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-09"
     }
   ]
 }
