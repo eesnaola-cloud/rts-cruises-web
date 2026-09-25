@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T22:55:28.536Z",
+  "updatedAt": "2026-09-25T13:36:32.409Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -27,17 +27,6 @@
     {
       "route": "Miami, FL to Bridgetown",
       "origin": "Miami, FL",
-      "dates": "MAR 19 → 31, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 7300,
-      "priceNow": 4800,
-      "maxDiscount": 34,
-      "label": "OFERTA · AHORRÁ 34%",
-      "departureDate": "2027-03-19"
-    },
-    {
-      "route": "Miami, FL to Bridgetown",
-      "origin": "Miami, FL",
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
@@ -47,15 +36,15 @@
       "departureDate": "2027-02-06"
     },
     {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "JAN 25 → FEB 6, 2027",
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 7900,
-      "priceNow": 5400,
-      "maxDiscount": 32,
-      "label": "OFERTA · AHORRÁ 32%",
-      "departureDate": "2027-01-25"
+      "priceFrom": 7300,
+      "priceNow": 4800,
+      "maxDiscount": 34,
+      "label": "OFERTA · AHORRÁ 34%",
+      "departureDate": "2027-03-19"
     },
     {
       "route": "Miami, FL to Lisbon",
@@ -67,6 +56,17 @@
       "maxDiscount": 35,
       "label": "OFERTA · AHORRÁ 35%",
       "departureDate": "2028-03-24"
+    },
+    {
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "JAN 25 → FEB 6, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 8300,
+      "priceNow": 5800,
+      "maxDiscount": 30,
+      "label": "OFERTA · AHORRÁ 30%",
+      "departureDate": "2027-01-25"
     },
     {
       "route": "Bridgetown to San Juan",
@@ -91,15 +91,15 @@
       "departureDate": "2027-10-28"
     },
     {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "MAR 7 → 19, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 7300,
-      "priceNow": 4800,
-      "maxDiscount": 34,
-      "label": "OFERTA · AHORRÁ 34%",
-      "departureDate": "2027-03-07"
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "FEB 7 → 19, 2027",
+      "ship": "SILVER RAY",
+      "priceFrom": null,
+      "priceNow": 6450,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-02-07"
     },
     {
       "route": "Puerto Williams to King George Island",
@@ -107,7 +107,7 @@
       "dates": "OCT 20 → 29, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 12400,
+      "priceNow": 10700,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-20"
