@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T00:06:32.962Z",
+  "updatedAt": "2026-09-29T14:47:34.359Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -117,8 +117,8 @@
       "origin": "Bridgetown",
       "dates": "FEB 26 → MAR 10, 2027",
       "ship": "SILVER RAY",
-      "priceFrom": 9100,
-      "priceNow": 6600,
+      "priceFrom": 9300,
+      "priceNow": 6800,
       "maxDiscount": 27,
       "label": "OFERTA · AHORRÁ 27%",
       "departureDate": "2027-02-26"
@@ -140,7 +140,7 @@
       "dates": "OCT 20 → 29, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 10700,
+      "priceNow": 10000,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-20"
@@ -150,10 +150,10 @@
       "origin": "King George Island",
       "dates": "OCT 20 → 26, 2026",
       "ship": "SILVER ENDEAVOUR",
-      "priceFrom": 20850,
-      "priceNow": 19600,
-      "maxDiscount": 6,
-      "label": "OFERTA · AHORRÁ 6%",
+      "priceFrom": null,
+      "priceNow": 13000,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2026-10-20"
     },
     {
@@ -172,8 +172,8 @@
       "origin": "Papeete (Tahiti)",
       "dates": "NOV 15 → 29, 2026",
       "ship": "SILVER WHISPER",
-      "priceFrom": 9350,
-      "priceNow": 8100,
+      "priceFrom": 9950,
+      "priceNow": 8700,
       "maxDiscount": 13,
       "label": "OFERTA · AHORRÁ 13%",
       "departureDate": "2026-11-15"
@@ -195,7 +195,7 @@
       "dates": "NOV 25 → DEC 4, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 23600,
+      "priceNow": 15300,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -206,7 +206,7 @@
       "dates": "NOV 25 → DEC 1, 2026",
       "ship": "SILVER ENDEAVOUR",
       "priceFrom": null,
-      "priceNow": 20900,
+      "priceNow": 13600,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
