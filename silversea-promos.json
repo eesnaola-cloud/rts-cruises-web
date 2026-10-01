@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T23:22:53.263Z",
+  "updatedAt": "2026-10-01T15:22:13.218Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -58,17 +58,6 @@
       "departureDate": "2026-12-21"
     },
     {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "MAR 7 → 19, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 7300,
-      "priceNow": 4800,
-      "maxDiscount": 34,
-      "label": "OFERTA · AHORRÁ 34%",
-      "departureDate": "2027-03-07"
-    },
-    {
       "route": "Fusina (Venice) to Civitavecchia (Rome)",
       "origin": "Fusina (Venice)",
       "dates": "OCT 28 → NOV 7, 2027",
@@ -78,6 +67,17 @@
       "maxDiscount": 26,
       "label": "OFERTA · AHORRÁ 26%",
       "departureDate": "2027-10-28"
+    },
+    {
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "MAR 7 → 19, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 7300,
+      "priceNow": 4800,
+      "maxDiscount": 34,
+      "label": "OFERTA · AHORRÁ 34%",
+      "departureDate": "2027-03-07"
     },
     {
       "route": "Bridgetown to Miami, FL",
@@ -102,17 +102,6 @@
       "departureDate": "2028-03-24"
     },
     {
-      "route": "Miami, FL to Bridgetown",
-      "origin": "Miami, FL",
-      "dates": "FEB 7 → 19, 2027",
-      "ship": "SILVER RAY",
-      "priceFrom": null,
-      "priceNow": 6750,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-02-07"
-    },
-    {
       "route": "Puerto Williams to King George Island",
       "origin": "Puerto Williams",
       "dates": "OCT 20 → 29, 2026",
@@ -124,15 +113,26 @@
       "departureDate": "2026-10-20"
     },
     {
-      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
-      "origin": "Papeete (Tahiti)",
-      "dates": "OCT 18 → 25, 2026",
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "FEB 7 → 19, 2027",
+      "ship": "SILVER RAY",
+      "priceFrom": null,
+      "priceNow": 6750,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-02-07"
+    },
+    {
+      "route": "Vancouver to Seward (Anchorage, Alaska)",
+      "origin": "Vancouver",
+      "dates": "JUL 29 → AUG 5, 2027",
       "ship": "SILVER WHISPER",
-      "priceFrom": 6150,
-      "priceNow": 4900,
-      "maxDiscount": 20,
-      "label": "OFERTA · AHORRÁ 20%",
-      "departureDate": "2026-10-18"
+      "priceFrom": 6600,
+      "priceNow": 4100,
+      "maxDiscount": 38,
+      "label": "OFERTA · AHORRÁ 38%",
+      "departureDate": "2027-07-29"
     },
     {
       "route": "King George Island to King George Island",
@@ -161,8 +161,8 @@
       "origin": "Papeete (Tahiti)",
       "dates": "NOV 15 → 29, 2026",
       "ship": "SILVER WHISPER",
-      "priceFrom": 9950,
-      "priceNow": 8700,
+      "priceFrom": 9350,
+      "priceNow": 8100,
       "maxDiscount": 13,
       "label": "OFERTA · AHORRÁ 13%",
       "departureDate": "2026-11-15"
@@ -184,7 +184,7 @@
       "dates": "NOV 25 → DEC 4, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 31600,
+      "priceNow": 15300,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -195,7 +195,7 @@
       "dates": "NOV 25 → DEC 1, 2026",
       "ship": "SILVER ENDEAVOUR",
       "priceFrom": null,
-      "priceNow": 14100,
+      "priceNow": 13600,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -217,7 +217,7 @@
       "dates": "DEC 2 → 20, 2026",
       "ship": "SILVER MUSE",
       "priceFrom": null,
-      "priceNow": 9550,
+      "priceNow": 9150,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-02"
