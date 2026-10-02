@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T23:37:32.367Z",
+  "updatedAt": "2026-10-02T14:40:33.127Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -69,28 +69,6 @@
       "departureDate": "2027-10-28"
     },
     {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "MAR 7 → 19, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 7300,
-      "priceNow": 4800,
-      "maxDiscount": 34,
-      "label": "OFERTA · AHORRÁ 34%",
-      "departureDate": "2027-03-07"
-    },
-    {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "JAN 25 → FEB 6, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 7900,
-      "priceNow": 5400,
-      "maxDiscount": 32,
-      "label": "OFERTA · AHORRÁ 32%",
-      "departureDate": "2027-01-25"
-    },
-    {
       "route": "Miami, FL to Lisbon",
       "origin": "Miami, FL",
       "dates": "MAR 24 → APR 8, 2028",
@@ -100,6 +78,17 @@
       "maxDiscount": 35,
       "label": "OFERTA · AHORRÁ 35%",
       "departureDate": "2028-03-24"
+    },
+    {
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "MAR 7 → 19, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 7300,
+      "priceNow": 4800,
+      "maxDiscount": 34,
+      "label": "OFERTA · AHORRÁ 34%",
+      "departureDate": "2027-03-07"
     },
     {
       "route": "Puerto Williams to King George Island",
@@ -113,6 +102,17 @@
       "departureDate": "2026-10-20"
     },
     {
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "FEB 26 → MAR 10, 2027",
+      "ship": "SILVER RAY",
+      "priceFrom": 9100,
+      "priceNow": 6600,
+      "maxDiscount": 27,
+      "label": "OFERTA · AHORRÁ 27%",
+      "departureDate": "2027-02-26"
+    },
+    {
       "route": "Miami, FL to Bridgetown",
       "origin": "Miami, FL",
       "dates": "FEB 7 → 19, 2027",
@@ -122,17 +122,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-07"
-    },
-    {
-      "route": "Vancouver to Seward (Anchorage, Alaska)",
-      "origin": "Vancouver",
-      "dates": "JUL 29 → AUG 5, 2027",
-      "ship": "SILVER WHISPER",
-      "priceFrom": 6600,
-      "priceNow": 4100,
-      "maxDiscount": 38,
-      "label": "OFERTA · AHORRÁ 38%",
-      "departureDate": "2027-07-29"
     },
     {
       "route": "King George Island to King George Island",
@@ -195,7 +184,7 @@
       "dates": "NOV 25 → DEC 1, 2026",
       "ship": "SILVER ENDEAVOUR",
       "priceFrom": null,
-      "priceNow": 13600,
+      "priceNow": 14400,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -221,6 +210,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-02"
+    },
+    {
+      "route": "Lisbon to Bridgetown",
+      "origin": "Lisbon",
+      "dates": "DEC 9 → 21, 2026",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": 3950,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-09"
     }
   ]
 }
