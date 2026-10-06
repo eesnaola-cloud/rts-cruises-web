@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T01:04:11.902Z",
+  "updatedAt": "2026-10-06T15:00:27.089Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -40,10 +40,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 24 → APR 8, 2028",
       "ship": "SILVER DAWN",
-      "priceFrom": 7100,
-      "priceNow": 4600,
-      "maxDiscount": 35,
-      "label": "OFERTA · AHORRÁ 35%",
+      "priceFrom": 7300,
+      "priceNow": 4800,
+      "maxDiscount": 34,
+      "label": "OFERTA · AHORRÁ 34%",
       "departureDate": "2028-03-24"
     },
     {
@@ -63,7 +63,7 @@
       "dates": "DEC 21 → 29, 2026",
       "ship": "SILVER NOVA",
       "priceFrom": null,
-      "priceNow": 4250,
+      "priceNow": 4050,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-21"
@@ -74,7 +74,7 @@
       "dates": "OCT 20 → 29, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 10000,
+      "priceNow": 9000,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-20"
@@ -100,17 +100,6 @@
       "maxDiscount": 33,
       "label": "OFERTA · AHORRÁ 33%",
       "departureDate": "2027-03-07"
-    },
-    {
-      "route": "Lisbon to Civitavecchia (Rome)",
-      "origin": "Lisbon",
-      "dates": "APR 6 → 16, 2027",
-      "ship": "SILVER NOVA",
-      "priceFrom": 8400,
-      "priceNow": 5900,
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
-      "departureDate": "2027-04-06"
     },
     {
       "route": "King George Island to King George Island",
@@ -162,7 +151,18 @@
       "dates": "NOV 25 → DEC 4, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 15300,
+      "priceNow": 14300,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-11-25"
+    },
+    {
+      "route": "King George Island to King George Island",
+      "origin": "King George Island",
+      "dates": "NOV 25 → DEC 1, 2026",
+      "ship": "SILVER ENDEAVOUR",
+      "priceFrom": null,
+      "priceNow": 14400,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
