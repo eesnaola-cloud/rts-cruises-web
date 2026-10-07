@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T23:30:11.379Z",
+  "updatedAt": "2026-10-07T15:28:46.900Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -18,10 +18,10 @@
       "origin": "Vancouver",
       "dates": "AUG 26 → SEP 2, 2027",
       "ship": "SILVER WHISPER",
-      "priceFrom": 6400,
-      "priceNow": 3900,
-      "maxDiscount": 39,
-      "label": "OFERTA · AHORRÁ 39%",
+      "priceFrom": 6600,
+      "priceNow": 4100,
+      "maxDiscount": 38,
+      "label": "OFERTA · AHORRÁ 38%",
       "departureDate": "2027-08-26"
     },
     {
@@ -51,10 +51,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 7600,
-      "priceNow": 5100,
-      "maxDiscount": 33,
-      "label": "OFERTA · AHORRÁ 33%",
+      "priceFrom": 8000,
+      "priceNow": 5500,
+      "maxDiscount": 31,
+      "label": "OFERTA · AHORRÁ 31%",
       "departureDate": "2027-03-19"
     },
     {
@@ -74,7 +74,7 @@
       "dates": "OCT 20 → 29, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 9000,
+      "priceNow": 10300,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-10-20"
@@ -89,17 +89,6 @@
       "maxDiscount": 26,
       "label": "OFERTA · AHORRÁ 26%",
       "departureDate": "2027-10-28"
-    },
-    {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "MAR 7 → 19, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 7600,
-      "priceNow": 5100,
-      "maxDiscount": 33,
-      "label": "OFERTA · AHORRÁ 33%",
-      "departureDate": "2027-03-07"
     },
     {
       "route": "King George Island to King George Island",
@@ -221,6 +210,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-03"
+    },
+    {
+      "route": "Puerto Williams to King George Island",
+      "origin": "Puerto Williams",
+      "dates": "JAN 6 → 15, 2027",
+      "ship": "SILVER WIND",
+      "priceFrom": null,
+      "priceNow": 24000,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-06"
     }
   ]
 }
