@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T00:05:19.769Z",
+  "updatedAt": "2026-10-09T15:12:39.025Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -58,17 +58,6 @@
       "departureDate": "2027-03-19"
     },
     {
-      "route": "Puerto Williams to King George Island",
-      "origin": "Puerto Williams",
-      "dates": "OCT 20 → 29, 2026",
-      "ship": "SILVER WIND",
-      "priceFrom": null,
-      "priceNow": 10300,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-10-20"
-    },
-    {
       "route": "Bridgetown to San Juan",
       "origin": "Bridgetown",
       "dates": "DEC 21 → 29, 2026",
@@ -78,6 +67,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-21"
+    },
+    {
+      "route": "Puerto Williams to King George Island",
+      "origin": "Puerto Williams",
+      "dates": "OCT 20 → 29, 2026",
+      "ship": "SILVER WIND",
+      "priceFrom": null,
+      "priceNow": 9000,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-10-20"
     },
     {
       "route": "Fusina (Venice) to Civitavecchia (Rome)",
