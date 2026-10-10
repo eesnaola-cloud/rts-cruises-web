@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T23:45:53.507Z",
+  "updatedAt": "2026-10-10T14:25:24.995Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -91,15 +91,15 @@
       "departureDate": "2027-10-28"
     },
     {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "MAR 7 → 19, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 7900,
-      "priceNow": 5400,
-      "maxDiscount": 32,
-      "label": "OFERTA · AHORRÁ 32%",
-      "departureDate": "2027-03-07"
+      "route": "Lisbon to Barcelona",
+      "origin": "Lisbon",
+      "dates": "MAR 24 → APR 4, 2027",
+      "ship": "SILVER RAY",
+      "priceFrom": 9100,
+      "priceNow": 6600,
+      "maxDiscount": 27,
+      "label": "OFERTA · AHORRÁ 27%",
+      "departureDate": "2027-03-24"
     },
     {
       "route": "King George Island to King George Island",
