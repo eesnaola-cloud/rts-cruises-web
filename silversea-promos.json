@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T22:01:29.548Z",
+  "updatedAt": "2026-10-13T01:45:29.015Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -69,15 +69,15 @@
       "departureDate": "2026-10-20"
     },
     {
-      "route": "Incheon (Seoul) to Tokyo",
-      "origin": "Incheon (Seoul)",
-      "dates": "MAY 10 → 24, 2027",
-      "ship": "SILVER MUSE",
-      "priceFrom": 10100,
-      "priceNow": 7600,
-      "maxDiscount": 25,
-      "label": "OFERTA · AHORRÁ 25%",
-      "departureDate": "2027-05-10"
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "MAR 7 → 19, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 7900,
+      "priceNow": 5400,
+      "maxDiscount": 32,
+      "label": "OFERTA · AHORRÁ 32%",
+      "departureDate": "2027-03-07"
     },
     {
       "route": "King George Island to King George Island",
