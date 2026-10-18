@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T21:55:53.362Z",
+  "updatedAt": "2026-10-18T12:34:19.030Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -19,7 +19,7 @@
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": 4750,
+      "priceNow": 4450,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-06"
@@ -34,17 +34,6 @@
       "maxDiscount": 38,
       "label": "OFERTA · AHORRÁ 38%",
       "departureDate": "2027-08-26"
-    },
-    {
-      "route": "Miami, FL to Lisbon",
-      "origin": "Miami, FL",
-      "dates": "MAR 24 → APR 8, 2028",
-      "ship": "SILVER DAWN",
-      "priceFrom": 7100,
-      "priceNow": 4600,
-      "maxDiscount": 35,
-      "label": "OFERTA · AHORRÁ 35%",
-      "departureDate": "2028-03-24"
     },
     {
       "route": "Miami, FL to Bridgetown",
@@ -69,6 +58,17 @@
       "departureDate": "2026-12-21"
     },
     {
+      "route": "Miami, FL to Lisbon",
+      "origin": "Miami, FL",
+      "dates": "MAR 24 → APR 8, 2028",
+      "ship": "SILVER DAWN",
+      "priceFrom": 7100,
+      "priceNow": 4600,
+      "maxDiscount": 35,
+      "label": "OFERTA · AHORRÁ 35%",
+      "departureDate": "2028-03-24"
+    },
+    {
       "route": "Bridgetown to Miami, FL",
       "origin": "Bridgetown",
       "dates": "MAR 7 → 19, 2027",
@@ -78,17 +78,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-03-07"
-    },
-    {
-      "route": "Puerto Williams to King George Island",
-      "origin": "Puerto Williams",
-      "dates": "OCT 20 → 29, 2026",
-      "ship": "SILVER WIND",
-      "priceFrom": null,
-      "priceNow": 10300,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-10-20"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -113,17 +102,6 @@
       "departureDate": "2027-02-14"
     },
     {
-      "route": "San Juan to Bridgetown",
-      "origin": "San Juan",
-      "dates": "FEB 6 → 16, 2027",
-      "ship": "SILVER SHADOW",
-      "priceFrom": null,
-      "priceNow": 4450,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-02-06"
-    },
-    {
       "route": "Copenhagen to Copenhagen",
       "origin": "Copenhagen",
       "dates": "MAY 21 → JUN 5, 2027",
@@ -133,6 +111,28 @@
       "maxDiscount": 28,
       "label": "OFERTA · AHORRÁ 28%",
       "departureDate": "2027-05-21"
+    },
+    {
+      "route": "Puerto Williams to King George Island",
+      "origin": "Puerto Williams",
+      "dates": "OCT 20 → 29, 2026",
+      "ship": "SILVER WIND",
+      "priceFrom": null,
+      "priceNow": 10300,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-10-20"
+    },
+    {
+      "route": "Tokyo to Tokyo",
+      "origin": "Tokyo",
+      "dates": "MAR 20 → APR 3, 2027",
+      "ship": "SILVER MOON",
+      "priceFrom": null,
+      "priceNow": 10150,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-03-20"
     },
     {
       "route": "King George Island to King George Island",
@@ -184,7 +184,7 @@
       "dates": "NOV 25 → DEC 4, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 14800,
+      "priceNow": 14300,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -206,7 +206,7 @@
       "dates": "DEC 2 → 20, 2026",
       "ship": "SILVER MUSE",
       "priceFrom": null,
-      "priceNow": 9950,
+      "priceNow": 9150,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-02"
