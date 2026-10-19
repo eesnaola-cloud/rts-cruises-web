@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T22:09:24.196Z",
+  "updatedAt": "2026-10-19T15:30:31.466Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -36,6 +36,17 @@
       "departureDate": "2027-08-26"
     },
     {
+      "route": "Bridgetown to San Juan",
+      "origin": "Bridgetown",
+      "dates": "DEC 21 → 29, 2026",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": 4800,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-21"
+    },
+    {
       "route": "Miami, FL to Bridgetown",
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
@@ -45,17 +56,6 @@
       "maxDiscount": 37,
       "label": "OFERTA · AHORRÁ 37%",
       "departureDate": "2027-03-19"
-    },
-    {
-      "route": "Bridgetown to San Juan",
-      "origin": "Bridgetown",
-      "dates": "DEC 21 → 29, 2026",
-      "ship": "SILVER NOVA",
-      "priceFrom": null,
-      "priceNow": 4600,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-12-21"
     },
     {
       "route": "Miami, FL to Lisbon",
@@ -69,17 +69,6 @@
       "departureDate": "2028-03-24"
     },
     {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "MAR 7 → 19, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": null,
-      "priceNow": 5050,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-03-07"
-    },
-    {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
       "origin": "Papeete (Tahiti)",
       "dates": "FEB 21 → MAR 7, 2027",
@@ -89,17 +78,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-21"
-    },
-    {
-      "route": "Singapore to Hong Kong",
-      "origin": "Singapore",
-      "dates": "FEB 14 → 28, 2027",
-      "ship": "SILVER MUSE",
-      "priceFrom": null,
-      "priceNow": 7750,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-02-14"
     },
     {
       "route": "Copenhagen to Copenhagen",
@@ -113,6 +91,28 @@
       "departureDate": "2027-05-21"
     },
     {
+      "route": "Bridgetown to Miami, FL",
+      "origin": "Bridgetown",
+      "dates": "MAR 7 → 19, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": null,
+      "priceNow": 5050,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-03-07"
+    },
+    {
+      "route": "Singapore to Hong Kong",
+      "origin": "Singapore",
+      "dates": "FEB 14 → 28, 2027",
+      "ship": "SILVER MUSE",
+      "priceFrom": null,
+      "priceNow": 7750,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-02-14"
+    },
+    {
       "route": "Puerto Williams to King George Island",
       "origin": "Puerto Williams",
       "dates": "OCT 20 → 29, 2026",
@@ -124,15 +124,15 @@
       "departureDate": "2026-10-20"
     },
     {
-      "route": "Tokyo to Tokyo",
-      "origin": "Tokyo",
-      "dates": "MAR 20 → APR 3, 2027",
-      "ship": "SILVER MOON",
-      "priceFrom": null,
-      "priceNow": 10150,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-03-20"
+      "route": "Southampton to Lisbon",
+      "origin": "Southampton",
+      "dates": "AUG 25 → SEP 6, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 10300,
+      "priceNow": 7300,
+      "maxDiscount": 29,
+      "label": "OFERTA · AHORRÁ 29%",
+      "departureDate": "2027-08-25"
     },
     {
       "route": "King George Island to King George Island",
