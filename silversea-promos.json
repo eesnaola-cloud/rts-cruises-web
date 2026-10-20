@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T19:44:15.610Z",
+  "updatedAt": "2026-10-20T13:30:35.449Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -58,6 +58,17 @@
       "departureDate": "2027-03-19"
     },
     {
+      "route": "Copenhagen to Copenhagen",
+      "origin": "Copenhagen",
+      "dates": "MAY 21 → JUN 5, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 10600,
+      "priceNow": 7600,
+      "maxDiscount": 28,
+      "label": "OFERTA · AHORRÁ 28%",
+      "departureDate": "2027-05-21"
+    },
+    {
       "route": "Miami, FL to Lisbon",
       "origin": "Miami, FL",
       "dates": "MAR 24 → APR 8, 2028",
@@ -78,17 +89,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-21"
-    },
-    {
-      "route": "Copenhagen to Copenhagen",
-      "origin": "Copenhagen",
-      "dates": "MAY 21 → JUN 5, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 10600,
-      "priceNow": 7600,
-      "maxDiscount": 28,
-      "label": "OFERTA · AHORRÁ 28%",
-      "departureDate": "2027-05-21"
     },
     {
       "route": "Bridgetown to Miami, FL",
@@ -113,17 +113,6 @@
       "departureDate": "2027-02-14"
     },
     {
-      "route": "Puerto Williams to King George Island",
-      "origin": "Puerto Williams",
-      "dates": "OCT 20 → 29, 2026",
-      "ship": "SILVER WIND",
-      "priceFrom": null,
-      "priceNow": 10300,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-10-20"
-    },
-    {
       "route": "Southampton to Lisbon",
       "origin": "Southampton",
       "dates": "AUG 25 → SEP 6, 2027",
@@ -133,17 +122,6 @@
       "maxDiscount": 29,
       "label": "OFERTA · AHORRÁ 29%",
       "departureDate": "2027-08-25"
-    },
-    {
-      "route": "King George Island to King George Island",
-      "origin": "King George Island",
-      "dates": "OCT 20 → 26, 2026",
-      "ship": "SILVER ENDEAVOUR",
-      "priceFrom": null,
-      "priceNow": 13000,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-10-20"
     },
     {
       "route": "Lisbon to Cape Town",
@@ -221,6 +199,28 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-09"
+    },
+    {
+      "route": "Lisbon to Miami, FL",
+      "origin": "Lisbon",
+      "dates": "DEC 9 → 21, 2026",
+      "ship": "SILVER DAWN",
+      "priceFrom": null,
+      "priceNow": 4150,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-09"
+    },
+    {
+      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
+      "origin": "Papeete (Tahiti)",
+      "dates": "JAN 3 → 13, 2027",
+      "ship": "SILVER WHISPER",
+      "priceFrom": 7900,
+      "priceNow": 5400,
+      "maxDiscount": 32,
+      "label": "OFERTA · AHORRÁ 32%",
+      "departureDate": "2027-01-03"
     }
   ]
 }
