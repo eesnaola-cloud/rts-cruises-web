@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T23:04:37.273Z",
+  "updatedAt": "2026-10-23T13:18:33.913Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -36,15 +36,15 @@
       "departureDate": "2027-05-21"
     },
     {
-      "route": "Vancouver to Seward (Anchorage, Alaska)",
-      "origin": "Vancouver",
-      "dates": "AUG 26 → SEP 2, 2027",
+      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
+      "origin": "Papeete (Tahiti)",
+      "dates": "FEB 21 → MAR 7, 2027",
       "ship": "SILVER WHISPER",
-      "priceFrom": 6600,
-      "priceNow": 4100,
-      "maxDiscount": 38,
-      "label": "OFERTA · AHORRÁ 38%",
-      "departureDate": "2027-08-26"
+      "priceFrom": null,
+      "priceNow": 6350,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-02-21"
     },
     {
       "route": "Miami, FL to Bridgetown",
@@ -58,15 +58,15 @@
       "departureDate": "2027-03-19"
     },
     {
-      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
-      "origin": "Papeete (Tahiti)",
-      "dates": "FEB 21 → MAR 7, 2027",
+      "route": "Vancouver to Seward (Anchorage, Alaska)",
+      "origin": "Vancouver",
+      "dates": "AUG 26 → SEP 2, 2027",
       "ship": "SILVER WHISPER",
-      "priceFrom": null,
-      "priceNow": 6350,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-02-21"
+      "priceFrom": 6600,
+      "priceNow": 4100,
+      "maxDiscount": 38,
+      "label": "OFERTA · AHORRÁ 38%",
+      "departureDate": "2027-08-26"
     },
     {
       "route": "Bridgetown to San Juan",
@@ -80,17 +80,6 @@
       "departureDate": "2026-12-21"
     },
     {
-      "route": "Miami, FL to Lisbon",
-      "origin": "Miami, FL",
-      "dates": "MAR 24 → APR 8, 2028",
-      "ship": "SILVER DAWN",
-      "priceFrom": 7100,
-      "priceNow": 4600,
-      "maxDiscount": 35,
-      "label": "OFERTA · AHORRÁ 35%",
-      "departureDate": "2028-03-24"
-    },
-    {
       "route": "Lisbon to Nice",
       "origin": "Lisbon",
       "dates": "MAR 23 → APR 1, 2027",
@@ -102,17 +91,6 @@
       "departureDate": "2027-03-23"
     },
     {
-      "route": "Bridgetown to Miami, FL",
-      "origin": "Bridgetown",
-      "dates": "MAR 7 → 19, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": null,
-      "priceNow": 5050,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-03-07"
-    },
-    {
       "route": "Lisbon to Barcelona",
       "origin": "Lisbon",
       "dates": "MAR 24 → APR 4, 2027",
@@ -122,6 +100,39 @@
       "maxDiscount": 32,
       "label": "OFERTA · AHORRÁ 32%",
       "departureDate": "2027-03-24"
+    },
+    {
+      "route": "Miami, FL to Lisbon",
+      "origin": "Miami, FL",
+      "dates": "MAR 24 → APR 8, 2028",
+      "ship": "SILVER DAWN",
+      "priceFrom": 7100,
+      "priceNow": 4600,
+      "maxDiscount": 35,
+      "label": "OFERTA · AHORRÁ 35%",
+      "departureDate": "2028-03-24"
+    },
+    {
+      "route": "Miami, FL to Lisbon",
+      "origin": "Miami, FL",
+      "dates": "MAR 10 → 24, 2027",
+      "ship": "SILVER RAY",
+      "priceFrom": null,
+      "priceNow": 4550,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-03-10"
+    },
+    {
+      "route": "Puerto Williams to Puerto Williams",
+      "origin": "Puerto Williams",
+      "dates": "NOV 9 → 24, 2026",
+      "ship": "SILVER CLOUD",
+      "priceFrom": 19750,
+      "priceNow": 18500,
+      "maxDiscount": 6,
+      "label": "OFERTA · AHORRÁ 6%",
+      "departureDate": "2026-11-09"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -146,12 +157,45 @@
       "departureDate": "2026-11-16"
     },
     {
+      "route": "King George Island to King George Island",
+      "origin": "King George Island",
+      "dates": "NOV 19 → 25, 2026",
+      "ship": "SILVER ENDEAVOUR",
+      "priceFrom": null,
+      "priceNow": 19900,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-11-19"
+    },
+    {
+      "route": "Puerto Williams to Puerto Williams",
+      "origin": "Puerto Williams",
+      "dates": "NOV 24 → DEC 9, 2026",
+      "ship": "SILVER CLOUD",
+      "priceFrom": 21900,
+      "priceNow": 19400,
+      "maxDiscount": 11,
+      "label": "OFERTA · AHORRÁ 11%",
+      "departureDate": "2026-11-24"
+    },
+    {
       "route": "Puerto Williams to King George Island",
       "origin": "Puerto Williams",
       "dates": "NOV 25 → DEC 4, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 14300,
+      "priceNow": 13300,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-11-25"
+    },
+    {
+      "route": "King George Island to King George Island",
+      "origin": "King George Island",
+      "dates": "NOV 25 → DEC 1, 2026",
+      "ship": "SILVER ENDEAVOUR",
+      "priceFrom": null,
+      "priceNow": 13200,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -177,50 +221,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-02"
-    },
-    {
-      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
-      "origin": "Papeete (Tahiti)",
-      "dates": "JAN 3 → 13, 2027",
-      "ship": "SILVER WHISPER",
-      "priceFrom": 7900,
-      "priceNow": 5400,
-      "maxDiscount": 32,
-      "label": "OFERTA · AHORRÁ 32%",
-      "departureDate": "2027-01-03"
-    },
-    {
-      "route": "Puerto Williams to King George Island",
-      "origin": "Puerto Williams",
-      "dates": "JAN 6 → 15, 2027",
-      "ship": "SILVER WIND",
-      "priceFrom": null,
-      "priceNow": 20900,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-01-06"
-    },
-    {
-      "route": "Puerto Williams to Puerto Williams",
-      "origin": "Puerto Williams",
-      "dates": "JAN 8 → 18, 2027",
-      "ship": "SILVER CLOUD",
-      "priceFrom": null,
-      "priceNow": 15800,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-01-08"
-    },
-    {
-      "route": "Los Angeles, California to Copenhagen",
-      "origin": "Los Angeles, California",
-      "dates": "JAN 8 → JUN 7, 2027",
-      "ship": "SILVER DAWN",
-      "priceFrom": null,
-      "priceNow": 111800,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-01-08"
     }
   ]
 }
