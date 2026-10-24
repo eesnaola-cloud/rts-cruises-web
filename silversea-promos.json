@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T22:49:11.691Z",
+  "updatedAt": "2026-10-24T12:36:28.497Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -19,7 +19,7 @@
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": 4950,
+      "priceNow": 5150,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-06"
@@ -47,17 +47,6 @@
       "departureDate": "2027-02-21"
     },
     {
-      "route": "Miami, FL to Bridgetown",
-      "origin": "Miami, FL",
-      "dates": "MAR 19 → 31, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 8000,
-      "priceNow": 5000,
-      "maxDiscount": 38,
-      "label": "OFERTA · AHORRÁ 38%",
-      "departureDate": "2027-03-19"
-    },
-    {
       "route": "Vancouver to Seward (Anchorage, Alaska)",
       "origin": "Vancouver",
       "dates": "AUG 26 → SEP 2, 2027",
@@ -67,6 +56,17 @@
       "maxDiscount": 38,
       "label": "OFERTA · AHORRÁ 38%",
       "departureDate": "2027-08-26"
+    },
+    {
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "MAR 19 → 31, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 8000,
+      "priceNow": 5000,
+      "maxDiscount": 38,
+      "label": "OFERTA · AHORRÁ 38%",
+      "departureDate": "2027-03-19"
     },
     {
       "route": "Bridgetown to San Juan",
@@ -104,6 +104,17 @@
     {
       "route": "Miami, FL to Lisbon",
       "origin": "Miami, FL",
+      "dates": "MAR 10 → 24, 2027",
+      "ship": "SILVER RAY",
+      "priceFrom": null,
+      "priceNow": 4550,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-03-10"
+    },
+    {
+      "route": "Miami, FL to Lisbon",
+      "origin": "Miami, FL",
       "dates": "MAR 24 → APR 8, 2028",
       "ship": "SILVER DAWN",
       "priceFrom": 7100,
@@ -113,15 +124,15 @@
       "departureDate": "2028-03-24"
     },
     {
-      "route": "Miami, FL to Lisbon",
-      "origin": "Miami, FL",
-      "dates": "MAR 10 → 24, 2027",
-      "ship": "SILVER RAY",
-      "priceFrom": null,
-      "priceNow": 4550,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-03-10"
+      "route": "Bayonne, New Jersey to Montreal",
+      "origin": "Bayonne, New Jersey",
+      "dates": "SEP 24 → OCT 5, 2027",
+      "ship": "SILVER SHADOW",
+      "priceFrom": 8450,
+      "priceNow": 6700,
+      "maxDiscount": 21,
+      "label": "OFERTA · AHORRÁ 21%",
+      "departureDate": "2027-09-24"
     },
     {
       "route": "Puerto Williams to Puerto Williams",
@@ -184,7 +195,7 @@
       "dates": "NOV 25 → DEC 4, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 13300,
+      "priceNow": 13800,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -195,7 +206,7 @@
       "dates": "NOV 25 → DEC 1, 2026",
       "ship": "SILVER ENDEAVOUR",
       "priceFrom": null,
-      "priceNow": 13200,
+      "priceNow": 33100,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -210,17 +221,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-29"
-    },
-    {
-      "route": "Mumbai to Singapore",
-      "origin": "Mumbai",
-      "dates": "DEC 2 → 20, 2026",
-      "ship": "SILVER MUSE",
-      "priceFrom": null,
-      "priceNow": 9150,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-12-02"
     }
   ]
 }
