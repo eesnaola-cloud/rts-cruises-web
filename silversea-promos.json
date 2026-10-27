@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T23:40:16.671Z",
+  "updatedAt": "2026-10-27T14:20:00.476Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -25,17 +25,6 @@
       "departureDate": "2027-02-06"
     },
     {
-      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
-      "origin": "Papeete (Tahiti)",
-      "dates": "FEB 21 → MAR 7, 2027",
-      "ship": "SILVER WHISPER",
-      "priceFrom": null,
-      "priceNow": 6350,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-02-21"
-    },
-    {
       "route": "Copenhagen to Copenhagen",
       "origin": "Copenhagen",
       "dates": "MAY 21 → JUN 5, 2027",
@@ -45,6 +34,17 @@
       "maxDiscount": 28,
       "label": "OFERTA · AHORRÁ 28%",
       "departureDate": "2027-05-21"
+    },
+    {
+      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
+      "origin": "Papeete (Tahiti)",
+      "dates": "FEB 21 → MAR 7, 2027",
+      "ship": "SILVER WHISPER",
+      "priceFrom": null,
+      "priceNow": 6350,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-02-21"
     },
     {
       "route": "Miami, FL to Bridgetown",
@@ -69,17 +69,6 @@
       "departureDate": "2026-12-21"
     },
     {
-      "route": "Vancouver to Seward (Anchorage, Alaska)",
-      "origin": "Vancouver",
-      "dates": "AUG 26 → SEP 2, 2027",
-      "ship": "SILVER WHISPER",
-      "priceFrom": 6600,
-      "priceNow": 4100,
-      "maxDiscount": 38,
-      "label": "OFERTA · AHORRÁ 38%",
-      "departureDate": "2027-08-26"
-    },
-    {
       "route": "Nice to Nice",
       "origin": "Nice",
       "dates": "APR 1 → 13, 2027",
@@ -89,6 +78,17 @@
       "maxDiscount": 34,
       "label": "OFERTA · AHORRÁ 34%",
       "departureDate": "2027-04-01"
+    },
+    {
+      "route": "Vancouver to Seward (Anchorage, Alaska)",
+      "origin": "Vancouver",
+      "dates": "AUG 26 → SEP 2, 2027",
+      "ship": "SILVER WHISPER",
+      "priceFrom": 6600,
+      "priceNow": 4100,
+      "maxDiscount": 38,
+      "label": "OFERTA · AHORRÁ 38%",
+      "departureDate": "2027-08-26"
     },
     {
       "route": "Incheon (Seoul) to Tokyo",
@@ -106,21 +106,32 @@
       "origin": "Lisbon",
       "dates": "MAR 24 → APR 4, 2027",
       "ship": "SILVER RAY",
-      "priceFrom": 9500,
-      "priceNow": 6500,
-      "maxDiscount": 32,
-      "label": "OFERTA · AHORRÁ 32%",
+      "priceFrom": null,
+      "priceNow": 6350,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2027-03-24"
+    },
+    {
+      "route": "Miami, FL to Lisbon",
+      "origin": "Miami, FL",
+      "dates": "MAR 10 → 24, 2027",
+      "ship": "SILVER RAY",
+      "priceFrom": null,
+      "priceNow": 4550,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-03-10"
     },
     {
       "route": "Lisbon to Nice",
       "origin": "Lisbon",
       "dates": "MAR 23 → APR 1, 2027",
       "ship": "SILVER SHADOW",
-      "priceFrom": 6900,
-      "priceNow": 3900,
-      "maxDiscount": 43,
-      "label": "OFERTA · AHORRÁ 43%",
+      "priceFrom": null,
+      "priceNow": 4150,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2027-03-23"
     },
     {
@@ -210,17 +221,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-29"
-    },
-    {
-      "route": "Mumbai to Singapore",
-      "origin": "Mumbai",
-      "dates": "DEC 2 → 20, 2026",
-      "ship": "SILVER MUSE",
-      "priceFrom": null,
-      "priceNow": 9150,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-12-02"
     }
   ]
 }
