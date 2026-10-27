@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T19:23:49.808Z",
+  "updatedAt": "2026-10-27T23:25:08.994Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -8,7 +8,7 @@
       "dates": "DEC 19 → 27, 2026",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": 4000,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-19"
@@ -19,7 +19,7 @@
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": 5150,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-06"
@@ -29,10 +29,10 @@
       "origin": "Copenhagen",
       "dates": "MAY 21 → JUN 5, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 10600,
-      "priceNow": 7600,
-      "maxDiscount": 28,
-      "label": "OFERTA · AHORRÁ 28%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2027-05-21"
     },
     {
@@ -41,7 +41,7 @@
       "dates": "FEB 21 → MAR 7, 2027",
       "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": 6350,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-21"
@@ -51,10 +51,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 8000,
-      "priceNow": 5000,
-      "maxDiscount": 38,
-      "label": "OFERTA · AHORRÁ 38%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2027-03-19"
     },
     {
@@ -63,7 +63,7 @@
       "dates": "DEC 21 → 29, 2026",
       "ship": "SILVER NOVA",
       "priceFrom": null,
-      "priceNow": 4600,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-21"
@@ -73,10 +73,10 @@
       "origin": "Nice",
       "dates": "APR 1 → 13, 2027",
       "ship": "SILVER SHADOW",
-      "priceFrom": 8800,
-      "priceNow": 5800,
-      "maxDiscount": 34,
-      "label": "OFERTA · AHORRÁ 34%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2027-04-01"
     },
     {
@@ -84,10 +84,10 @@
       "origin": "Vancouver",
       "dates": "AUG 26 → SEP 2, 2027",
       "ship": "SILVER WHISPER",
-      "priceFrom": 6600,
-      "priceNow": 4100,
-      "maxDiscount": 38,
-      "label": "OFERTA · AHORRÁ 38%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2027-08-26"
     },
     {
@@ -95,10 +95,10 @@
       "origin": "Incheon (Seoul)",
       "dates": "JUN 7 → 21, 2027",
       "ship": "SILVER MUSE",
-      "priceFrom": 10000,
-      "priceNow": 7000,
-      "maxDiscount": 30,
-      "label": "OFERTA · AHORRÁ 30%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2027-06-07"
     },
     {
@@ -107,7 +107,7 @@
       "dates": "MAR 24 → APR 4, 2027",
       "ship": "SILVER RAY",
       "priceFrom": null,
-      "priceNow": 6350,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-03-24"
@@ -118,7 +118,7 @@
       "dates": "MAR 10 → 24, 2027",
       "ship": "SILVER RAY",
       "priceFrom": null,
-      "priceNow": 4550,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-03-10"
@@ -129,7 +129,7 @@
       "dates": "MAR 23 → APR 1, 2027",
       "ship": "SILVER SHADOW",
       "priceFrom": null,
-      "priceNow": 4150,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-03-23"
@@ -139,10 +139,10 @@
       "origin": "Puerto Williams",
       "dates": "NOV 9 → 24, 2026",
       "ship": "SILVER CLOUD",
-      "priceFrom": 19750,
-      "priceNow": 18500,
-      "maxDiscount": 6,
-      "label": "OFERTA · AHORRÁ 6%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2026-11-09"
     },
     {
@@ -151,7 +151,7 @@
       "dates": "NOV 15 → 29, 2026",
       "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": 7050,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-15"
@@ -162,7 +162,7 @@
       "dates": "NOV 16 → DEC 4, 2026",
       "ship": "SILVER MOON",
       "priceFrom": null,
-      "priceNow": 7700,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-16"
@@ -173,7 +173,7 @@
       "dates": "NOV 19 → 25, 2026",
       "ship": "SILVER ENDEAVOUR",
       "priceFrom": null,
-      "priceNow": 19900,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-19"
@@ -183,10 +183,10 @@
       "origin": "Puerto Williams",
       "dates": "NOV 24 → DEC 9, 2026",
       "ship": "SILVER CLOUD",
-      "priceFrom": 21900,
-      "priceNow": 19400,
-      "maxDiscount": 11,
-      "label": "OFERTA · AHORRÁ 11%",
+      "priceFrom": null,
+      "priceNow": null,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2026-11-24"
     },
     {
@@ -195,7 +195,7 @@
       "dates": "NOV 25 → DEC 4, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 13800,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -206,7 +206,7 @@
       "dates": "NOV 25 → DEC 1, 2026",
       "ship": "SILVER ENDEAVOUR",
       "priceFrom": null,
-      "priceNow": 33100,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -217,7 +217,7 @@
       "dates": "NOV 29 → DEC 13, 2026",
       "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": 6450,
+      "priceNow": null,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-29"
