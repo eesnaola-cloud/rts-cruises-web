@@ -387,8 +387,8 @@ html, body {
 #canvas[data-scheme="negro"] .tpl-destino::before {
   background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.5) 40%, rgba(0,0,0,.95) 80%, #000 100%);
 }
-/* Decorative bg lines */
-.tpl-destino::after {
+/* Decorative bg lines (hidden when photo is loaded) */
+.tpl-destino:not(.has-image)::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -398,6 +398,45 @@ html, body {
   z-index: 0;
   pointer-events: none;
 }
+
+/* Background image layer */
+#dest-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+/* Image upload control in panel */
+.img-drop {
+  border: 1px dashed rgba(196,154,60,.35);
+  border-radius: 3px;
+  padding: 18px 12px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--ui-muted);
+  transition: border-color .2s, color .2s;
+  position: relative;
+}
+.img-drop:hover { border-color: var(--gold); color: var(--ui-text); }
+.img-drop input[type=file] {
+  position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%;
+}
+.img-drop .img-icon { font-size: 22px; margin-bottom: 6px; display: block; }
+.img-preview {
+  width: 100%; aspect-ratio: 1;
+  object-fit: cover; border-radius: 3px;
+  margin-top: 10px; display: none;
+}
+.btn-remove-img {
+  width: 100%; margin-top: 8px;
+  background: transparent; border: 1px solid rgba(255,255,255,.12);
+  border-radius: 3px; color: var(--ui-muted); font-family: var(--sans);
+  font-size: 11px; padding: 7px; cursor: pointer; transition: all .15s; display: none;
+}
+.btn-remove-img:hover { border-color: rgba(255,80,80,.4); color: #ff6b6b; }
 .dest-body {
   position: relative;
   z-index: 2;
@@ -603,6 +642,16 @@ html, body {
       </div>
     </div>
 
+    <div class="panel-section" id="section-img" hidden>
+      <div class="panel-label">Imagen de fondo</div>
+      <label class="img-drop" id="img-drop-label">
+        <span class="img-icon">🖼</span>
+        <span id="img-drop-text">Adjuntar foto de la ruta</span>
+        <input type="file" id="img-upload" accept="image/*">
+      </label>
+      <button class="btn-remove-img" id="btn-remove-img">✕ Quitar imagen</button>
+    </div>
+
     <div class="panel-section">
       <div class="panel-label">Cómo usar</div>
       <div class="instructions">
@@ -647,7 +696,8 @@ html, body {
           </div>
 
           <!-- ── TEMPLATE: DESTINO ── -->
-          <div class="tpl tpl-destino">
+          <div class="tpl tpl-destino" id="tpl-destino">
+            <div id="dest-bg"></div>
             <div class="dest-logo">
               <div class="c-logo-name">RTS Cruises</div>
               <div class="c-logo-sub">Luxury Cruises</div>
@@ -723,8 +773,45 @@ function applyState() {
   c.dataset.fmt    = state.fmt;
   c.dataset.tpl    = state.tpl;
   c.dataset.scheme = state.scheme;
+  // Show image upload panel only for Destino
+  document.getElementById('section-img').hidden = (state.tpl !== 'destino');
   requestAnimationFrame(updateScale);
 }
+
+// ── IMAGE UPLOAD (Destino) ──
+(function() {
+  const input       = document.getElementById('img-upload');
+  const destBg      = document.getElementById('dest-bg');
+  const destTpl     = document.getElementById('tpl-destino');
+  const btnRemove   = document.getElementById('btn-remove-img');
+  const dropText    = document.getElementById('img-drop-text');
+
+  function setImage(dataUrl) {
+    destBg.style.backgroundImage = `url(${dataUrl})`;
+    destTpl.classList.add('has-image');
+    btnRemove.style.display = 'block';
+    dropText.textContent = 'Cambiar imagen';
+    requestAnimationFrame(updateScale);
+  }
+
+  function clearImage() {
+    destBg.style.backgroundImage = '';
+    destTpl.classList.remove('has-image');
+    btnRemove.style.display = 'none';
+    dropText.textContent = 'Adjuntar foto de la ruta';
+    input.value = '';
+  }
+
+  input.addEventListener('change', () => {
+    const file = input.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => setImage(e.target.result);
+    reader.readAsDataURL(file);
+  });
+
+  btnRemove.addEventListener('click', clearImage);
+})();
 
 // ── SCALE ──
 function updateScale() {
