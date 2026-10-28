@@ -1,0 +1,785 @@
+<title>Kit Redes — RTS Cruises</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<style>
+/* ── TOKENS ── */
+:root {
+  --ui-bg:      #0c0c12;
+  --ui-panel:   #14141e;
+  --ui-surface: #1e1e2a;
+  --ui-border:  rgba(255,255,255,.07);
+  --ui-hover:   rgba(255,255,255,.06);
+  --ui-text:    #ddd9d2;
+  --ui-muted:   rgba(221,217,210,.4);
+  --ui-accent:  #C49A3C;
+
+  --navy:      #0B1C3D;
+  --navy-deep: #071529;
+  --gold:      #C49A3C;
+  --gold-lt:   #dab35e;
+  --cream:     #f7f3ec;
+
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans:  'DM Sans', system-ui, sans-serif;
+
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--sans);
+  background: var(--ui-bg);
+  color: var(--ui-text);
+}
+
+/* ── LAYOUT ── */
+.app {
+  display: flex;
+  height: 100%;
+}
+
+/* ── PANEL (sidebar) ── */
+.panel {
+  width: 280px;
+  flex-shrink: 0;
+  background: var(--ui-panel);
+  border-right: 1px solid var(--ui-border);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.panel::-webkit-scrollbar { width: 4px; }
+.panel::-webkit-scrollbar-thumb { background: rgba(255,255,255,.12); border-radius: 2px; }
+
+.panel-brand {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--ui-border);
+}
+.brand-name {
+  font-family: var(--serif);
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: .5px;
+}
+.brand-sub {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 2px;
+}
+
+.panel-section {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--ui-border);
+}
+.panel-label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ui-muted);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Buttons row */
+.btn-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.opt-btn {
+  flex: 1;
+  min-width: 0;
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-border);
+  border-radius: 3px;
+  color: var(--ui-text);
+  font-family: var(--sans);
+  font-size: 11px;
+  padding: 7px 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.opt-btn:hover { background: var(--ui-hover); }
+.opt-btn.active { background: rgba(196,154,60,.15); border-color: var(--gold); color: var(--gold); }
+
+/* Scheme swatches */
+.scheme-row { display: flex; gap: 8px; }
+.swatch {
+  width: 40px; height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color .15s;
+  position: relative;
+}
+.swatch.active { border-color: var(--gold); }
+.swatch::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -18px;
+  left: 50%; transform: translateX(-50%);
+  font-size: 9px;
+  color: var(--ui-muted);
+  white-space: nowrap;
+}
+.swatch-navy  { background: linear-gradient(135deg,#0B1C3D 50%,#C49A3C 50%); }
+.swatch-cream { background: linear-gradient(135deg,#f7f3ec 50%,#0B1C3D 50%); }
+.swatch-negro { background: linear-gradient(135deg,#000 50%,#C49A3C 50%); }
+
+/* Instructions */
+.instructions {
+  padding: 12px;
+  background: var(--ui-surface);
+  border-radius: 4px;
+  font-size: 11.5px;
+  color: var(--ui-muted);
+  line-height: 1.6;
+}
+.instructions strong { color: var(--ui-text); }
+
+/* Export button */
+.panel-footer {
+  padding: 16px 20px 20px;
+  margin-top: auto;
+}
+.btn-export {
+  width: 100%;
+  background: var(--gold);
+  color: #071529;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 13px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background .2s;
+}
+.btn-export:hover { background: var(--gold-lt); }
+.btn-export:disabled { opacity: .5; cursor: not-allowed; }
+
+#export-msg {
+  font-size: 11px;
+  color: var(--ui-muted);
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* ── STAGE (preview area) ── */
+.stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+  padding: 32px 24px 48px;
+  background: var(--ui-bg);
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+}
+.stage::-webkit-scrollbar { width: 6px; }
+.stage::-webkit-scrollbar-thumb { background: rgba(255,255,255,.1); border-radius: 3px; }
+
+.stage-label {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ui-muted);
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+
+/* Scale wrapper */
+.canvas-outer {
+  /* JS sets width/height to scaled dimensions */
+}
+.canvas-scale {
+  transform-origin: top left;
+  /* JS sets transform: scale(N) */
+}
+
+/* ── CANVAS (1080px internal) ── */
+#canvas {
+  width: 1080px;
+  position: relative;
+  font-family: var(--sans);
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Formats → height */
+#canvas[data-fmt="square"]    { height: 1080px; }
+#canvas[data-fmt="portrait"]  { height: 1350px; }
+#canvas[data-fmt="story"]     { height: 1920px; }
+#canvas[data-fmt="landscape"] { height:  607px; }
+
+/* Schemes → bg/fg */
+#canvas[data-scheme="navy"]  { background: var(--navy); color: #fff; }
+#canvas[data-scheme="cream"] { background: var(--cream); color: var(--navy); }
+#canvas[data-scheme="negro"] { background: #000; color: #fff; }
+
+/* Gold accent color per scheme */
+#canvas[data-scheme="navy"]  { --c-gold: #C49A3C; --c-gold-lt: #dab35e; --c-dim: rgba(255,255,255,.45); --c-hr: rgba(196,154,60,.4); }
+#canvas[data-scheme="cream"] { --c-gold: #A07830; --c-gold-lt: #C49A3C; --c-dim: rgba(11,28,61,.5);     --c-hr: rgba(11,28,61,.2); }
+#canvas[data-scheme="negro"] { --c-gold: #C49A3C; --c-gold-lt: #dab35e; --c-dim: rgba(255,255,255,.45); --c-hr: rgba(196,154,60,.4); }
+
+/* Decorative corner mark */
+#canvas::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 160px; height: 160px;
+  background: radial-gradient(circle at 100% 0%, var(--c-gold) 0%, transparent 65%);
+  opacity: .12;
+  pointer-events: none;
+}
+#canvas::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 240px; height: 240px;
+  background: radial-gradient(circle at 0% 100%, var(--c-gold) 0%, transparent 65%);
+  opacity: .07;
+  pointer-events: none;
+}
+
+/* Logo mark */
+.c-logo {
+  position: absolute;
+  top: 52px; left: 60px;
+  z-index: 10;
+}
+.c-logo-name {
+  font-family: var(--serif);
+  font-size: 22px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.c-logo-sub {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin-top: 4px;
+}
+
+/* Hide/show templates */
+.tpl { display: none; }
+#canvas[data-tpl="impacto"]      .tpl-impacto      { display: flex; }
+#canvas[data-tpl="destino"]      .tpl-destino      { display: flex; }
+#canvas[data-tpl="institucional"] .tpl-institucional { display: flex; }
+
+/* ─── TEMPLATE: IMPACTO ─── */
+.tpl-impacto {
+  position: absolute;
+  inset: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 80px 100px;
+  text-align: center;
+  gap: 0;
+}
+.c-eyebrow {
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  font-weight: 600;
+  margin-bottom: 28px;
+  min-width: 40px;
+}
+.c-eyebrow:focus { outline: 1px dashed var(--c-gold); outline-offset: 4px; border-radius: 2px; }
+.c-headline {
+  font-family: var(--serif);
+  font-size: 96px;
+  line-height: 1.02;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.c-headline em { font-style: italic; color: var(--c-gold-lt); }
+.c-headline:focus { outline: 1px dashed rgba(255,255,255,.3); outline-offset: 4px; border-radius: 2px; }
+.c-hr {
+  width: 80px;
+  height: 2px;
+  background: var(--c-gold);
+  margin: 0 auto 32px;
+  flex-shrink: 0;
+}
+.c-subheadline {
+  font-size: 26px;
+  color: var(--c-dim);
+  max-width: 700px;
+  line-height: 1.45;
+  margin-bottom: 52px;
+}
+.c-subheadline:focus { outline: 1px dashed rgba(255,255,255,.2); outline-offset: 4px; border-radius: 2px; }
+.c-cta {
+  display: inline-block;
+  background: var(--c-gold);
+  color: #071529;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 18px 52px;
+  border-radius: 2px;
+}
+.c-cta:focus { outline: 2px solid var(--c-gold-lt); outline-offset: 2px; }
+.c-footer-imp {
+  position: absolute;
+  bottom: 44px;
+  right: 60px;
+  font-size: 13px;
+  color: var(--c-dim);
+  letter-spacing: 1px;
+}
+.c-footer-imp:focus { outline: 1px dashed rgba(255,255,255,.2); outline-offset: 4px; border-radius: 2px; }
+
+/* Story adjustments */
+#canvas[data-fmt="story"] .c-headline { font-size: 80px; }
+#canvas[data-fmt="story"] .tpl-impacto { padding-top: 200px; padding-bottom: 200px; }
+
+/* Landscape adjustments */
+#canvas[data-fmt="landscape"] .c-headline { font-size: 64px; margin-bottom: 16px; }
+#canvas[data-fmt="landscape"] .c-subheadline { font-size: 20px; margin-bottom: 32px; }
+#canvas[data-fmt="landscape"] .c-eyebrow { margin-bottom: 16px; }
+#canvas[data-fmt="landscape"] .c-hr { margin-bottom: 16px; }
+#canvas[data-fmt="landscape"] .tpl-impacto { padding: 40px 100px; }
+#canvas[data-fmt="landscape"] .c-cta { padding: 14px 40px; font-size: 13px; }
+
+/* ─── TEMPLATE: DESTINO ─── */
+.tpl-destino {
+  position: absolute;
+  inset: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
+}
+/* Gradient overlay */
+.tpl-destino::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(7,21,41,.4) 40%, rgba(7,21,41,.92) 75%, var(--navy-deep) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+#canvas[data-scheme="cream"] .tpl-destino::before {
+  background: linear-gradient(to bottom, transparent 30%, rgba(247,243,236,.88) 70%, var(--cream) 100%);
+}
+#canvas[data-scheme="negro"] .tpl-destino::before {
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.5) 40%, rgba(0,0,0,.95) 80%, #000 100%);
+}
+/* Decorative bg lines */
+.tpl-destino::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 119px, rgba(196,154,60,.04) 120px),
+    repeating-linear-gradient(90deg, transparent, transparent 119px, rgba(196,154,60,.04) 120px);
+  z-index: 0;
+  pointer-events: none;
+}
+.dest-body {
+  position: relative;
+  z-index: 2;
+  padding: 60px;
+}
+.c-dest-tag {
+  display: inline-block;
+  border: 1px solid var(--c-gold);
+  color: var(--c-gold);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  margin-bottom: 28px;
+}
+.c-dest-tag:focus { outline: 1px dashed var(--c-gold); outline-offset: 4px; border-radius: 2px; }
+.c-dest-route {
+  font-family: var(--serif);
+  font-size: 88px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+.c-dest-route:focus { outline: 1px dashed rgba(255,255,255,.3); outline-offset: 8px; border-radius: 2px; }
+.dest-meta {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.c-dest-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.c-dest-detail .d-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  font-weight: 600;
+}
+.c-dest-detail .d-value {
+  font-size: 22px;
+  font-weight: 500;
+}
+.c-dest-detail .d-value:focus { outline: 1px dashed rgba(255,255,255,.2); outline-offset: 4px; border-radius: 2px; }
+.dest-divider { width: 1px; height: 44px; background: var(--c-hr); }
+
+/* Landscape destino */
+#canvas[data-fmt="landscape"] .c-dest-route { font-size: 64px; }
+#canvas[data-fmt="landscape"] .dest-body { padding: 32px 60px; }
+
+/* Story destino */
+#canvas[data-fmt="story"] .c-dest-route { font-size: 80px; }
+#canvas[data-fmt="story"] .dest-body { padding: 80px 60px; }
+
+/* Logo en destino */
+.tpl-destino .dest-logo {
+  position: absolute;
+  top: 52px; left: 60px;
+  z-index: 3;
+}
+.tpl-destino .dest-logo .c-logo-name { font-family: var(--serif); font-size: 20px; line-height: 1; }
+.tpl-destino .dest-logo .c-logo-sub  { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--c-gold); margin-top: 3px; }
+
+/* ─── TEMPLATE: INSTITUCIONAL ─── */
+.tpl-institucional {
+  position: absolute;
+  inset: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  text-align: center;
+  gap: 0;
+}
+.c-inst-logo {
+  font-family: var(--serif);
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.c-inst-logo-sub {
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin-bottom: 48px;
+}
+.c-inst-line {
+  width: 60px;
+  height: 1px;
+  background: var(--c-hr);
+  margin: 0 auto 40px;
+  flex-shrink: 0;
+}
+.c-inst-eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+.c-inst-eyebrow:focus { outline: 1px dashed var(--c-gold); outline-offset: 4px; border-radius: 2px; }
+.c-inst-headline {
+  font-family: var(--serif);
+  font-size: 68px;
+  line-height: 1.1;
+  font-weight: 700;
+  max-width: 840px;
+  margin: 0 auto 36px;
+}
+.c-inst-headline:focus { outline: 1px dashed rgba(0,0,0,.2); outline-offset: 8px; border-radius: 2px; }
+#canvas[data-scheme="navy"] .c-inst-headline:focus,
+#canvas[data-scheme="negro"] .c-inst-headline:focus { outline-color: rgba(255,255,255,.2); }
+.c-inst-body {
+  font-size: 22px;
+  color: var(--c-dim);
+  max-width: 680px;
+  line-height: 1.5;
+  margin-bottom: 52px;
+}
+.c-inst-body:focus { outline: 1px dashed rgba(255,255,255,.15); outline-offset: 4px; border-radius: 2px; }
+.c-inst-footer {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--c-gold);
+}
+.c-inst-footer:focus { outline: 1px dashed var(--c-gold); outline-offset: 4px; border-radius: 2px; }
+
+/* Landscape institucional */
+#canvas[data-fmt="landscape"] .c-inst-headline { font-size: 48px; margin-bottom: 20px; }
+#canvas[data-fmt="landscape"] .c-inst-body { font-size: 18px; margin-bottom: 32px; }
+#canvas[data-fmt="landscape"] .tpl-institucional { padding: 40px 120px; }
+#canvas[data-fmt="landscape"] .c-inst-logo { font-size: 16px; }
+
+/* Story institucional */
+#canvas[data-fmt="story"] .c-inst-headline { font-size: 72px; }
+#canvas[data-fmt="story"] .tpl-institucional { gap: 0; padding: 100px 100px; }
+
+/* ── EDIT HINT ── */
+[contenteditable]:focus { user-select: text; }
+.edit-hint {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--ui-muted);
+  text-transform: uppercase;
+  margin-top: 14px;
+  text-align: center;
+}
+
+/* ── RESPONSIVE OVERRIDE ── */
+@media (max-width: 680px) {
+  .panel { width: 100%; height: auto; border-right: none; border-bottom: 1px solid var(--ui-border); overflow-y: visible; }
+  .app { flex-direction: column; overflow: auto; height: auto; }
+  .stage { overflow: visible; padding: 20px 16px 40px; }
+  html, body { overflow: auto; height: auto; }
+}
+</style>
+
+<div class="app">
+
+  <!-- ── PANEL ── -->
+  <aside class="panel">
+    <div class="panel-brand">
+      <div class="brand-name">RTS Cruises</div>
+      <div class="brand-sub">Kit de Redes Sociales</div>
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-label">Formato</div>
+      <div class="btn-row">
+        <button class="opt-btn active" data-key="fmt" data-val="square">1:1</button>
+        <button class="opt-btn" data-key="fmt" data-val="portrait">4:5</button>
+        <button class="opt-btn" data-key="fmt" data-val="story">Story</button>
+        <button class="opt-btn" data-key="fmt" data-val="landscape">16:9</button>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-label">Plantilla</div>
+      <div class="btn-row" style="flex-direction:column;">
+        <button class="opt-btn active" style="text-align:left;padding:10px 12px;" data-key="tpl" data-val="impacto">
+          <strong>Impacto</strong> — Promo, Black Friday, campaña
+        </button>
+        <button class="opt-btn" style="text-align:left;padding:10px 12px;" data-key="tpl" data-val="destino">
+          <strong>Destino</strong> — Itinerario, ruta, fechas
+        </button>
+        <button class="opt-btn" style="text-align:left;padding:10px 12px;" data-key="tpl" data-val="institucional">
+          <strong>Institucional</strong> — Marca, novedades
+        </button>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-label">Esquema de color</div>
+      <div class="scheme-row" style="padding-bottom:22px;">
+        <div class="swatch swatch-navy active"  data-scheme="navy"  data-label="Navy" title="Navy + Dorado"></div>
+        <div class="swatch swatch-cream"        data-scheme="cream" data-label="Cream" title="Cream + Navy"></div>
+        <div class="swatch swatch-negro"        data-scheme="negro" data-label="Negro" title="Negro + Dorado"></div>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="panel-label">Cómo usar</div>
+      <div class="instructions">
+        <strong>1.</strong> Elegí formato, plantilla y color.<br>
+        <strong>2.</strong> Hacé clic sobre cualquier texto en la previsualización para editarlo.<br>
+        <strong>3.</strong> Presioná <strong>Exportar PNG</strong> para descargar la imagen.<br><br>
+        <span style="color:rgba(221,217,210,.3)">Si el botón no descarga, usá Cmd+Shift+4 (Mac) o Win+Shift+S para capturar el canvas.</span>
+      </div>
+    </div>
+
+    <div class="panel-footer">
+      <button class="btn-export" id="btn-export" onclick="exportCanvas()">⬇ Exportar PNG</button>
+      <div id="export-msg" hidden style="margin-top:10px;font-size:11px;color:var(--ui-muted);text-align:center;line-height:1.6;">
+        Guardá este archivo HTML y abrilo localmente<br>para que la exportación funcione.
+      </div>
+    </div>
+  </aside>
+
+  <!-- ── STAGE ── -->
+  <main class="stage" id="stage">
+    <div class="stage-label">Previsualización · click en el texto para editar</div>
+
+    <div class="canvas-outer" id="canvas-outer">
+      <div class="canvas-scale" id="canvas-scale">
+
+        <div id="canvas" data-fmt="square" data-tpl="impacto" data-scheme="navy">
+
+          <!-- Logo (Impacto + Institucional) -->
+          <div class="c-logo">
+            <div class="c-logo-name">RTS Cruises</div>
+            <div class="c-logo-sub">Luxury Cruises</div>
+          </div>
+
+          <!-- ── TEMPLATE: IMPACTO ── -->
+          <div class="tpl tpl-impacto">
+            <div class="c-eyebrow" contenteditable spellcheck="false">TIEMPO LIMITADO</div>
+            <div class="c-headline" contenteditable spellcheck="false">Silversea<br><em>Black Friday</em></div>
+            <div class="c-hr"></div>
+            <div class="c-subheadline" contenteditable spellcheck="false">Hasta 45% de descuento en itinerarios seleccionados del Mediterráneo, Caribe y más.</div>
+            <div class="c-cta" contenteditable spellcheck="false">Consultar ahora →</div>
+            <div class="c-footer-imp" contenteditable spellcheck="false">rtscruises.com</div>
+          </div>
+
+          <!-- ── TEMPLATE: DESTINO ── -->
+          <div class="tpl tpl-destino">
+            <div class="dest-logo">
+              <div class="c-logo-name">RTS Cruises</div>
+              <div class="c-logo-sub">Luxury Cruises</div>
+            </div>
+            <div class="dest-body">
+              <div class="c-dest-tag" contenteditable spellcheck="false">MEDITERRÁNEO · SILVERSEA</div>
+              <div class="c-dest-route" contenteditable spellcheck="false">Barcelona<br>→ Roma</div>
+              <div class="dest-meta">
+                <div class="c-dest-detail">
+                  <div class="d-label">Salida</div>
+                  <div class="d-value" contenteditable spellcheck="false">15 Nov 2026</div>
+                </div>
+                <div class="dest-divider"></div>
+                <div class="c-dest-detail">
+                  <div class="d-label">Duración</div>
+                  <div class="d-value" contenteditable spellcheck="false">10 noches</div>
+                </div>
+                <div class="dest-divider"></div>
+                <div class="c-dest-detail">
+                  <div class="d-label">Desde</div>
+                  <div class="d-value" contenteditable spellcheck="false">USD 6.800</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── TEMPLATE: INSTITUCIONAL ── -->
+          <div class="tpl tpl-institucional">
+            <div class="c-inst-logo">RTS Cruises</div>
+            <div class="c-inst-logo-sub">Luxury Cruises</div>
+            <div class="c-inst-line"></div>
+            <div class="c-inst-eyebrow" contenteditable spellcheck="false">REPRESENTANTE OFICIAL</div>
+            <div class="c-inst-headline" contenteditable spellcheck="false">Cruceros de lujo para los clientes más exigentes</div>
+            <div class="c-inst-body" contenteditable spellcheck="false">8 navieras de lujo · Mediterráneo · Caribe · Asia · Ártico y más destinos exclusivos.</div>
+            <div class="c-inst-footer" contenteditable spellcheck="false">rtscruises.com · 011 4313-5726</div>
+          </div>
+
+        </div><!-- #canvas -->
+      </div><!-- .canvas-scale -->
+    </div><!-- .canvas-outer -->
+
+    <p class="edit-hint">Hacé clic en cualquier texto del canvas para editarlo</p>
+  </main>
+</div>
+
+<script>
+// ── STATE ──
+const state = { fmt: 'square', tpl: 'impacto', scheme: 'navy' };
+
+// ── OPTION BUTTONS ──
+document.querySelectorAll('.opt-btn[data-key]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const key = btn.dataset.key;
+    state[key] = btn.dataset.val;
+    document.querySelectorAll(`.opt-btn[data-key="${key}"]`).forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applyState();
+  });
+});
+
+// ── SCHEME SWATCHES ──
+document.querySelectorAll('.swatch').forEach(sw => {
+  sw.addEventListener('click', () => {
+    state.scheme = sw.dataset.scheme;
+    document.querySelectorAll('.swatch').forEach(s => s.classList.remove('active'));
+    sw.classList.add('active');
+    applyState();
+  });
+});
+
+function applyState() {
+  const c = document.getElementById('canvas');
+  c.dataset.fmt    = state.fmt;
+  c.dataset.tpl    = state.tpl;
+  c.dataset.scheme = state.scheme;
+  requestAnimationFrame(updateScale);
+}
+
+// ── SCALE ──
+function updateScale() {
+  const stage      = document.getElementById('stage');
+  const outer      = document.getElementById('canvas-outer');
+  const scaleWrap  = document.getElementById('canvas-scale');
+  const canvas     = document.getElementById('canvas');
+
+  const availW  = stage.clientWidth - 48;
+  const scale   = Math.min(availW / 1080, 0.9);
+  const canvasH = canvas.offsetHeight;
+
+  scaleWrap.style.transform      = `scale(${scale})`;
+  scaleWrap.style.transformOrigin = 'top left';
+  outer.style.width  = Math.round(1080 * scale) + 'px';
+  outer.style.height = Math.round(canvasH * scale) + 'px';
+}
+
+window.addEventListener('resize', updateScale);
+window.addEventListener('load', () => requestAnimationFrame(updateScale));
+// Recompute after fonts load
+document.fonts.ready.then(() => requestAnimationFrame(updateScale));
+
+// ── EXPORT ──
+async function exportCanvas() {
+  const btn = document.getElementById('btn-export');
+  const msg = document.getElementById('export-msg');
+  btn.disabled = true;
+  btn.textContent = 'Generando…';
+
+  // Remove contenteditable outline before capture
+  const editables = document.querySelectorAll('[contenteditable]');
+  editables.forEach(el => el.blur());
+
+  try {
+    const canvas = document.getElementById('canvas');
+    const h2c = await html2canvas(canvas, {
+      scale: 2,
+      useCORS: true,
+      backgroundColor: null,
+      logging: false,
+    });
+    const url = h2c.toDataURL('image/png');
+    const a   = document.createElement('a');
+    a.href     = url;
+    a.download = `rts-${state.tpl}-${state.fmt}.png`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    btn.textContent = '✓ Descargado';
+    setTimeout(() => { btn.textContent = '⬇ Exportar PNG'; btn.disabled = false; }, 2500);
+  } catch (err) {
+    btn.textContent = '⬇ Exportar PNG';
+    btn.disabled = false;
+    msg.hidden = false;
+  }
+}
+</script>
