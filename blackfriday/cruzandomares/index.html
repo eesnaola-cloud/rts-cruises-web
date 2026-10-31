@@ -139,8 +139,19 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.55);padding:clamp(48p
   .cards-grid{grid-template-columns:1fr;}
 }
 </style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WVDNKBT7');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVDNKBT7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <a href="../../index.html" class="nav-logo" style="gap:14px;align-items:center;">
     <img src="logo-cruzandomares.jpg" alt="CruzandoMares" style="height:44px;width:auto;border-radius:3px;object-fit:contain;">
@@ -265,7 +276,7 @@ const ITINERARIOS = [{"emb": "Barcelona", "deb": "Civitavecchia", "date": "01 No
     }
 
     sel('promos-grid').innerHTML = filtered.map(r => `
-      <div class="promo-card">
+      <div class="promo-card" data-region="${r.region}" data-ship="${r.ship}" data-disc="${r.disc}">
         <img class="card-img" src="${r.img}" alt="${r.emb}" loading="lazy">
         <div class="card-body">
           <span class="card-discount">Hasta ${r.disc}% OFF</span>
@@ -421,6 +432,81 @@ document.getElementById('promo-form').addEventListener('submit', function(e) {
     link.href = 'mailto:paloma.medina@rocatransport.com.ar?cc=' + encodeURIComponent(email) + '&subject=' + subject + '&body=' + body;
     link.click();
   }, 800);
+});
+</script>
+
+<script>
+// ── Black Friday GA4 tracking ─────────────────────────────────────────
+const BF_RESELLER = 'cruzandomares';
+window.dataLayer = window.dataLayer || [];
+
+// Page view with reseller dimension
+dataLayer.push({event:'bf_page_view', reseller:BF_RESELLER});
+
+// Hero CTA click
+document.addEventListener('DOMContentLoaded', function() {
+  var heroCta = document.querySelector('.hero-cta');
+  if (heroCta) {
+    heroCta.addEventListener('click', function() {
+      dataLayer.push({event:'bf_hero_cta_click', reseller:BF_RESELLER});
+    });
+  }
+
+  // Filter tracking via event delegation
+  var filtersBar = document.querySelector('.filters-bar');
+  if (filtersBar) {
+    // Selects (region, ship, year)
+    filtersBar.addEventListener('change', function(e) {
+      if (e.target.classList.contains('filter-select')) {
+        var filterType = e.target.id || e.target.name || 'unknown';
+        var filterValue = e.target.value;
+        var count = parseInt((document.getElementById('results-count') || {}).textContent) || document.querySelectorAll('.promo-card').length;
+        dataLayer.push({
+          event: 'bf_filter_change',
+          reseller: BF_RESELLER,
+          filter_type: filterType,
+          filter_value: filterValue,
+          results_count: count
+        });
+      }
+    });
+    // Discount chips
+    filtersBar.addEventListener('click', function(e) {
+      var chip = e.target.closest('.chip-btn');
+      if (chip) {
+        var count = parseInt((document.getElementById('results-count') || {}).textContent) || document.querySelectorAll('.promo-card').length;
+        dataLayer.push({
+          event: 'bf_filter_change',
+          reseller: BF_RESELLER,
+          filter_type: 'discount',
+          filter_value: chip.dataset.disc || chip.textContent.trim(),
+          results_count: count
+        });
+      }
+    });
+  }
+
+  // WhatsApp card clicks — event delegation on grid
+  var grid = document.getElementById('promos-grid');
+  if (grid) {
+    grid.addEventListener('click', function(e) {
+      var cta = e.target.closest('.card-cta');
+      if (!cta) return;
+      var card = cta.closest('.promo-card');
+      var region = card ? (card.querySelector('[data-region]') || {}).dataset?.region : '';
+      var ship   = card ? (card.querySelector('[data-ship]')   || {}).dataset?.ship   : '';
+      var disc   = card ? (card.querySelector('[data-disc]')   || {}).dataset?.disc   : '';
+      var route  = card ? (card.querySelector('.card-route') || {}).textContent?.trim() : '';
+      dataLayer.push({
+        event: 'bf_whatsapp_click',
+        reseller: BF_RESELLER,
+        region: region,
+        ship: ship,
+        discount_pct: disc,
+        itinerary_route: route
+      });
+    });
+  }
 });
 </script>
 </body>
