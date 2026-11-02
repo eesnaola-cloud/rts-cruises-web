@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T23:16:45.626Z",
+  "updatedAt": "2026-11-02T18:10:00.388Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -63,7 +63,7 @@
       "dates": "MAR 10 → 24, 2027",
       "ship": "SILVER RAY",
       "priceFrom": null,
-      "priceNow": 4750,
+      "priceNow": 4550,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-03-10"
@@ -80,15 +80,15 @@
       "departureDate": "2027-03-24"
     },
     {
-      "route": "Lisbon to Nice",
-      "origin": "Lisbon",
-      "dates": "MAR 23 → APR 1, 2027",
-      "ship": "SILVER SHADOW",
-      "priceFrom": null,
-      "priceNow": 4150,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-03-23"
+      "route": "Seattle (Washington) to Vancouver",
+      "origin": "Seattle (Washington)",
+      "dates": "MAY 27 → JUN 3, 2027",
+      "ship": "SILVER WHISPER",
+      "priceFrom": 5350,
+      "priceNow": 4100,
+      "maxDiscount": 23,
+      "label": "OFERTA · AHORRÁ 23%",
+      "departureDate": "2027-05-27"
     },
     {
       "route": "Nice to Nice",
@@ -113,15 +113,15 @@
       "departureDate": "2026-12-21"
     },
     {
-      "route": "Seattle (Washington) to Vancouver",
-      "origin": "Seattle (Washington)",
-      "dates": "MAY 27 → JUN 3, 2027",
-      "ship": "SILVER WHISPER",
-      "priceFrom": 5350,
-      "priceNow": 4100,
-      "maxDiscount": 23,
-      "label": "OFERTA · AHORRÁ 23%",
-      "departureDate": "2027-05-27"
+      "route": "Lisbon to Nice",
+      "origin": "Lisbon",
+      "dates": "MAR 23 → APR 1, 2027",
+      "ship": "SILVER SHADOW",
+      "priceFrom": null,
+      "priceNow": 4150,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-03-23"
     },
     {
       "route": "Bayonne, New Jersey to Montreal",
