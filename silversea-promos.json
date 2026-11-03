@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T22:39:45.423Z",
+  "updatedAt": "2026-11-03T01:56:39.403Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -102,15 +102,15 @@
       "departureDate": "2027-04-01"
     },
     {
-      "route": "Bridgetown to San Juan",
-      "origin": "Bridgetown",
-      "dates": "DEC 21 → 29, 2026",
-      "ship": "SILVER NOVA",
-      "priceFrom": null,
-      "priceNow": 4600,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-12-21"
+      "route": "Bayonne, New Jersey to Montreal",
+      "origin": "Bayonne, New Jersey",
+      "dates": "SEP 24 → OCT 5, 2027",
+      "ship": "SILVER SHADOW",
+      "priceFrom": 8450,
+      "priceNow": 6700,
+      "maxDiscount": 21,
+      "label": "OFERTA · AHORRÁ 21%",
+      "departureDate": "2027-09-24"
     },
     {
       "route": "Lisbon to Nice",
@@ -124,15 +124,15 @@
       "departureDate": "2027-03-23"
     },
     {
-      "route": "Bayonne, New Jersey to Montreal",
-      "origin": "Bayonne, New Jersey",
-      "dates": "SEP 24 → OCT 5, 2027",
-      "ship": "SILVER SHADOW",
-      "priceFrom": 8450,
-      "priceNow": 6700,
-      "maxDiscount": 21,
-      "label": "OFERTA · AHORRÁ 21%",
-      "departureDate": "2027-09-24"
+      "route": "Bridgetown to San Juan",
+      "origin": "Bridgetown",
+      "dates": "DEC 21 → 29, 2026",
+      "ship": "SILVER NOVA",
+      "priceFrom": null,
+      "priceNow": 4600,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2026-12-21"
     },
     {
       "route": "Puerto Williams to Puerto Williams",
