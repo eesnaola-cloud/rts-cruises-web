@@ -82,9 +82,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(7,21,41,.92)
 .card-cta{display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:12px;border-radius:2px;transition:background .2s;margin-top:4px;}
 .card-cta:hover{background:#1ebe5d;}
 .card-cta svg{width:16px;height:16px;fill:currentColor;flex-shrink:0;}
-.card-itinerary-link{display:block;text-align:center;font-size:11px;letter-spacing:.5px;color:var(--gold-light);text-decoration:none;margin-top:6px;opacity:.8;transition:opacity .2s;}
-.card-itinerary-link:hover{opacity:1;text-decoration:underline;}
-
 /* FILTERS */
 .filters-bar{max-width:1200px;margin:0 auto 32px;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;}
 .filter-group{display:flex;flex-direction:column;gap:6px;min-width:160px;}
@@ -300,7 +297,6 @@ const ITINERARIOS = [{"emb": "Miami, Florida", "deb": "Miami, Florida", "date": 
             ${WA_SVG}
             Consultar por WhatsApp
           </a>
-          <a href="${r.url}" class="card-itinerary-link" target="_blank" rel="noopener">Ver itinerario completo →</a>
         </div>
       </div>`).join('');
   }
