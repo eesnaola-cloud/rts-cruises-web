@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T23:21:32.445Z",
+  "updatedAt": "2026-11-09T18:39:40.438Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -18,8 +18,8 @@
       "origin": "Fusina (Venice)",
       "dates": "OCT 24 → NOV 2, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 11100,
-      "priceNow": 6105,
+      "priceFrom": 8200,
+      "priceNow": 4510,
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2027-10-24"
@@ -60,6 +60,17 @@
     {
       "route": "Miami, FL to Bridgetown",
       "origin": "Miami, FL",
+      "dates": "MAR 19 → 31, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 10900,
+      "priceNow": 5995,
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2027-03-19"
+    },
+    {
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
       "priceFrom": 7300,
@@ -69,15 +80,15 @@
       "departureDate": "2027-02-06"
     },
     {
-      "route": "Miami, FL to Bridgetown",
-      "origin": "Miami, FL",
-      "dates": "MAR 19 → 31, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 10900,
-      "priceNow": 5995,
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2027-03-19"
+      "route": "San Juan to Bridgetown",
+      "origin": "San Juan",
+      "dates": "FEB 6 → 16, 2027",
+      "ship": "SILVER SHADOW",
+      "priceFrom": null,
+      "priceNow": 4450,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-02-06"
     },
     {
       "route": "Lisbon to Barcelona",
@@ -100,28 +111,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-04-01"
-    },
-    {
-      "route": "Bayonne, New Jersey to Montreal",
-      "origin": "Bayonne, New Jersey",
-      "dates": "SEP 24 → OCT 5, 2027",
-      "ship": "SILVER SHADOW",
-      "priceFrom": 10000,
-      "priceNow": 7500,
-      "maxDiscount": 25,
-      "label": "OFERTA · AHORRÁ 25%",
-      "departureDate": "2027-09-24"
-    },
-    {
-      "route": "Puerto Williams to Puerto Williams",
-      "origin": "Puerto Williams",
-      "dates": "NOV 9 → 24, 2026",
-      "ship": "SILVER CLOUD",
-      "priceFrom": 21600,
-      "priceNow": 18360,
-      "maxDiscount": 15,
-      "label": "OFERTA · AHORRÁ 15%",
-      "departureDate": "2026-11-09"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -221,6 +210,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-21"
+    },
+    {
+      "route": "Puerto Williams to Puerto Williams",
+      "origin": "Puerto Williams",
+      "dates": "DEC 22, 2026 → JAN 6, 2027",
+      "ship": "SILVER WIND",
+      "priceFrom": 26900,
+      "priceNow": 22865,
+      "maxDiscount": 15,
+      "label": "OFERTA · AHORRÁ 15%",
+      "departureDate": "2026-12-22"
     }
   ]
 }
