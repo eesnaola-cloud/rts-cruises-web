@@ -522,13 +522,16 @@ document.addEventListener('DOMContentLoaded', function() {
         discount_pct: disc,
         itinerary_route: route
       });
-      if (typeof fbq !== 'undefined') fbq('track', 'Lead', {
-        content_name: route,
-        content_category: region,
-        content_type: ship,
-        value: 0,
-        currency: 'USD'
-      });
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead');
+        fbq('track', 'Lead', {
+          content_name: route,
+          content_category: region,
+          content_type: ship,
+          value: 0,
+          currency: 'USD'
+        });
+      }
     });
   }
 });
