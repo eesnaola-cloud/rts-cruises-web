@@ -206,19 +206,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="filters-bar" id="filters-bar">
       <div class="filter-group">
         <span class="filter-label">Región</span>
-        <select class="filter-select" id="f-region">
+        <select class="filter-select" id="f-region" autocomplete="off">
           <option value="">Todas las regiones</option>
         </select>
       </div>
       <div class="filter-group">
         <span class="filter-label">Barco</span>
-        <select class="filter-select" id="f-ship">
+        <select class="filter-select" id="f-ship" autocomplete="off">
           <option value="">Todos los barcos</option>
         </select>
       </div>
       <div class="filter-group">
         <span class="filter-label">Año</span>
-        <select class="filter-select" id="f-year">
+        <select class="filter-select" id="f-year" autocomplete="off">
           <option value="">Todos los años</option>
         </select>
       </div>
@@ -331,26 +331,26 @@ const ITINERARIOS = [{"emb": "Miami, Florida", "deb": "Miami, Florida", "date": 
       <div class="form-row">
         <div class="form-group">
           <label for="f-nombre">Nombre completo</label>
-          <input type="text" id="f-nombre" placeholder="María González" required>
+          <input type="text" id="f-nombre" placeholder="María González" required autocomplete="off">
         </div>
         <div class="form-group">
           <label for="f-agencia">Agencia de viajes</label>
-          <input type="text" id="f-agencia" placeholder="Travel Dreams S.A." required>
+          <input type="text" id="f-agencia" placeholder="Travel Dreams S.A." required autocomplete="off">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
           <label for="f-email">Email</label>
-          <input type="email" id="f-email" placeholder="maria@agencia.com" required>
+          <input type="email" id="f-email" placeholder="maria@agencia.com" required autocomplete="off">
         </div>
         <div class="form-group">
           <label for="f-tel">WhatsApp (opcional)</label>
-          <input type="tel" id="f-tel" placeholder="+54 9 11 XXXX-XXXX">
+          <input type="tel" id="f-tel" placeholder="+54 9 11 XXXX-XXXX" autocomplete="off">
         </div>
       </div>
       <div class="form-group">
         <label for="f-destinos">Destinos de interés</label>
-        <select id="f-destinos">
+        <select id="f-destinos" autocomplete="off">
           <option value="">Todos los destinos</option>
           <option>Mediterráneo</option>
           <option>Caribe</option>
