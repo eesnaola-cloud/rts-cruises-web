@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T23:19:47.663Z",
+  "updatedAt": "2026-11-10T02:29:51.740Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -8,7 +8,7 @@
       "dates": "DEC 19 → 27, 2026",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 5050,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-19"
@@ -18,11 +18,22 @@
       "origin": "Fusina (Venice)",
       "dates": "OCT 24 → NOV 2, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": null,
-      "priceNow": null,
-      "maxDiscount": 0,
-      "label": "OFERTA",
+      "priceFrom": 8200,
+      "priceNow": 4510,
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2027-10-24"
+    },
+    {
+      "route": "Tokyo to Tokyo",
+      "origin": "Tokyo",
+      "dates": "SEP 25 → OCT 7, 2027",
+      "ship": "SILVER MUSE",
+      "priceFrom": 14000,
+      "priceNow": 7700,
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
+      "departureDate": "2027-09-25"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -30,31 +41,20 @@
       "dates": "FEB 21 → MAR 7, 2027",
       "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 6350,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-21"
-    },
-    {
-      "route": "Tokyo to Tokyo",
-      "origin": "Tokyo",
-      "dates": "SEP 25 → OCT 7, 2027",
-      "ship": "SILVER MUSE",
-      "priceFrom": null,
-      "priceNow": null,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-09-25"
     },
     {
       "route": "Seattle (Washington) to Vancouver",
       "origin": "Seattle (Washington)",
       "dates": "MAY 27 → JUN 3, 2027",
       "ship": "SILVER WHISPER",
-      "priceFrom": null,
-      "priceNow": null,
-      "maxDiscount": 0,
-      "label": "OFERTA",
+      "priceFrom": 6000,
+      "priceNow": 5100,
+      "maxDiscount": 15,
+      "label": "OFERTA · AHORRÁ 15%",
       "departureDate": "2027-05-27"
     },
     {
@@ -62,10 +62,10 @@
       "origin": "Miami, FL",
       "dates": "MAR 19 → 31, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": null,
-      "priceNow": null,
-      "maxDiscount": 0,
-      "label": "OFERTA",
+      "priceFrom": 10900,
+      "priceNow": 5995,
+      "maxDiscount": 45,
+      "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2027-03-19"
     },
     {
@@ -73,10 +73,10 @@
       "origin": "Miami, FL",
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": null,
-      "priceNow": null,
-      "maxDiscount": 0,
-      "label": "OFERTA",
+      "priceFrom": 7300,
+      "priceNow": 5475,
+      "maxDiscount": 25,
+      "label": "OFERTA · AHORRÁ 25%",
       "departureDate": "2027-02-06"
     },
     {
@@ -85,7 +85,7 @@
       "dates": "FEB 6 → 16, 2027",
       "ship": "SILVER SHADOW",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 4450,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-06"
@@ -96,7 +96,7 @@
       "dates": "MAR 24 → APR 4, 2027",
       "ship": "SILVER RAY",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 6350,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-03-24"
@@ -107,10 +107,21 @@
       "dates": "APR 1 → 13, 2027",
       "ship": "SILVER SHADOW",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 5550,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-04-01"
+    },
+    {
+      "route": "Tokyo to Tokyo",
+      "origin": "Tokyo",
+      "dates": "MAR 20 → APR 3, 2027",
+      "ship": "SILVER MOON",
+      "priceFrom": null,
+      "priceNow": 10150,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-03-20"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -118,7 +129,7 @@
       "dates": "NOV 15 → 29, 2026",
       "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 6150,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-15"
@@ -129,7 +140,7 @@
       "dates": "NOV 16 → DEC 4, 2026",
       "ship": "SILVER MOON",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 8300,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-16"
@@ -140,7 +151,7 @@
       "dates": "NOV 19 → 25, 2026",
       "ship": "SILVER ENDEAVOUR",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 21900,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-19"
@@ -150,10 +161,10 @@
       "origin": "Puerto Williams",
       "dates": "NOV 24 → DEC 9, 2026",
       "ship": "SILVER CLOUD",
-      "priceFrom": null,
-      "priceNow": null,
-      "maxDiscount": 0,
-      "label": "OFERTA",
+      "priceFrom": 26400,
+      "priceNow": 22440,
+      "maxDiscount": 15,
+      "label": "OFERTA · AHORRÁ 15%",
       "departureDate": "2026-11-24"
     },
     {
@@ -162,7 +173,7 @@
       "dates": "NOV 25 → DEC 4, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 13300,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
@@ -173,7 +184,7 @@
       "dates": "NOV 29 → DEC 13, 2026",
       "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 6050,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-29"
@@ -184,7 +195,7 @@
       "dates": "DEC 4 → 12, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 27600,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-04"
@@ -194,10 +205,10 @@
       "origin": "Puerto Williams",
       "dates": "DEC 9 → 21, 2026",
       "ship": "SILVER CLOUD",
-      "priceFrom": null,
-      "priceNow": null,
-      "maxDiscount": 0,
-      "label": "OFERTA",
+      "priceFrom": 21100,
+      "priceNow": 17935,
+      "maxDiscount": 15,
+      "label": "OFERTA · AHORRÁ 15%",
       "departureDate": "2026-12-09"
     },
     {
@@ -206,21 +217,10 @@
       "dates": "DEC 21 → 29, 2026",
       "ship": "SILVER NOVA",
       "priceFrom": null,
-      "priceNow": null,
+      "priceNow": 5150,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-21"
-    },
-    {
-      "route": "Puerto Williams to Puerto Williams",
-      "origin": "Puerto Williams",
-      "dates": "DEC 22, 2026 → JAN 6, 2027",
-      "ship": "SILVER WIND",
-      "priceFrom": null,
-      "priceNow": null,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-12-22"
     }
   ]
 }
