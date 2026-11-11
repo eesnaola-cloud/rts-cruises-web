@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T00:22:15.176Z",
+  "updatedAt": "2026-11-11T21:10:08.073Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -7,10 +7,10 @@
       "origin": "Bridgetown",
       "dates": "DEC 19 → 27, 2026",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 7600,
-      "priceNow": 5700,
-      "maxDiscount": 25,
-      "label": "OFERTA · AHORRÁ 25%",
+      "priceFrom": null,
+      "priceNow": 4500,
+      "maxDiscount": 0,
+      "label": "OFERTA",
       "departureDate": "2026-12-19"
     },
     {
@@ -18,8 +18,8 @@
       "origin": "Fusina (Venice)",
       "dates": "OCT 24 → NOV 2, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 8200,
-      "priceNow": 4510,
+      "priceFrom": 11100,
+      "priceNow": 6105,
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2027-10-24"
@@ -69,17 +69,6 @@
       "departureDate": "2027-02-06"
     },
     {
-      "route": "San Juan to Bridgetown",
-      "origin": "San Juan",
-      "dates": "FEB 6 → 16, 2027",
-      "ship": "SILVER SHADOW",
-      "priceFrom": null,
-      "priceNow": 4450,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-02-06"
-    },
-    {
       "route": "Lisbon to Barcelona",
       "origin": "Lisbon",
       "dates": "MAR 24 → APR 4, 2027",
@@ -100,6 +89,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-04-01"
+    },
+    {
+      "route": "San Juan to Bridgetown",
+      "origin": "San Juan",
+      "dates": "FEB 6 → 16, 2027",
+      "ship": "SILVER SHADOW",
+      "priceFrom": null,
+      "priceNow": 4450,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-02-06"
     },
     {
       "route": "Tokyo to Tokyo",
@@ -206,7 +206,7 @@
       "dates": "DEC 21 → 29, 2026",
       "ship": "SILVER NOVA",
       "priceFrom": null,
-      "priceNow": 5150,
+      "priceNow": 5850,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-21"
