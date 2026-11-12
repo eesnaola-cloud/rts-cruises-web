@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T01:45:30.788Z",
+  "updatedAt": "2026-11-12T16:44:19.309Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -29,8 +29,8 @@
       "origin": "Tokyo",
       "dates": "SEP 25 → OCT 7, 2027",
       "ship": "SILVER MUSE",
-      "priceFrom": 13100,
-      "priceNow": 7205,
+      "priceFrom": 14000,
+      "priceNow": 7700,
       "maxDiscount": 45,
       "label": "OFERTA · AHORRÁ 45%",
       "departureDate": "2027-09-25"
@@ -51,8 +51,8 @@
       "origin": "Seattle (Washington)",
       "dates": "MAY 27 → JUN 3, 2027",
       "ship": "SILVER WHISPER",
-      "priceFrom": 6000,
-      "priceNow": 5100,
+      "priceFrom": 4800,
+      "priceNow": 4080,
       "maxDiscount": 15,
       "label": "OFERTA · AHORRÁ 15%",
       "departureDate": "2027-05-27"
@@ -62,8 +62,8 @@
       "origin": "Miami, FL",
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 7300,
-      "priceNow": 5475,
+      "priceFrom": 7900,
+      "priceNow": 5925,
       "maxDiscount": 25,
       "label": "OFERTA · AHORRÁ 25%",
       "departureDate": "2027-02-06"
@@ -74,7 +74,7 @@
       "dates": "MAR 24 → APR 4, 2027",
       "ship": "SILVER RAY",
       "priceFrom": null,
-      "priceNow": 6350,
+      "priceNow": 5950,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-03-24"
@@ -172,8 +172,8 @@
       "origin": "Puerto Williams",
       "dates": "NOV 24 → DEC 9, 2026",
       "ship": "SILVER CLOUD",
-      "priceFrom": 24000,
-      "priceNow": 20400,
+      "priceFrom": 26400,
+      "priceNow": 22440,
       "maxDiscount": 15,
       "label": "OFERTA · AHORRÁ 15%",
       "departureDate": "2026-11-24"
@@ -184,7 +184,7 @@
       "dates": "NOV 25 → DEC 4, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 13300,
+      "priceNow": 13800,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-11-25"
