@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T01:59:01.253Z",
+  "updatedAt": "2026-11-18T17:09:05.379Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -8,21 +8,10 @@
       "dates": "DEC 19 → 27, 2026",
       "ship": "SILVER SPIRIT",
       "priceFrom": null,
-      "priceNow": 4500,
+      "priceNow": 4050,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-19"
-    },
-    {
-      "route": "Fusina (Venice) to Fusina (Venice)",
-      "origin": "Fusina (Venice)",
-      "dates": "OCT 24 → NOV 2, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 8900,
-      "priceNow": 4895,
-      "maxDiscount": 45,
-      "label": "OFERTA · AHORRÁ 45%",
-      "departureDate": "2027-10-24"
     },
     {
       "route": "Seattle (Washington) to Vancouver",
@@ -52,7 +41,7 @@
       "dates": "APR 1 → 13, 2027",
       "ship": "SILVER SHADOW",
       "priceFrom": null,
-      "priceNow": 6950,
+      "priceNow": 7250,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-04-01"
@@ -221,6 +210,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-10"
+    },
+    {
+      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
+      "origin": "Papeete (Tahiti)",
+      "dates": "JAN 13 → 24, 2027",
+      "ship": "SILVER WHISPER",
+      "priceFrom": null,
+      "priceNow": 5050,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-13"
     }
   ]
 }
