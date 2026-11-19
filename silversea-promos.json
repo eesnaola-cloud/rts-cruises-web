@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T01:36:11.668Z",
+  "updatedAt": "2026-11-19T17:15:24.904Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -18,8 +18,8 @@
       "origin": "Seattle (Washington)",
       "dates": "MAY 27 → JUN 3, 2027",
       "ship": "SILVER WHISPER",
-      "priceFrom": 4800,
-      "priceNow": 4080,
+      "priceFrom": 6000,
+      "priceNow": 5100,
       "maxDiscount": 15,
       "label": "OFERTA · AHORRÁ 15%",
       "departureDate": "2027-05-27"
@@ -40,8 +40,8 @@
       "origin": "Miami, FL",
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 7600,
-      "priceNow": 5700,
+      "priceFrom": 8900,
+      "priceNow": 6675,
       "maxDiscount": 25,
       "label": "OFERTA · AHORRÁ 25%",
       "departureDate": "2027-02-06"
@@ -63,7 +63,7 @@
       "dates": "MAR 24 → APR 4, 2027",
       "ship": "SILVER RAY",
       "priceFrom": null,
-      "priceNow": 5950,
+      "priceNow": 5550,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-03-24"
@@ -140,7 +140,7 @@
       "dates": "DEC 21 → 29, 2026",
       "ship": "SILVER NOVA",
       "priceFrom": null,
-      "priceNow": 5150,
+      "priceNow": 5050,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-21"
@@ -168,12 +168,23 @@
       "departureDate": "2027-01-03"
     },
     {
+      "route": "Puerto Williams to King George Island",
+      "origin": "Puerto Williams",
+      "dates": "JAN 6 → 15, 2027",
+      "ship": "SILVER WIND",
+      "priceFrom": null,
+      "priceNow": 18000,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-06"
+    },
+    {
       "route": "Los Angeles, California to Copenhagen",
       "origin": "Los Angeles, California",
       "dates": "JAN 8 → JUN 7, 2027",
       "ship": "SILVER DAWN",
       "priceFrom": null,
-      "priceNow": 107000,
+      "priceNow": 111800,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-08"
@@ -195,7 +206,7 @@
       "dates": "JAN 10 → 20, 2027",
       "ship": "SILVER SHADOW",
       "priceFrom": null,
-      "priceNow": 4850,
+      "priceNow": 5750,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-10"
@@ -210,17 +221,6 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-13"
-    },
-    {
-      "route": "Puerto Williams to King George Island",
-      "origin": "Puerto Williams",
-      "dates": "JAN 24 → FEB 2, 2027",
-      "ship": "SILVER WIND",
-      "priceFrom": 29100,
-      "priceNow": 21825,
-      "maxDiscount": 25,
-      "label": "OFERTA · AHORRÁ 25%",
-      "departureDate": "2027-01-24"
     }
   ]
 }
