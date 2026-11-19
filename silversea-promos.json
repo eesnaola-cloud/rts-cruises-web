@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T21:45:16.194Z",
+  "updatedAt": "2026-11-19T01:36:11.668Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -36,6 +36,17 @@
       "departureDate": "2027-02-21"
     },
     {
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "FEB 6 → 18, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 7600,
+      "priceNow": 5700,
+      "maxDiscount": 25,
+      "label": "OFERTA · AHORRÁ 25%",
+      "departureDate": "2027-02-06"
+    },
+    {
       "route": "Nice to Nice",
       "origin": "Nice",
       "dates": "APR 1 → 13, 2027",
@@ -58,37 +69,15 @@
       "departureDate": "2027-03-24"
     },
     {
-      "route": "Miami, FL to Bridgetown",
-      "origin": "Miami, FL",
-      "dates": "FEB 6 → 18, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 7600,
-      "priceNow": 5700,
-      "maxDiscount": 25,
-      "label": "OFERTA · AHORRÁ 25%",
-      "departureDate": "2027-02-06"
-    },
-    {
-      "route": "Singapore to Hong Kong",
-      "origin": "Singapore",
-      "dates": "FEB 14 → 28, 2027",
-      "ship": "SILVER MUSE",
+      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
+      "origin": "Papeete (Tahiti)",
+      "dates": "FEB 14 → 21, 2027",
+      "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": 7750,
+      "priceNow": 3150,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-14"
-    },
-    {
-      "route": "King George Island to King George Island",
-      "origin": "King George Island",
-      "dates": "NOV 19 → 25, 2026",
-      "ship": "SILVER ENDEAVOUR",
-      "priceFrom": null,
-      "priceNow": 21900,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2026-11-19"
     },
     {
       "route": "Puerto Williams to Puerto Williams",
@@ -221,6 +210,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-13"
+    },
+    {
+      "route": "Puerto Williams to King George Island",
+      "origin": "Puerto Williams",
+      "dates": "JAN 24 → FEB 2, 2027",
+      "ship": "SILVER WIND",
+      "priceFrom": 29100,
+      "priceNow": 21825,
+      "maxDiscount": 25,
+      "label": "OFERTA · AHORRÁ 25%",
+      "departureDate": "2027-01-24"
     }
   ]
 }
