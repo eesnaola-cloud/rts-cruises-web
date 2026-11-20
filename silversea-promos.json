@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T01:35:23.502Z",
+  "updatedAt": "2026-11-20T16:54:09.232Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -62,8 +62,8 @@
       "origin": "Miami, FL",
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 8900,
-      "priceNow": 6675,
+      "priceFrom": 9200,
+      "priceNow": 6900,
       "maxDiscount": 25,
       "label": "OFERTA · AHORRÁ 25%",
       "departureDate": "2027-02-06"
@@ -129,7 +129,7 @@
       "dates": "DEC 12 → 22, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 11000,
+      "priceNow": 31600,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-12"
@@ -173,7 +173,7 @@
       "dates": "JAN 6 → 15, 2027",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 18000,
+      "priceNow": 19400,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-06"
@@ -206,7 +206,7 @@
       "dates": "JAN 10 → 20, 2027",
       "ship": "SILVER SHADOW",
       "priceFrom": null,
-      "priceNow": 5750,
+      "priceNow": 6050,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-10"
