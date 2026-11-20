@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T22:01:53.535Z",
+  "updatedAt": "2026-11-20T01:35:23.502Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -36,17 +36,6 @@
       "departureDate": "2027-02-21"
     },
     {
-      "route": "Miami, FL to Bridgetown",
-      "origin": "Miami, FL",
-      "dates": "FEB 6 → 18, 2027",
-      "ship": "SILVER SPIRIT",
-      "priceFrom": 8900,
-      "priceNow": 6675,
-      "maxDiscount": 25,
-      "label": "OFERTA · AHORRÁ 25%",
-      "departureDate": "2027-02-06"
-    },
-    {
       "route": "Nice to Nice",
       "origin": "Nice",
       "dates": "APR 1 → 13, 2027",
@@ -67,6 +56,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-03-24"
+    },
+    {
+      "route": "Miami, FL to Bridgetown",
+      "origin": "Miami, FL",
+      "dates": "FEB 6 → 18, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 8900,
+      "priceNow": 6675,
+      "maxDiscount": 25,
+      "label": "OFERTA · AHORRÁ 25%",
+      "departureDate": "2027-02-06"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
