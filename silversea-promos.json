@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T00:33:52.651Z",
+  "updatedAt": "2026-11-23T20:05:52.567Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -73,22 +73,11 @@
       "origin": "Miami, FL",
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 9200,
-      "priceNow": 6900,
+      "priceFrom": 8800,
+      "priceNow": 6600,
       "maxDiscount": 25,
       "label": "OFERTA · AHORRÁ 25%",
       "departureDate": "2027-02-06"
-    },
-    {
-      "route": "Valparaiso to Papeete (Tahiti)",
-      "origin": "Valparaiso",
-      "dates": "MAR 10 → APR 1, 2027",
-      "ship": "SILVER CLOUD",
-      "priceFrom": null,
-      "priceNow": 12950,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-03-10"
     },
     {
       "route": "Puerto Williams to Puerto Williams",
@@ -150,8 +139,8 @@
       "origin": "Puerto Williams",
       "dates": "DEC 22, 2026 → JAN 6, 2027",
       "ship": "SILVER WIND",
-      "priceFrom": 29400,
-      "priceNow": 24990,
+      "priceFrom": 26900,
+      "priceNow": 22865,
       "maxDiscount": 15,
       "label": "OFERTA · AHORRÁ 15%",
       "departureDate": "2026-12-22"
@@ -221,6 +210,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-13"
+    },
+    {
+      "route": "Puerto Williams to King George Island",
+      "origin": "Puerto Williams",
+      "dates": "JAN 24 → FEB 2, 2027",
+      "ship": "SILVER WIND",
+      "priceFrom": 29100,
+      "priceNow": 21825,
+      "maxDiscount": 25,
+      "label": "OFERTA · AHORRÁ 25%",
+      "departureDate": "2027-01-24"
     }
   ]
 }
