@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T20:05:52.567Z",
+  "updatedAt": "2026-11-24T01:33:13.115Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -80,15 +80,15 @@
       "departureDate": "2027-02-06"
     },
     {
-      "route": "Puerto Williams to Puerto Williams",
-      "origin": "Puerto Williams",
-      "dates": "NOV 24 → DEC 9, 2026",
-      "ship": "SILVER CLOUD",
-      "priceFrom": 24000,
-      "priceNow": 20400,
-      "maxDiscount": 15,
-      "label": "OFERTA · AHORRÁ 15%",
-      "departureDate": "2026-11-24"
+      "route": "Copenhagen to Copenhagen",
+      "origin": "Copenhagen",
+      "dates": "AUG 24 → SEP 3, 2027",
+      "ship": "SILVER DAWN",
+      "priceFrom": 10300,
+      "priceNow": 7725,
+      "maxDiscount": 25,
+      "label": "OFERTA · AHORRÁ 25%",
+      "departureDate": "2027-08-24"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
