@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T04:32:41.023Z",
+  "updatedAt": "2026-11-24T19:28:19.222Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -36,6 +36,17 @@
       "departureDate": "2027-02-21"
     },
     {
+      "route": "Copenhagen to Copenhagen",
+      "origin": "Copenhagen",
+      "dates": "MAY 21 → JUN 5, 2027",
+      "ship": "SILVER SPIRIT",
+      "priceFrom": 11700,
+      "priceNow": 7605,
+      "maxDiscount": 35,
+      "label": "OFERTA · AHORRÁ 35%",
+      "departureDate": "2027-05-21"
+    },
+    {
       "route": "Lisbon to Barcelona",
       "origin": "Lisbon",
       "dates": "MAR 24 → APR 4, 2027",
@@ -52,7 +63,7 @@
       "dates": "FEB 14 → 21, 2027",
       "ship": "SILVER WHISPER",
       "priceFrom": null,
-      "priceNow": 3150,
+      "priceNow": 3750,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-02-14"
@@ -73,8 +84,8 @@
       "origin": "Miami, FL",
       "dates": "FEB 6 → 18, 2027",
       "ship": "SILVER SPIRIT",
-      "priceFrom": 8800,
-      "priceNow": 6600,
+      "priceFrom": 9200,
+      "priceNow": 6900,
       "maxDiscount": 25,
       "label": "OFERTA · AHORRÁ 25%",
       "departureDate": "2027-02-06"
@@ -84,8 +95,8 @@
       "origin": "Copenhagen",
       "dates": "AUG 24 → SEP 3, 2027",
       "ship": "SILVER DAWN",
-      "priceFrom": 10300,
-      "priceNow": 7725,
+      "priceFrom": 12900,
+      "priceNow": 9675,
       "maxDiscount": 25,
       "label": "OFERTA · AHORRÁ 25%",
       "departureDate": "2027-08-24"
@@ -104,21 +115,10 @@
     {
       "route": "Puerto Williams to Puerto Williams",
       "origin": "Puerto Williams",
-      "dates": "DEC 9 → 21, 2026",
-      "ship": "SILVER CLOUD",
-      "priceFrom": 21100,
-      "priceNow": 17935,
-      "maxDiscount": 15,
-      "label": "OFERTA · AHORRÁ 15%",
-      "departureDate": "2026-12-09"
-    },
-    {
-      "route": "Puerto Williams to Puerto Williams",
-      "origin": "Puerto Williams",
       "dates": "DEC 12 → 22, 2026",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 12100,
+      "priceNow": 11000,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-12"
@@ -129,21 +129,10 @@
       "dates": "DEC 21 → 29, 2026",
       "ship": "SILVER NOVA",
       "priceFrom": null,
-      "priceNow": 5050,
+      "priceNow": 5150,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2026-12-21"
-    },
-    {
-      "route": "Puerto Williams to Puerto Williams",
-      "origin": "Puerto Williams",
-      "dates": "DEC 22, 2026 → JAN 6, 2027",
-      "ship": "SILVER WIND",
-      "priceFrom": 26900,
-      "priceNow": 22865,
-      "maxDiscount": 15,
-      "label": "OFERTA · AHORRÁ 15%",
-      "departureDate": "2026-12-22"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -162,7 +151,7 @@
       "dates": "JAN 6 → 15, 2027",
       "ship": "SILVER WIND",
       "priceFrom": null,
-      "priceNow": 18000,
+      "priceNow": 16300,
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-06"
@@ -210,6 +199,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-13"
+    },
+    {
+      "route": "San Cristóbal, Galápagos to San Cristóbal, Galápagos",
+      "origin": "San Cristóbal, Galápagos",
+      "dates": "JAN 16 → 23, 2027",
+      "ship": "SILVER ORIGIN",
+      "priceFrom": null,
+      "priceNow": 14950,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-16"
     },
     {
       "route": "Puerto Williams to King George Island",
