@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T22:59:59.640Z",
+  "updatedAt": "2026-11-26T02:35:25.094Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -58,17 +58,6 @@
       "departureDate": "2027-03-24"
     },
     {
-      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
-      "origin": "Papeete (Tahiti)",
-      "dates": "FEB 14 → 21, 2027",
-      "ship": "SILVER WHISPER",
-      "priceFrom": null,
-      "priceNow": 3750,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-02-14"
-    },
-    {
       "route": "Nice to Nice",
       "origin": "Nice",
       "dates": "APR 1 → 13, 2027",
@@ -78,6 +67,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-04-01"
+    },
+    {
+      "route": "Papeete (Tahiti) to Papeete (Tahiti)",
+      "origin": "Papeete (Tahiti)",
+      "dates": "FEB 14 → 21, 2027",
+      "ship": "SILVER WHISPER",
+      "priceFrom": null,
+      "priceNow": 3750,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-02-14"
     },
     {
       "route": "Miami, FL to Lisbon",
