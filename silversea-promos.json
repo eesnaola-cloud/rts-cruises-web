@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T22:53:34.291Z",
+  "updatedAt": "2026-11-27T02:35:13.479Z",
   "source": "https://www.silversea.com/best-luxury-cruise-deals/save-up-to-40-percent.html",
   "promos": [
     {
@@ -58,17 +58,6 @@
       "departureDate": "2027-03-24"
     },
     {
-      "route": "Nice to Nice",
-      "origin": "Nice",
-      "dates": "APR 1 → 13, 2027",
-      "ship": "SILVER SHADOW",
-      "priceFrom": null,
-      "priceNow": 7250,
-      "maxDiscount": 0,
-      "label": "OFERTA",
-      "departureDate": "2027-04-01"
-    },
-    {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
       "origin": "Papeete (Tahiti)",
       "dates": "FEB 14 → 21, 2027",
@@ -91,15 +80,15 @@
       "departureDate": "2028-03-24"
     },
     {
-      "route": "Copenhagen to Copenhagen",
-      "origin": "Copenhagen",
-      "dates": "AUG 24 → SEP 3, 2027",
-      "ship": "SILVER DAWN",
-      "priceFrom": 11600,
-      "priceNow": 8700,
-      "maxDiscount": 25,
-      "label": "OFERTA · AHORRÁ 25%",
-      "departureDate": "2027-08-24"
+      "route": "Nice to Nice",
+      "origin": "Nice",
+      "dates": "APR 1 → 13, 2027",
+      "ship": "SILVER SHADOW",
+      "priceFrom": null,
+      "priceNow": 7250,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-04-01"
     },
     {
       "route": "Papeete (Tahiti) to Papeete (Tahiti)",
@@ -221,6 +210,17 @@
       "maxDiscount": 0,
       "label": "OFERTA",
       "departureDate": "2027-01-24"
+    },
+    {
+      "route": "San Cristóbal, Galapagos to San Cristóbal, Galapagos",
+      "origin": "San Cristóbal, Galapagos",
+      "dates": "JAN 30 → FEB 6, 2027",
+      "ship": "SILVER ORIGIN",
+      "priceFrom": null,
+      "priceNow": 12650,
+      "maxDiscount": 0,
+      "label": "OFERTA",
+      "departureDate": "2027-01-30"
     }
   ]
 }
